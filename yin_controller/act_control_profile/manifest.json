@@ -1,0 +1,47 @@
+{
+  "root": "/home/yin/act_run02_baseline_control_20261112",
+  "protected_originals": {
+    "/home/yin/Yin_ros2_ws/src/yin_franka_cartesian_controller/config/controllers_safe.yaml": "0fb35d1c55c08500a3a18d8f9313447f8f1a1eb751be1b052e1d20d20a0e1672",
+    "/home/yin/Yin_ros2_ws/src/yin_franka_bringup/launch/fr3_control.launch.py": "86b8f4d3a3fdc61605cff249e5b0602a4074cb449a1150260f534ef19acd12dd",
+    "/home/yin/Yin_ros2_ws/scripts/run_fr3_control.sh": "e77685ef5234d6f0ba2a3334affdb6c85c3f84a5c9a9d8c88aa58f3cba85822c",
+    "/home/yin/Yin_ros2_ws/src/yin_franka_cartesian_controller/src/franka_cartesian_twist_controller.cpp": "77df9db5be6a96fd38b45e7f6c51e0e395abeea051a50990226a10c327da918e",
+    "/home/yin/Yin_ros2_ws/src/yin_franka_cartesian_controller/include/yin_franka_cartesian_controller/franka_cartesian_twist_controller.hpp": "94ee2287302093a4db2d4b2ca6733421693b987f1ed794edc82321b03076e2cc",
+    "/home/yin/Yin_ros2_ws/src/yin_franka_cartesian_controller/scripts/udp_to_twist_bridge.py": "e95e41fde8852f7c83f3d01d89d8599158fde05f446e9e59e74f955f580d5cbc"
+  },
+  "new_files": {
+    "original_controllers_safe.yaml": "0fb35d1c55c08500a3a18d8f9313447f8f1a1eb751be1b052e1d20d20a0e1672",
+    "controllers_act.yaml": "b86188b37fd2a72f889ced1fb82f271076a421c0d5202f319884eef0b73d8e5a",
+    "act_cartesian.launch.py": "fbb143ff8a0550798e4f4b498fcbb4335a32f4063df5965cb69f89e94cf37b17",
+    "run_control.sh": "f6d19891094e3ba6db8fffeec7b41cec07579e6ee40455b8e60b64a77efd2dd5"
+  },
+  "parameter_changes": {
+    "linear_deadband": {
+      "before": [
+        0.003,
+        0.003,
+        0.003
+      ],
+      "after": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "angular_deadband": {
+      "before": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "after": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "model_changed": false,
+  "motion_limits_changed": false,
+  "timeouts_changed": false,
+  "reason_for_launch_adapter": "Original bringup fixes the parameter filename; copied launch changes only this path."
+}

@@ -1,0 +1,153 @@
+--- /home/lixin/act_gripper_baseline_run02_20261112/runtime_config.json
++++ /home/lixin/act_gripper_temporal_run02_20261112/runtime_config.json
+@@ -30,7 +30,7 @@
+     "use_vae": true,
+     "latent_dim": 32,
+     "n_vae_encoder_layers": 4,
+-    "temporal_ensemble_coeff": null,
++    "temporal_ensemble_coeff": 0.01,
+     "dropout": 0.1,
+     "kl_weight": 10.0,
+     "arm_action_dim": 7,
+@@ -57,7 +57,7 @@
+     "transition_sampling_radius_frames": 45,
+     "deployment_validation": true
+   },
+-  "data_dir": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata",
++  "data_dir": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata",
+   "dataset": {
+     "image_resize": [
+       64,
+--- /home/lixin/act_gripper_baseline_run02_20261112/baseline_settings.json
++++ /home/lixin/act_gripper_temporal_run02_20261112/baseline_settings.json
+@@ -2,9 +2,9 @@
+   "allow_motion": false,
+   "auto_reset": false,
+   "n_action_steps": 1,
+-  "temporal_ensemble_coeff": null,
++  "temporal_ensemble_coeff": 0.01,
+   "hz": 30,
+-  "action_chunk_index": 0,
++  "action_chunk_index": "Native temporal ensemble of overlapping chunks",
+   "training_action_offset_frames": 10,
+   "additional_runtime_offset_frames": 0,
+   "gripper_close_threshold_m": 0.0693,
+--- /home/lixin/act_gripper_baseline_run02_20261112/real_launch.py
++++ /home/lixin/act_gripper_temporal_run02_20261112/real_launch.py
+@@ -34,7 +34,7 @@
+         '--gripper-close-threshold', '.0693', '--gripper-open-threshold', '.074',
+         '--gripper-threshold', '.5', '--gripper-hysteresis', '.05',
+         '--max-linear-velocity', '.12', '--max-angular-velocity', '.35',
+-        '--log-dir', str(ROOT / 'reports/real_baseline')]
++        '--log-dir', str(ROOT / 'reports/real_temporal')]
+ 
+ 
+ def check():
+@@ -56,14 +56,17 @@
+         raise RuntimeError('EMA checkpoint mismatch')
+     training = json.loads((ROOT / 'checkpoint/act_config.json').read_text())
+     runtime = json.loads((ROOT / 'runtime_config.json').read_text())
+-    if [k for k in set(training) | set(runtime) if training.get(k) != runtime.get(k)] != ['data_dir']:
+-        raise RuntimeError('Unexpected runtime/model configuration changes')
++    expected = json.loads(json.dumps(training))
++    expected['data_dir'] = runtime['data_dir']
++    expected['policy']['temporal_ensemble_coeff'] = 0.01
++    if runtime != expected:
++        raise RuntimeError('Unexpected temporal runtime/model configuration changes')
+     if runtime['policy'].get('mask_gripper_state') is not True:
+         raise RuntimeError('run02 requires its trained gripper-input mask')
+     if os.environ.get('N_ACTION_STEPS') != '1':
+         raise RuntimeError('Original-loop baseline requires N_ACTION_STEPS=1')
+-    if runtime['policy']['temporal_ensemble_coeff'] is not None:
+-        raise RuntimeError('This baseline has no temporal ensemble')
++    if runtime['policy']['temporal_ensemble_coeff'] != 0.01:
++        raise RuntimeError('This independent version requires native temporal ensemble k=0.01')
+     previous = json.loads((ROOT / 'reports/offline_results.json').read_text())
+     if not previous['software_checks_passed'] or not previous['recorded_event_check_passed']:
+         raise RuntimeError('Saved-data offline checks have not passed')
+@@ -81,7 +84,7 @@
+     result = {'passed': True, 'mode': 'static_no_robot', 'original_runner_unchanged': True,
+         'original_runner_sha256': digest(ROOT / 'original_runner.py'), 'ema_sha256': manifest['ema_sha256'],
+         'source_files_unchanged': len(protected), 'command': command,
+-        'n_action_steps': 1, 'training_action_lead_frames': 10, 'extra_runtime_offset_frames': 0,
++        'n_action_steps': 1, 'temporal_ensemble_coeff': 0.01, 'training_action_lead_frames': 10, 'extra_runtime_offset_frames': 0,
+         'auto_reset': False, 'gripper_reset': 'hold', 'command_target': '10.10.10.2:8888',
+         'linear_velocity_component_limit_m_s': .12, 'angular_velocity_component_limit_rad_s': .35,
+         'robot_connection_created': False, 'ros_graph_created': False,
+@@ -103,7 +106,7 @@
+         return 0
+     if not os.environ.get('DISPLAY') or not sys.stdin.isatty():
+         raise RuntimeError('Run mode needs an interactive terminal on the lixin Linux desktop for B/C keys.')
+-    print('Starting ORIGINAL Cartesian ACT loop: EMA, 30 Hz, action steps=1, automatic reset OFF.', flush=True)
++    print('Starting ORIGINAL Cartesian ACT loop: EMA step 30000, native temporal k=0.01, 30 Hz, automatic reset OFF.', flush=True)
+     print('Before B: original code probes the bridge and sends zero arm delta + current gripper command.', flush=True)
+     print('Manually open the gripper and restore the demonstrated joint start before launching.', flush=True)
+     print('B starts/ends an episode; C exits. Maximum component speeds: .12 m/s and .35 rad/s.', flush=True)
+--- /home/lixin/act_gripper_baseline_run02_20261112/offline_checks.py
++++ /home/lixin/act_gripper_temporal_run02_20261112/offline_checks.py
+@@ -56,7 +56,7 @@
+     output = ROOT / 'reports'
+     output.mkdir(exist_ok=True)
+     result = {'software_checks_passed': False, 'physical_motion_performed': False,
+-              'ros_graph_created': False, 'method': 'Recorded observations, original N_ACTION_STEPS=1 loop',
++              'ros_graph_created': False, 'method': 'Recorded observations, unchanged original runner, native temporal ensemble k=0.01',
+               'limitations': ['No live camera/state validation', 'No actuator/controller test',
+                               'Recorded-observation replay is not autonomous rollout',
+                               'Only two episodes are held out; they were previously used to choose EMA']}
+@@ -70,7 +70,10 @@
+     training = json.loads((ROOT / 'checkpoint/act_config.json').read_text())
+     runtime = json.loads((ROOT / 'runtime_config.json').read_text())
+     differences = [k for k in set(training) | set(runtime) if training.get(k) != runtime.get(k)]
+-    assert differences == ['data_dir']
++    assert set(differences) == {'data_dir', 'policy'}
++    expected = json.loads(json.dumps(training)); expected['data_dir'] = runtime['data_dir']
++    expected['policy']['temporal_ensemble_coeff'] = 0.01
++    assert runtime == expected
+     tree = ast.parse((ROOT / 'original_runner.py').read_text())
+     imports = [n.module for n in ast.walk(tree) if isinstance(n, ast.ImportFrom)]
+     assert not any(x in imports for x in ['franka_action_execution', 'franka_joint_client'])
+@@ -79,7 +82,7 @@
+     torch.set_num_threads(8)
+     policy, cfg, size = load_act_gripper_policy(ROOT / 'runtime_config.json', ROOT / 'checkpoint',
+                                                torch.device('cuda'), 'act_policy_ema.pth')
+-    assert policy.config.n_action_steps == 1 and policy.config.temporal_ensemble_coeff is None
++    assert policy.config.n_action_steps == 1 and policy.config.temporal_ensemble_coeff == 0.01
+     assert policy.config.mask_gripper_state and cfg['dataset']['action_offset_frames'] == 10
+     import act_gripper_policy, franka_gripper_control, franka_gripper_transport, image_preprocessing
+     modules = [act_gripper_policy, franka_gripper_control, franka_gripper_transport, image_preprocessing,
+@@ -232,6 +235,7 @@
+     print('PASS original main loop with real model/FK, no IP sockets or command calls, stale observation rejected', flush=True)
+ 
+     first = np.full((len(states), 8), np.nan, dtype=np.float32)
++    raw_chunks = np.full((len(states), 100, 8), np.nan, dtype=np.float32)
+     lead = int(cfg['dataset']['action_offset_frames'])
+     indices = np.concatenate([np.arange(a, b - lead) for a, b in zip(starts, ends)])
+     timings = []
+@@ -241,11 +245,17 @@
+             t = time.perf_counter()
+             pred = policy.predict_action_chunk(batch(ix))
+             assert tuple(pred.shape) == (len(ix), 100, 8) and bool(torch.isfinite(pred).all())
+-            first[ix] = pred[:, 0].clamp(alo, ahi).cpu().numpy()
++            raw_chunks[ix] = pred.cpu().numpy()
+             timings.append((time.perf_counter() - t) * 1000)
+             if offset % 4096 == 0:
+                 print(f'OFFLINE_REPLAY {offset}/{len(indices)}', flush=True)
+     assert not network_attempts
++    from lerobot.policies.act.modeling_act import ACTTemporalEnsembler
++    for a, b in zip(starts, ends):
++        ensemble = ACTTemporalEnsembler(0.01, 100)
++        for i in range(int(a), int(b) - lead):
++            value = ensemble.update(torch.from_numpy(raw_chunks[i]).unsqueeze(0))[0].numpy()
++            first[i] = np.clip(value, alo.cpu().numpy(), ahi.cpu().numpy())
+     event_rows = []
+     correct = total = 0
+     arm_error_sum = 0.
+@@ -273,7 +283,7 @@
+         arm_error_sum += float(np.abs(first[ix, :7] - target[:, :7]).sum())
+     result['recorded_replay'] = {'dataset_episodes': 14, 'dataset_total_frames': len(states),
+         'evaluated_frames': total, 'excluded_source_episode': 6, 'action_lead_frames': lead,
+-        'runtime_action_index': 0, 'gripper_accuracy': correct / total, 'arm_mae_rad': arm_error_sum / (total * 7),
++        'runtime_action_index': 'native_temporal_ensemble', 'gripper_accuracy': correct / total, 'arm_mae_rad': arm_error_sum / (total * 7),
+         'episodes_with_one_close_one_open_within_1s': sum(x['within_one_second'] for x in event_rows),
+         'max_abs_event_timing_error_s': max(abs(e) for x in event_rows for e in (x['timing_error_s'] or [])),
+         'episodes': event_rows, 'median_64_observation_batch_ms': float(np.median(timings))}

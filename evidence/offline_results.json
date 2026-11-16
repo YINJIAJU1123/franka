@@ -1,0 +1,408 @@
+{
+  "software_checks_passed": true,
+  "physical_motion_performed": false,
+  "ros_graph_created": false,
+  "method": "Recorded observations, unchanged original runner, native temporal ensemble k=0.01",
+  "limitations": [
+    "No live camera/state validation",
+    "No actuator/controller test",
+    "Recorded-observation replay is not autonomous rollout",
+    "Only two episodes are held out; they were previously used to choose EMA"
+  ],
+  "isolation": {
+    "original_runner_byte_identical": true,
+    "model_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+    "runtime_config_changed_keys": [
+      "policy",
+      "data_dir"
+    ],
+    "module_paths": [
+      "/home/lixin/act_gripper_temporal_run02_20261112/act_gripper_policy.py",
+      "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_control.py",
+      "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_transport.py",
+      "/home/lixin/act_gripper_temporal_run02_20261112/image_preprocessing.py",
+      "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py",
+      "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py"
+    ],
+    "protected_source_files_unchanged": 70,
+    "no_joint_client_or_action_executor": true
+  },
+  "gripper_calibration": {
+    "widths_m": [
+      0.079744,
+      0.058849,
+      0.071,
+      0.079744
+    ],
+    "binary_sequence": [
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "passed": true
+  },
+  "camera_preprocessing": {
+    "cam_head": {
+      "raw_rgb_shape": [
+        480,
+        640,
+        3
+      ],
+      "mode": "center",
+      "output_shape": [
+        3,
+        64,
+        64
+      ],
+      "max_abs_difference_from_training_cache": 0.0
+    },
+    "cam_wrist": {
+      "raw_rgb_shape": [
+        720,
+        1280,
+        3
+      ],
+      "mode": "pad",
+      "output_shape": [
+        3,
+        64,
+        64
+      ],
+      "max_abs_difference_from_training_cache": 0.0
+    }
+  },
+  "original_loop": {
+    "raw_observation_steps": 12,
+    "real_ema_and_fk": true,
+    "command_send_attempts": 0,
+    "ip_socket_attempts": 0,
+    "stale_observation_rejected": true,
+    "max_joint_difference_from_direct_select_action_rad": 4.983596801899637e-07
+  },
+  "recorded_replay": {
+    "dataset_episodes": 14,
+    "dataset_total_frames": 24054,
+    "evaluated_frames": 23914,
+    "excluded_source_episode": 6,
+    "action_lead_frames": 10,
+    "runtime_action_index": "native_temporal_ensemble",
+    "gripper_accuracy": 0.9971146608681107,
+    "arm_mae_rad": 0.009250481989886775,
+    "episodes_with_one_close_one_open_within_1s": 14,
+    "max_abs_event_timing_error_s": 0.5666666666666667,
+    "episodes": [
+      {
+        "training_episode": 0,
+        "source_episode": 0,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          215,
+          1243
+        ],
+        "expected_frames": [
+          214,
+          1243
+        ],
+        "timing_error_s": [
+          0.03333333333333333,
+          0.0
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 1,
+        "source_episode": 1,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          263,
+          1260
+        ],
+        "expected_frames": [
+          262,
+          1258
+        ],
+        "timing_error_s": [
+          0.03333333333333333,
+          0.06666666666666667
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 2,
+        "source_episode": 2,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          233,
+          1303
+        ],
+        "expected_frames": [
+          216,
+          1300
+        ],
+        "timing_error_s": [
+          0.5666666666666667,
+          0.1
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 3,
+        "source_episode": 3,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          230,
+          1202
+        ],
+        "expected_frames": [
+          232,
+          1199
+        ],
+        "timing_error_s": [
+          -0.06666666666666667,
+          0.1
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 4,
+        "source_episode": 4,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          184,
+          1161
+        ],
+        "expected_frames": [
+          183,
+          1164
+        ],
+        "timing_error_s": [
+          0.03333333333333333,
+          -0.1
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 5,
+        "source_episode": 5,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          239,
+          1226
+        ],
+        "expected_frames": [
+          238,
+          1224
+        ],
+        "timing_error_s": [
+          0.03333333333333333,
+          0.06666666666666667
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 6,
+        "source_episode": 7,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          192,
+          1166
+        ],
+        "expected_frames": [
+          193,
+          1164
+        ],
+        "timing_error_s": [
+          -0.03333333333333333,
+          0.06666666666666667
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 7,
+        "source_episode": 8,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          195,
+          1206
+        ],
+        "expected_frames": [
+          193,
+          1205
+        ],
+        "timing_error_s": [
+          0.06666666666666667,
+          0.03333333333333333
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 8,
+        "source_episode": 9,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          293,
+          1294
+        ],
+        "expected_frames": [
+          290,
+          1294
+        ],
+        "timing_error_s": [
+          0.1,
+          0.0
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 9,
+        "source_episode": 10,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          258,
+          1240
+        ],
+        "expected_frames": [
+          256,
+          1237
+        ],
+        "timing_error_s": [
+          0.06666666666666667,
+          0.1
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 10,
+        "source_episode": 11,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          270,
+          1127
+        ],
+        "expected_frames": [
+          266,
+          1126
+        ],
+        "timing_error_s": [
+          0.13333333333333333,
+          0.03333333333333333
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 11,
+        "source_episode": 12,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          304,
+          1112
+        ],
+        "expected_frames": [
+          297,
+          1111
+        ],
+        "timing_error_s": [
+          0.23333333333333334,
+          0.03333333333333333
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 12,
+        "source_episode": 13,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          179,
+          1013
+        ],
+        "expected_frames": [
+          180,
+          1011
+        ],
+        "timing_error_s": [
+          -0.03333333333333333,
+          0.06666666666666667
+        ],
+        "within_one_second": true
+      },
+      {
+        "training_episode": 13,
+        "source_episode": 14,
+        "predicted_types": [
+          "close",
+          "open"
+        ],
+        "predicted_frames": [
+          203,
+          1156
+        ],
+        "expected_frames": [
+          200,
+          1156
+        ],
+        "timing_error_s": [
+          0.1,
+          0.0
+        ],
+        "within_one_second": true
+      }
+    ],
+    "median_64_observation_batch_ms": 8.509633538778871
+  },
+  "model_input_contract": {
+    "masked_gripper_flip_max_output_difference": 0.0,
+    "passed": true
+  },
+  "known_model_limitation": {
+    "saved_near_grasp_input_first_target_distance_mm": {
+      "recorded": 9.060330180843915,
+      "live": 112.67483916184308,
+      "live_q3_corrected": 9.758248927193627
+    },
+    "q3_sensitivity_still_present": true,
+    "physical_state_was_not_changed": true,
+    "not_a_state_spoofing_fix": true
+  },
+  "recorded_event_check_passed": true,
+  "autonomous_task_success_established": false
+}

@@ -1,0 +1,54 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      update_rate: 1000
+      thread_priority: 98
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      franka_robot_state_broadcaster:
+        type: franka_robot_state_broadcaster/FrankaRobotStateBroadcaster
+
+      franka_cartesian_twist_controller:
+        type: yin_franka_cartesian_controller/FrankaCartesianTwistController
+
+/**:
+  joint_state_broadcaster:
+    ros__parameters:
+      update_rate: 60
+
+/**:
+  franka_robot_state_broadcaster:
+    ros__parameters:
+      update_rate: 60
+      lock_try_count: 5
+      lock_sleep_interval: 5
+      lock_log_error: false
+      lock_update_success: true
+
+/**:
+  franka_cartesian_twist_controller:
+    ros__parameters:
+      arm_id: "fr3"
+      command_topic: "~/twist_cmd"
+      command_timeout: 0.15
+      command_filter_tau: 0.03
+      fresh_command_required_cycles: 3
+
+      # Faster teleop limits. FCI/libfranka reflex limits still remain active.
+      linear_scale: [1.0, 1.0, 1.0]
+      angular_scale: [1.0, 1.0, 1.0]
+
+      max_linear_velocity: [0.16, 0.16, 0.12]     # m/s
+      max_angular_velocity: [0.45, 0.45, 0.45]    # rad/s
+      max_linear_speed_norm: 0.18                 # m/s, scale xyz vector if norm exceeds this
+      max_angular_speed_norm: 0.45                # rad/s, scale rpy vector if norm exceeds this
+      linear_accel_limit: [0.40, 0.40, 0.30]      # m/s^2
+      angular_accel_limit: [1.10, 1.10, 1.10]     # rad/s^2
+      linear_jerk_limit: [2.00, 2.00, 1.50]       # m/s^3
+      angular_jerk_limit: [4.50, 4.50, 4.50]      # rad/s^3
+
+      # A bit more deadband to reject SpaceMouse noise.
+      linear_deadband: [0.0, 0.0, 0.0]
+      angular_deadband: [0.0, 0.0, 0.0]

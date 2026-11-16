@@ -1,0 +1,4669 @@
+{
+  "independent_root": "/home/lixin/act_gripper_temporal_run02_20261112",
+  "source_root": "/home/lixin/act_gripper_baseline_run02_20261112",
+  "model_step": 30000,
+  "ema_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+  "runtime_config_changes": {
+    "policy.temporal_ensemble_coeff": [
+      null,
+      0.01
+    ],
+    "data_dir": [
+      "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata",
+      "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata"
+    ]
+  },
+  "core_code_byte_identical_to_baseline": {
+    "original_runner.py": true,
+    "act_gripper_policy.py": true,
+    "franka_gripper_transport.py": true,
+    "franka_gripper_control.py": true,
+    "image_preprocessing.py": true,
+    "lerobot/src/lerobot/policies/act/modeling_act.py": true
+  },
+  "existing_source_files_checked": 140,
+  "existing_sources_unchanged": true,
+  "offline_checks": {
+    "software_checks_passed": true,
+    "physical_motion_performed": false,
+    "ros_graph_created": false,
+    "method": "Recorded observations, unchanged original runner, native temporal ensemble k=0.01",
+    "limitations": [
+      "No live camera/state validation",
+      "No actuator/controller test",
+      "Recorded-observation replay is not autonomous rollout",
+      "Only two episodes are held out; they were previously used to choose EMA"
+    ],
+    "isolation": {
+      "original_runner_byte_identical": true,
+      "model_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+      "runtime_config_changed_keys": [
+        "policy",
+        "data_dir"
+      ],
+      "module_paths": [
+        "/home/lixin/act_gripper_temporal_run02_20261112/act_gripper_policy.py",
+        "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_control.py",
+        "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_transport.py",
+        "/home/lixin/act_gripper_temporal_run02_20261112/image_preprocessing.py",
+        "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py",
+        "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py"
+      ],
+      "protected_source_files_unchanged": 70,
+      "no_joint_client_or_action_executor": true
+    },
+    "gripper_calibration": {
+      "widths_m": [
+        0.079744,
+        0.058849,
+        0.071,
+        0.079744
+      ],
+      "binary_sequence": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "passed": true
+    },
+    "camera_preprocessing": {
+      "cam_head": {
+        "raw_rgb_shape": [
+          480,
+          640,
+          3
+        ],
+        "mode": "center",
+        "output_shape": [
+          3,
+          64,
+          64
+        ],
+        "max_abs_difference_from_training_cache": 0.0
+      },
+      "cam_wrist": {
+        "raw_rgb_shape": [
+          720,
+          1280,
+          3
+        ],
+        "mode": "pad",
+        "output_shape": [
+          3,
+          64,
+          64
+        ],
+        "max_abs_difference_from_training_cache": 0.0
+      }
+    },
+    "original_loop": {
+      "raw_observation_steps": 12,
+      "real_ema_and_fk": true,
+      "command_send_attempts": 0,
+      "ip_socket_attempts": 0,
+      "stale_observation_rejected": true,
+      "max_joint_difference_from_direct_select_action_rad": 4.983596801899637e-07
+    },
+    "recorded_replay": {
+      "dataset_episodes": 14,
+      "dataset_total_frames": 24054,
+      "evaluated_frames": 23914,
+      "excluded_source_episode": 6,
+      "action_lead_frames": 10,
+      "runtime_action_index": "native_temporal_ensemble",
+      "gripper_accuracy": 0.9971146608681107,
+      "arm_mae_rad": 0.009250481989886775,
+      "episodes_with_one_close_one_open_within_1s": 14,
+      "max_abs_event_timing_error_s": 0.5666666666666667,
+      "episodes": [
+        {
+          "training_episode": 0,
+          "source_episode": 0,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            215,
+            1243
+          ],
+          "expected_frames": [
+            214,
+            1243
+          ],
+          "timing_error_s": [
+            0.03333333333333333,
+            0.0
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 1,
+          "source_episode": 1,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            263,
+            1260
+          ],
+          "expected_frames": [
+            262,
+            1258
+          ],
+          "timing_error_s": [
+            0.03333333333333333,
+            0.06666666666666667
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 2,
+          "source_episode": 2,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            233,
+            1303
+          ],
+          "expected_frames": [
+            216,
+            1300
+          ],
+          "timing_error_s": [
+            0.5666666666666667,
+            0.1
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 3,
+          "source_episode": 3,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            230,
+            1202
+          ],
+          "expected_frames": [
+            232,
+            1199
+          ],
+          "timing_error_s": [
+            -0.06666666666666667,
+            0.1
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 4,
+          "source_episode": 4,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            184,
+            1161
+          ],
+          "expected_frames": [
+            183,
+            1164
+          ],
+          "timing_error_s": [
+            0.03333333333333333,
+            -0.1
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 5,
+          "source_episode": 5,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            239,
+            1226
+          ],
+          "expected_frames": [
+            238,
+            1224
+          ],
+          "timing_error_s": [
+            0.03333333333333333,
+            0.06666666666666667
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 6,
+          "source_episode": 7,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            192,
+            1166
+          ],
+          "expected_frames": [
+            193,
+            1164
+          ],
+          "timing_error_s": [
+            -0.03333333333333333,
+            0.06666666666666667
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 7,
+          "source_episode": 8,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            195,
+            1206
+          ],
+          "expected_frames": [
+            193,
+            1205
+          ],
+          "timing_error_s": [
+            0.06666666666666667,
+            0.03333333333333333
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 8,
+          "source_episode": 9,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            293,
+            1294
+          ],
+          "expected_frames": [
+            290,
+            1294
+          ],
+          "timing_error_s": [
+            0.1,
+            0.0
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 9,
+          "source_episode": 10,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            258,
+            1240
+          ],
+          "expected_frames": [
+            256,
+            1237
+          ],
+          "timing_error_s": [
+            0.06666666666666667,
+            0.1
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 10,
+          "source_episode": 11,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            270,
+            1127
+          ],
+          "expected_frames": [
+            266,
+            1126
+          ],
+          "timing_error_s": [
+            0.13333333333333333,
+            0.03333333333333333
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 11,
+          "source_episode": 12,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            304,
+            1112
+          ],
+          "expected_frames": [
+            297,
+            1111
+          ],
+          "timing_error_s": [
+            0.23333333333333334,
+            0.03333333333333333
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 12,
+          "source_episode": 13,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            179,
+            1013
+          ],
+          "expected_frames": [
+            180,
+            1011
+          ],
+          "timing_error_s": [
+            -0.03333333333333333,
+            0.06666666666666667
+          ],
+          "within_one_second": true
+        },
+        {
+          "training_episode": 13,
+          "source_episode": 14,
+          "predicted_types": [
+            "close",
+            "open"
+          ],
+          "predicted_frames": [
+            203,
+            1156
+          ],
+          "expected_frames": [
+            200,
+            1156
+          ],
+          "timing_error_s": [
+            0.1,
+            0.0
+          ],
+          "within_one_second": true
+        }
+      ],
+      "median_64_observation_batch_ms": 8.509633538778871
+    },
+    "model_input_contract": {
+      "masked_gripper_flip_max_output_difference": 0.0,
+      "passed": true
+    },
+    "known_model_limitation": {
+      "saved_near_grasp_input_first_target_distance_mm": {
+        "recorded": 9.060330180843915,
+        "live": 112.67483916184308,
+        "live_q3_corrected": 9.758248927193627
+      },
+      "q3_sensitivity_still_present": true,
+      "physical_state_was_not_changed": true,
+      "not_a_state_spoofing_fix": true
+    },
+    "recorded_event_check_passed": true,
+    "autonomous_task_success_established": false
+  },
+  "launcher_check": {
+    "passed": true,
+    "mode": "static_no_robot",
+    "original_runner_unchanged": true,
+    "original_runner_sha256": "5deea3cf877b51dce0380e1064ac86e78de5888c9e2bbd3efef0e9efd558167c",
+    "ema_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+    "source_files_unchanged": 70,
+    "command": [
+      "/home/lixin/miniconda3/envs/tools/bin/python",
+      "-u",
+      "/home/lixin/act_gripper_temporal_run02_20261112/original_runner.py",
+      "--act_ckpt_dir",
+      "/home/lixin/act_gripper_temporal_run02_20261112/checkpoint",
+      "--act_ckpt_file",
+      "act_policy_ema.pth",
+      "--config",
+      "/home/lixin/act_gripper_temporal_run02_20261112/runtime_config.json",
+      "--urdf",
+      "/home/lixin/act_gripper_temporal_run02_20261112/fr3.urdf",
+      "--device",
+      "cuda",
+      "--hz",
+      "30",
+      "--allow-motion",
+      "1",
+      "--dry-run-steps",
+      "0",
+      "--yin-host",
+      "10.10.10.2",
+      "--command-port",
+      "8888",
+      "--head-topic",
+      "/camera/cam_head/color/image_raw",
+      "--wrist-topic",
+      "/camera/cam_wrist/color/image_raw",
+      "--joint-topic",
+      "/fr3/filtered_joint_states",
+      "--pose-topic",
+      "/franka_robot_state_broadcaster/current_pose",
+      "--gripper-topic",
+      "/franka_gripper/joint_states",
+      "--auto-reset",
+      "0",
+      "--gripper-reset",
+      "hold",
+      "--strict-reset",
+      "0",
+      "--gripper-close-threshold",
+      ".0693",
+      "--gripper-open-threshold",
+      ".074",
+      "--gripper-threshold",
+      ".5",
+      "--gripper-hysteresis",
+      ".05",
+      "--max-linear-velocity",
+      ".12",
+      "--max-angular-velocity",
+      ".35",
+      "--log-dir",
+      "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_temporal"
+    ],
+    "n_action_steps": 1,
+    "temporal_ensemble_coeff": 0.01,
+    "training_action_lead_frames": 10,
+    "extra_runtime_offset_frames": 0,
+    "auto_reset": false,
+    "gripper_reset": "hold",
+    "command_target": "10.10.10.2:8888",
+    "linear_velocity_component_limit_m_s": 0.12,
+    "angular_velocity_component_limit_rad_s": 0.35,
+    "robot_connection_created": false,
+    "ros_graph_created": false,
+    "onsite_keyboard_required": true,
+    "original_behavior_before_B": "Bridge probe, then zero arm delta packets carrying current gripper binary command",
+    "known_limitation": "run02 q3 sensitivity persists; this launcher does not correct predictions"
+  },
+  "pose_bias": {
+    "model": "run02 EMA step 30000",
+    "temporal_coefficient": 0.01,
+    "held_out_episodes": [
+      2,
+      4
+    ],
+    "action_lead_frames": 10,
+    "same_frame_action_equals_state": true,
+    "limitations": [
+      "Predicted actions never generate the next observation.",
+      "Oracle joint replacements and q3 offsets are attribution probes, not deployable corrections.",
+      "Offline target error exists before any controller, network, or robot response."
+    ],
+    "episodes": {
+      "2": {
+        "reference_events": [
+          {
+            "type": "close",
+            "frame": 216,
+            "time_s": 7.2
+          },
+          {
+            "type": "open",
+            "frame": 1300,
+            "time_s": 43.333333333333336
+          }
+        ],
+        "phases": {
+          "approach": [
+            0,
+            217
+          ],
+          "closed_carry": [
+            217,
+            1300
+          ],
+          "after_release": [
+            1300,
+            1702
+          ]
+        },
+        "methods": {
+          "first_1": {
+            "whole": {
+              "distance_mm": {
+                "p50": 11.828902038523196,
+                "p95": 29.010475119334433,
+                "max": 49.31267525065065
+              },
+              "rmse_mm": 14.43444757800637,
+              "signed_xyz_mean_mm": [
+                -5.539568521033709,
+                -5.160059058302362,
+                -1.1324687495409684
+              ],
+              "abs_xyz_median_mm": [
+                5.468880761229478,
+                6.0847411539621605,
+                6.686704299646074
+              ],
+              "joint_mae_rad": [
+                0.018256917595863342,
+                0.027397971600294113,
+                0.00032032604212872684,
+                0.01846451312303543,
+                0.011000627651810646,
+                0.020666858181357384,
+                0.015173245221376419
+              ],
+              "joint_signed_mean_rad": [
+                -0.014236900955438614,
+                -0.014868229627609253,
+                -0.00013971417502034456,
+                -0.01400489266961813,
+                0.0041345590725541115,
+                -0.004149963613599539,
+                -0.00876605324447155
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 4.629704957657438,
+                  "p95": 10.52137914873233,
+                  "max": 12.251586607848992
+                },
+                "rmse_mm": 6.1488101725076705,
+                "signed_xyz_mean_mm": [
+                  0.2007121288307359,
+                  -0.18876514617116857,
+                  -4.357159273294837
+                ],
+                "abs_xyz_median_mm": [
+                  0.6417468751520605,
+                  0.5534527757120045,
+                  4.51771533645462
+                ],
+                "joint_mae_rad": [
+                  0.0009408615296706557,
+                  0.006968616973608732,
+                  0.0001566216378705576,
+                  0.006478728260844946,
+                  0.013882326893508434,
+                  0.011678014881908894,
+                  0.006327419076114893
+                ],
+                "joint_signed_mean_rad": [
+                  -6.43716412014328e-05,
+                  0.005907600279897451,
+                  -0.0001566216378705576,
+                  -0.0030680526979267597,
+                  0.013882326893508434,
+                  0.00950254499912262,
+                  -0.004654306452721357
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 11.244454012566827,
+                  "p95": 36.8225425200913,
+                  "max": 49.31267525065065
+                },
+                "rmse_mm": 15.691921580917683,
+                "signed_xyz_mean_mm": [
+                  -4.930700260387671,
+                  -5.792403946474526,
+                  -3.180622137277486
+                ],
+                "abs_xyz_median_mm": [
+                  4.115973874809942,
+                  6.712120149979989,
+                  6.476951940521447
+                ],
+                "joint_mae_rad": [
+                  0.018113721162080765,
+                  0.024365879595279694,
+                  0.00042509863851591945,
+                  0.022839246317744255,
+                  0.013179348781704903,
+                  0.01795980893075466,
+                  0.018286211416125298
+                ],
+                "joint_signed_mean_rad": [
+                  -0.011971655301749706,
+                  -0.007289116736501455,
+                  -0.00020820939971599728,
+                  -0.01651405543088913,
+                  0.0049340566620230675,
+                  0.0035445985849946737,
+                  -0.008592500351369381
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 15.143283788229725,
+                  "p95": 15.423267341662442,
+                  "max": 15.885500911862264
+                },
+                "rmse_mm": 14.083876836553221,
+                "signed_xyz_mean_mm": [
+                  -10.278486996904965,
+                  -6.1400124539292715,
+                  6.126008769297947
+                ],
+                "abs_xyz_median_mm": [
+                  10.65863966382516,
+                  6.108727189121324,
+                  8.84612973980578
+                ],
+                "joint_mae_rad": [
+                  0.02798992581665516,
+                  0.04659430310130119,
+                  0.00012643443187698722,
+                  0.01314876414835453,
+                  0.003575599519535899,
+                  0.032811976969242096,
+                  0.01156175322830677
+                ],
+                "joint_signed_mean_rad": [
+                  -0.02798992581665516,
+                  -0.04650138318538666,
+                  5.394064646679908e-05,
+                  -0.01314876414835453,
+                  -0.003281160956248641,
+                  -0.03224898502230644,
+                  -0.011453138664364815
+                ]
+              }
+            },
+            "single_joint_oracle": [
+              {
+                "joint": 1,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 8.52034369531079,
+                    "p95": 26.615852561020585,
+                    "max": 47.4627421145914
+                  },
+                  "rmse_mm": 12.158520123314375,
+                  "signed_xyz_mean_mm": [
+                    -4.460482834970578,
+                    -0.42894160700562967,
+                    -1.1324687495409684
+                  ],
+                  "abs_xyz_median_mm": [
+                    4.175795567464502,
+                    2.1678314258360007,
+                    6.686704299646074
+                  ],
+                  "joint_mae_rad": [
+                    0.0,
+                    0.027397971600294113,
+                    0.00032032604212872684,
+                    0.01846451312303543,
+                    0.011000627651810646,
+                    0.020666858181357384,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0,
+                    -0.014868229627609253,
+                    -0.00013971417502034456,
+                    -0.01400489266961813,
+                    0.0041345590725541115,
+                    -0.004149963613599539,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.638691127560937,
+                  "closed_carry": 8.611458029107977,
+                  "after_release": 12.118040917179519
+                }
+              },
+              {
+                "joint": 2,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.708199203624691,
+                    "p95": 35.025521121275666,
+                    "max": 68.27592971305727
+                  },
+                  "rmse_mm": 16.171573209037483,
+                  "signed_xyz_mean_mm": [
+                    -5.3233373864444316,
+                    -4.996774298387123,
+                    -6.3246243886955655
+                  ],
+                  "abs_xyz_median_mm": [
+                    4.938625166812261,
+                    6.048120927186755,
+                    6.587486662713193
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.0,
+                    0.00032032604212872684,
+                    0.01846451312303543,
+                    0.011000627651810646,
+                    0.020666858181357384,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    0.0,
+                    -0.00013971417502034456,
+                    -0.01400489266961813,
+                    0.0041345590725541115,
+                    -0.004149963613599539,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 1.950547383374439,
+                  "closed_carry": 10.35339810095858,
+                  "after_release": 14.154437098149169
+                }
+              },
+              {
+                "joint": 3,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.786236520160216,
+                    "p95": 29.153101142956537,
+                    "max": 48.99677774902962
+                  },
+                  "rmse_mm": 14.42368096327034,
+                  "signed_xyz_mean_mm": [
+                    -5.542530876207447,
+                    -5.110580930849162,
+                    -1.1305762068106013
+                  ],
+                  "abs_xyz_median_mm": [
+                    5.513101103625795,
+                    6.069616700859259,
+                    6.682190640789259
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.027397971600294113,
+                    0.0,
+                    0.01846451312303543,
+                    0.011000627651810646,
+                    0.020666858181357384,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    -0.014868229627609253,
+                    0.0,
+                    -0.01400489266961813,
+                    0.0041345590725541115,
+                    -0.004149963613599539,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.652379102857744,
+                  "closed_carry": 11.159556506117827,
+                  "after_release": 15.136305327345763
+                }
+              },
+              {
+                "joint": 4,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 12.568542030857838,
+                    "p95": 24.456656888033454,
+                    "max": 63.90809648888568
+                  },
+                  "rmse_mm": 15.127525482173196,
+                  "signed_xyz_mean_mm": [
+                    -1.8734368874828788,
+                    -5.046595233072195,
+                    4.948066893091866
+                  ],
+                  "abs_xyz_median_mm": [
+                    2.3140492421135916,
+                    6.860285688636337,
+                    8.45989853458784
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.027397971600294113,
+                    0.00032032604212872684,
+                    0.0,
+                    0.011000627651810646,
+                    0.020666858181357384,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    -0.014868229627609253,
+                    -0.00013971417502034456,
+                    0.0,
+                    0.0041345590725541115,
+                    -0.004149963613599539,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.8456408026664333,
+                  "closed_carry": 11.870717111534239,
+                  "after_release": 17.300267980809487
+                }
+              },
+              {
+                "joint": 5,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.843372470170138,
+                    "p95": 28.88259118898321,
+                    "max": 48.66421824986757
+                  },
+                  "rmse_mm": 14.418878606496088,
+                  "signed_xyz_mean_mm": [
+                    -5.5353175530252745,
+                    -5.240214588320252,
+                    -1.132717508763228
+                  ],
+                  "abs_xyz_median_mm": [
+                    5.490209715730776,
+                    6.026003224775117,
+                    6.694105436112929
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.027397971600294113,
+                    0.00032032604212872684,
+                    0.01846451312303543,
+                    0.0,
+                    0.020666858181357384,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    -0.014868229627609253,
+                    -0.00013971417502034456,
+                    -0.01400489266961813,
+                    0.0,
+                    -0.004149963613599539,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.646369265324961,
+                  "closed_carry": 11.312408400593359,
+                  "after_release": 15.115562809290665
+                }
+              },
+              {
+                "joint": 6,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.818742571290132,
+                    "p95": 26.678678517648414,
+                    "max": 55.07088997917231
+                  },
+                  "rmse_mm": 14.850057088811031,
+                  "signed_xyz_mean_mm": [
+                    -5.209290071588353,
+                    -5.213143646625706,
+                    -0.7004235169003576
+                  ],
+                  "abs_xyz_median_mm": [
+                    6.071168999776278,
+                    6.586699959826699,
+                    6.171153904181159
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.027397971600294113,
+                    0.00032032604212872684,
+                    0.01846451312303543,
+                    0.011000627651810646,
+                    0.0,
+                    0.015173245221376419
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    -0.014868229627609253,
+                    -0.00013971417502034456,
+                    -0.01400489266961813,
+                    0.0041345590725541115,
+                    0.0,
+                    -0.00876605324447155
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.946367330967541,
+                  "closed_carry": 11.458392827438363,
+                  "after_release": 16.34816419497504
+                }
+              },
+              {
+                "joint": 7,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.828902038523196,
+                    "p95": 29.010475119334433,
+                    "max": 49.31267525065065
+                  },
+                  "rmse_mm": 14.43444757800637,
+                  "signed_xyz_mean_mm": [
+                    -5.539568521033709,
+                    -5.160059058302362,
+                    -1.1324687495409684
+                  ],
+                  "abs_xyz_median_mm": [
+                    5.468880761229478,
+                    6.0847411539621605,
+                    6.686704299646074
+                  ],
+                  "joint_mae_rad": [
+                    0.018256917595863342,
+                    0.027397971600294113,
+                    0.00032032604212872684,
+                    0.01846451312303543,
+                    0.011000627651810646,
+                    0.020666858181357384,
+                    0.0
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.014236900955438614,
+                    -0.014868229627609253,
+                    -0.00013971417502034456,
+                    -0.01400489266961813,
+                    0.0041345590725541115,
+                    -0.004149963613599539,
+                    0.0
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.629704957657438,
+                  "closed_carry": 11.244454012566827,
+                  "after_release": 15.143283788229725
+                }
+              }
+            ],
+            "time_alignment_search": {
+              "lag_range_frames": [
+                -60,
+                60
+              ],
+              "original": {
+                "extra_lag_frames": 0,
+                "extra_lag_s": 0.0,
+                "rmse_mm": 14.656640652808091,
+                "distance_median_mm": 11.828902038523196
+              },
+              "best_rmse": {
+                "extra_lag_frames": 2,
+                "extra_lag_s": 0.06666666666666667,
+                "rmse_mm": 14.539164569557006,
+                "distance_median_mm": 11.689639120410252
+              }
+            },
+            "at_reference_close_xyz_error_mm": [
+              -0.6248021233428158,
+              -0.41905584892981684,
+              -8.267136541690256
+            ]
+          },
+          "ensemble_0.01": {
+            "whole": {
+              "distance_mm": {
+                "p50": 16.489488271839328,
+                "p95": 37.530106225311805,
+                "max": 61.60931608846766
+              },
+              "rmse_mm": 20.66383567914889,
+              "signed_xyz_mean_mm": [
+                -7.323483610983439,
+                -5.873723306997264,
+                -1.3050658226544263
+              ],
+              "abs_xyz_median_mm": [
+                6.4319900370866385,
+                5.91331568441298,
+                8.907173172583992
+              ],
+              "joint_mae_rad": [
+                0.022258810698986053,
+                0.04689396172761917,
+                0.00035206691245548427,
+                0.0242044348269701,
+                0.02364335209131241,
+                0.039722245186567307,
+                0.024148743599653244
+              ],
+              "joint_signed_mean_rad": [
+                -0.013375758193433285,
+                -0.02413099631667137,
+                -0.00019457870803307742,
+                -0.02093598060309887,
+                0.0026805992238223553,
+                -0.005537714809179306,
+                -0.009152615442872047
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 4.543220076861497,
+                  "p95": 8.285077583662009,
+                  "max": 9.02637197206621
+                },
+                "rmse_mm": 5.223929658961309,
+                "signed_xyz_mean_mm": [
+                  0.4347333566232149,
+                  -0.029797378226104815,
+                  -2.744572553366851
+                ],
+                "abs_xyz_median_mm": [
+                  0.48386980449743877,
+                  0.3305367833509043,
+                  4.507118976058266
+                ],
+                "joint_mae_rad": [
+                  0.0007067644037306309,
+                  0.006335447542369366,
+                  0.00013513759768102318,
+                  0.0030175100546330214,
+                  0.013562197797000408,
+                  0.008145914413034916,
+                  0.004378420766443014
+                ],
+                "joint_signed_mean_rad": [
+                  -0.0005287542007863522,
+                  0.00425574230030179,
+                  -0.00013513759768102318,
+                  -0.0009086824138648808,
+                  0.013562197797000408,
+                  0.005089568439871073,
+                  -0.00431686919182539
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 18.170750124433855,
+                  "p95": 42.03484811155704,
+                  "max": 61.60931608846766
+                },
+                "rmse_mm": 22.969180455901135,
+                "signed_xyz_mean_mm": [
+                  -7.834533411738186,
+                  -7.1448369292707286,
+                  -6.2262128442291065
+                ],
+                "abs_xyz_median_mm": [
+                  4.3455994467465064,
+                  9.406334295478075,
+                  8.478413864552003
+                ],
+                "joint_mae_rad": [
+                  0.026592668145895004,
+                  0.048311714082956314,
+                  0.00045514802332036197,
+                  0.03425528481602669,
+                  0.031434301286935806,
+                  0.03809205815196037,
+                  0.033839207142591476
+                ],
+                "joint_signed_mean_rad": [
+                  -0.012668032199144363,
+                  -0.015080773271620274,
+                  -0.000245546834776178,
+                  -0.03111850470304489,
+                  0.003732193959876895,
+                  0.011783448979258537,
+                  -0.010715187527239323
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 16.829651642707145,
+                  "p95": 32.03960923893883,
+                  "max": 33.97420377715119
+                },
+                "rmse_mm": 19.281206360184754,
+                "signed_xyz_mean_mm": [
+                  -10.134593431265154,
+                  -5.603862296104662,
+                  12.729698318962456
+                ],
+                "abs_xyz_median_mm": [
+                  10.703159317613398,
+                  5.49990073150939,
+                  11.369245867172861
+                ],
+                "joint_mae_rad": [
+                  0.02221716195344925,
+                  0.06496817618608475,
+                  0.00019146116392221302,
+                  0.008563894778490067,
+                  0.00809609703719616,
+                  0.06115898862481117,
+                  0.008714433759450912
+                ],
+                "joint_signed_mean_rad": [
+                  -0.02221716195344925,
+                  -0.06383581459522247,
+                  -8.93554461072199e-05,
+                  -0.00431476067751646,
+                  -0.006026314105838537,
+                  -0.057938091456890106,
+                  -0.0075533329509198666
+                ]
+              }
+            },
+            "single_joint_oracle": [
+              {
+                "joint": 1,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 13.744524821998635,
+                    "p95": 36.43186530964919,
+                    "max": 54.29339517752958
+                  },
+                  "rmse_mm": 18.288685421734936,
+                  "signed_xyz_mean_mm": [
+                    -6.76383144194751,
+                    -1.772494032763532,
+                    -1.3050658226544263
+                  ],
+                  "abs_xyz_median_mm": [
+                    3.669055154972761,
+                    1.6564470571059087,
+                    8.907173172583992
+                  ],
+                  "joint_mae_rad": [
+                    0.0,
+                    0.04689396172761917,
+                    0.00035206691245548427,
+                    0.0242044348269701,
+                    0.02364335209131241,
+                    0.039722245186567307,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0,
+                    -0.02413099631667137,
+                    -0.00019457870803307742,
+                    -0.02093598060309887,
+                    0.0026805992238223553,
+                    -0.005537714809179306,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.591220038350252,
+                  "closed_carry": 13.246988947914282,
+                  "after_release": 14.412057685383306
+                }
+              },
+              {
+                "joint": 2,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 11.605206742091475,
+                    "p95": 53.39037729774112,
+                    "max": 92.0449281852297
+                  },
+                  "rmse_mm": 23.974247049471938,
+                  "signed_xyz_mean_mm": [
+                    -6.943715600538022,
+                    -5.652791893732094,
+                    -9.374153196485087
+                  ],
+                  "abs_xyz_median_mm": [
+                    5.833999588049865,
+                    5.86907226622059,
+                    4.919457415670486
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.0,
+                    0.00035206691245548427,
+                    0.0242044348269701,
+                    0.02364335209131241,
+                    0.039722245186567307,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    0.0,
+                    -0.00019457870803307742,
+                    -0.02093598060309887,
+                    0.0026805992238223553,
+                    -0.005537714809179306,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 0.7632157512686479,
+                  "closed_carry": 11.389007874325106,
+                  "after_release": 13.473833588967452
+                }
+              },
+              {
+                "joint": 3,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 16.45976333351573,
+                    "p95": 37.52092246021572,
+                    "max": 61.24560983521217
+                  },
+                  "rmse_mm": 20.628900064398934,
+                  "signed_xyz_mean_mm": [
+                    -7.324250581140861,
+                    -5.812696756543942,
+                    -1.2975675537823481
+                  ],
+                  "abs_xyz_median_mm": [
+                    6.444271376559563,
+                    5.875122310794054,
+                    8.941815051570739
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.04689396172761917,
+                    0.0,
+                    0.0242044348269701,
+                    0.02364335209131241,
+                    0.039722245186567307,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    -0.02413099631667137,
+                    0.0,
+                    -0.02093598060309887,
+                    0.0026805992238223553,
+                    -0.005537714809179306,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.520384469742322,
+                  "closed_carry": 18.154688881074883,
+                  "after_release": 16.838902560898585
+                }
+              },
+              {
+                "joint": 4,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 17.971342353306852,
+                    "p95": 48.336254255587704,
+                    "max": 83.01943923747194
+                  },
+                  "rmse_mm": 24.958619442112138,
+                  "signed_xyz_mean_mm": [
+                    -1.8801996132370948,
+                    -5.063079319036007,
+                    8.013564464831667
+                  ],
+                  "abs_xyz_median_mm": [
+                    1.7700342026166216,
+                    7.064190528254438,
+                    13.698426251320006
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.04689396172761917,
+                    0.00035206691245548427,
+                    0.0,
+                    0.02364335209131241,
+                    0.039722245186567307,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    -0.02413099631667137,
+                    -0.00019457870803307742,
+                    0.0,
+                    0.0026805992238223553,
+                    -0.005537714809179306,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.73736058173182,
+                  "closed_carry": 17.72017557860771,
+                  "after_release": 18.35236441474904
+                }
+              },
+              {
+                "joint": 5,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 16.439589809261765,
+                    "p95": 37.52505996648162,
+                    "max": 61.164126482442114
+                  },
+                  "rmse_mm": 20.63306723685978,
+                  "signed_xyz_mean_mm": [
+                    -7.316402320573159,
+                    -5.932350227717957,
+                    -1.3007057672270088
+                  ],
+                  "abs_xyz_median_mm": [
+                    6.413938537770725,
+                    5.82280082640841,
+                    8.913057791417572
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.04689396172761917,
+                    0.00035206691245548427,
+                    0.0242044348269701,
+                    0.0,
+                    0.039722245186567307,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    -0.02413099631667137,
+                    -0.00019457870803307742,
+                    -0.02093598060309887,
+                    0.0,
+                    -0.005537714809179306,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.563355788383967,
+                  "closed_carry": 18.15357309178477,
+                  "after_release": 16.807943396087712
+                }
+              },
+              {
+                "joint": 6,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 18.87734335403946,
+                    "p95": 42.071979643705326,
+                    "max": 69.22271826317333
+                  },
+                  "rmse_mm": 23.09327561650765,
+                  "signed_xyz_mean_mm": [
+                    -6.961120317780195,
+                    -6.030448203488748,
+                    -0.6388296931624917
+                  ],
+                  "abs_xyz_median_mm": [
+                    5.792431119325259,
+                    6.77017425986854,
+                    12.610659833033777
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.04689396172761917,
+                    0.00035206691245548427,
+                    0.0242044348269701,
+                    0.02364335209131241,
+                    0.0,
+                    0.024148743599653244
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    -0.02413099631667137,
+                    -0.00019457870803307742,
+                    -0.02093598060309887,
+                    0.0026805992238223553,
+                    0.0,
+                    -0.009152615442872047
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 5.318136577336491,
+                  "closed_carry": 20.429870671500108,
+                  "after_release": 19.004443286471307
+                }
+              },
+              {
+                "joint": 7,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 16.489488271839328,
+                    "p95": 37.530106225311805,
+                    "max": 61.60931608846766
+                  },
+                  "rmse_mm": 20.66383567914889,
+                  "signed_xyz_mean_mm": [
+                    -7.323483610983439,
+                    -5.873723306997264,
+                    -1.3050658226544263
+                  ],
+                  "abs_xyz_median_mm": [
+                    6.4319900370866385,
+                    5.91331568441298,
+                    8.907173172583992
+                  ],
+                  "joint_mae_rad": [
+                    0.022258810698986053,
+                    0.04689396172761917,
+                    0.00035206691245548427,
+                    0.0242044348269701,
+                    0.02364335209131241,
+                    0.039722245186567307,
+                    0.0
+                  ],
+                  "joint_signed_mean_rad": [
+                    -0.013375758193433285,
+                    -0.02413099631667137,
+                    -0.00019457870803307742,
+                    -0.02093598060309887,
+                    0.0026805992238223553,
+                    -0.005537714809179306,
+                    0.0
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.543220076861497,
+                  "closed_carry": 18.170750124433855,
+                  "after_release": 16.829651642707145
+                }
+              }
+            ],
+            "time_alignment_search": {
+              "lag_range_frames": [
+                -60,
+                60
+              ],
+              "original": {
+                "extra_lag_frames": 0,
+                "extra_lag_s": 0.0,
+                "rmse_mm": 21.153732496640295,
+                "distance_median_mm": 16.97844164602524
+              },
+              "best_rmse": {
+                "extra_lag_frames": 4,
+                "extra_lag_s": 0.13333333333333333,
+                "rmse_mm": 20.876687392800715,
+                "distance_median_mm": 16.579098222681694
+              }
+            },
+            "at_reference_close_xyz_error_mm": [
+              -0.29789115030942614,
+              -0.597403711236677,
+              -9.001653217407924
+            ]
+          }
+        },
+        "input_q3_offset_probes": [
+          {
+            "offset_rad": -0.001,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 12.831491341718042,
+                "p95": 35.1347924174303,
+                "max": 64.40550014889332
+              },
+              "rmse_mm": 18.85385971981253,
+              "signed_xyz_mean_mm": [
+                -5.607209683262012,
+                -7.382053666313714,
+                -3.004818816514991
+              ],
+              "abs_xyz_median_mm": [
+                5.413416816104938,
+                7.364342524631265,
+                5.152447592708747
+              ],
+              "joint_mae_rad": [
+                0.024589737877249718,
+                0.03592808172106743,
+                0.0003345003933645785,
+                0.021777642890810966,
+                0.018982956185936928,
+                0.03243960067629814,
+                0.025317063555121422
+              ],
+              "joint_signed_mean_rad": [
+                -0.019041195511817932,
+                -0.013056199066340923,
+                -0.00022603887191507965,
+                -0.01802108995616436,
+                0.004605772439390421,
+                0.00020745204528793693,
+                -0.01628277823328972
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 3.466888223682379,
+                  "p95": 9.145809103097896,
+                  "max": 9.850243963237054
+                },
+                "rmse_mm": 5.3192891556965165,
+                "signed_xyz_mean_mm": [
+                  -0.044164351321531146,
+                  1.2930755114239378,
+                  1.362157319837179
+                ],
+                "abs_xyz_median_mm": [
+                  0.09126529432113006,
+                  1.3656345573554995,
+                  3.0816837432685595
+                ],
+                "joint_mae_rad": [
+                  0.001307308441027999,
+                  0.005303099285811186,
+                  0.0002069508918793872,
+                  0.004129071719944477,
+                  0.005942934658378363,
+                  0.00911775417625904,
+                  0.005246490705758333
+                ],
+                "joint_signed_mean_rad": [
+                  0.001232006005011499,
+                  -0.0007053256849758327,
+                  -0.0002069508918793872,
+                  0.0023975949734449387,
+                  0.005921856965869665,
+                  -0.0025354409590363503,
+                  0.0037945008371025324
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 17.166316159973185,
+                  "p95": 46.22954236331216,
+                  "max": 64.40550014889332
+                },
+                "rmse_mm": 22.19339011207248,
+                "signed_xyz_mean_mm": [
+                  -5.874576311647002,
+                  -9.337786298088828,
+                  -6.579195200834851
+                ],
+                "abs_xyz_median_mm": [
+                  3.080373769385525,
+                  10.9065473579842,
+                  6.013767498589672
+                ],
+                "joint_mae_rad": [
+                  0.028627783060073853,
+                  0.042674172669649124,
+                  0.0004270882054697722,
+                  0.030554069206118584,
+                  0.027063241228461266,
+                  0.036355502903461456,
+                  0.03396499529480934
+                ],
+                "joint_signed_mean_rad": [
+                  -0.02041671797633171,
+                  -0.008782829158008099,
+                  -0.00028549606213346124,
+                  -0.026186753064393997,
+                  0.004579425789415836,
+                  0.011245575733482838,
+                  -0.021715695038437843
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 11.915280473696749,
+                  "p95": 17.620100275526298,
+                  "max": 18.673121949011577
+                },
+                "rmse_mm": 12.758634929055793,
+                "signed_xyz_mean_mm": [
+                  -7.889853410849414,
+                  -6.796094938345075,
+                  4.267359796992437
+                ],
+                "abs_xyz_median_mm": [
+                  7.885440398308879,
+                  6.937852123082456,
+                  4.838139270302161
+                ],
+                "joint_mae_rad": [
+                  0.026279006153345108,
+                  0.03428534045815468,
+                  0.00015391675697173923,
+                  0.007660525850951672,
+                  0.0042533897794783115,
+                  0.03447917848825455,
+                  0.012853367254137993
+                ],
+                "joint_signed_mean_rad": [
+                  -0.026279006153345108,
+                  -0.03123575821518898,
+                  -7.616309449076653e-05,
+                  -0.007044568657875061,
+                  0.003966327756643295,
+                  -0.02804897166788578,
+                  -0.012484051287174225
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 240,
+                "time_s": 8.0
+              },
+              {
+                "type": "open",
+                "frame": 1306,
+                "time_s": 43.53333333333333
+              }
+            ]
+          },
+          {
+            "offset_rad": -0.0005,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 15.088418625605058,
+                "p95": 36.529980171270324,
+                "max": 62.946369385124044
+              },
+              "rmse_mm": 19.554760449160195,
+              "signed_xyz_mean_mm": [
+                -6.351065627993834,
+                -6.636762386655037,
+                -2.198348125518215
+              ],
+              "abs_xyz_median_mm": [
+                6.018975111207525,
+                6.678626698127605,
+                7.13788574934912
+              ],
+              "joint_mae_rad": [
+                0.022924456745386124,
+                0.0420905239880085,
+                0.00033765932312235236,
+                0.02270396798849106,
+                0.021205158904194832,
+                0.03652206435799599,
+                0.023933498188853264
+              ],
+              "joint_signed_mean_rad": [
+                -0.016016600653529167,
+                -0.018036413937807083,
+                -0.000206424665520899,
+                -0.019267801195383072,
+                0.004109489265829325,
+                -0.0024818372912704945,
+                -0.012636554427444935
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 4.445151543650467,
+                  "p95": 7.832389510107292,
+                  "max": 8.992548040682866
+                },
+                "rmse_mm": 4.7962336694329855,
+                "signed_xyz_mean_mm": [
+                  0.2057333034728855,
+                  0.6344557941878749,
+                  -0.6427404285609976
+                ],
+                "abs_xyz_median_mm": [
+                  0.22748562656615956,
+                  0.7065250712026405,
+                  4.313318871607297
+                ],
+                "joint_mae_rad": [
+                  0.0007879745098762214,
+                  0.005765571724623442,
+                  0.00017088116146624088,
+                  0.0033367075957357883,
+                  0.009548809379339218,
+                  0.007891373708844185,
+                  0.0030950165819376707
+                ],
+                "joint_signed_mean_rad": [
+                  0.00033684700611047447,
+                  0.001763395732268691,
+                  -0.00017088116146624088,
+                  0.0008701421320438385,
+                  0.009548809379339218,
+                  0.0010953762102872133,
+                  -0.0002779224596451968
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 17.154092237404566,
+                  "p95": 43.87942904372238,
+                  "max": 62.946369385124044
+                },
+                "rmse_mm": 22.453289376382877,
+                "signed_xyz_mean_mm": [
+                  -6.747753172261224,
+                  -8.278975423858695,
+                  -6.528473130436809
+                ],
+                "abs_xyz_median_mm": [
+                  3.665207419101646,
+                  10.405856556002721,
+                  6.7030205427373595
+                ],
+                "joint_mae_rad": [
+                  0.027043698355555534,
+                  0.046644147485494614,
+                  0.00043677023495547473,
+                  0.032271917909383774,
+                  0.029868347570300102,
+                  0.03782888501882553,
+                  0.033421147614717484
+                ],
+                "joint_signed_mean_rad": [
+                  -0.016412965953350067,
+                  -0.011168771423399448,
+                  -0.00026273864204995334,
+                  -0.028586605563759804,
+                  0.004607475362718105,
+                  0.012053417973220348,
+                  -0.016585344448685646
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 14.041231614568574,
+                  "p95": 25.222038820790445,
+                  "max": 27.222998898193705
+                },
+                "rmse_mm": 15.759304690379915,
+                "signed_xyz_mean_mm": [
+                  -8.821744129702019,
+                  -6.1376022522056175,
+                  8.627419312509447
+                ],
+                "abs_xyz_median_mm": [
+                  8.885890199497592,
+                  6.240587526610476,
+                  8.697500006292325
+                ],
+                "joint_mae_rad": [
+                  0.023776352405548096,
+                  0.04943091422319412,
+                  0.0001606784062460065,
+                  0.007382141891866922,
+                  0.004158310126513243,
+                  0.04845631495118141,
+                  0.009622071869671345
+                ],
+                "joint_signed_mean_rad": [
+                  -0.023776352405548096,
+                  -0.04722598195075989,
+                  -7.389952952507883e-05,
+                  -0.005033115390688181,
+                  -0.0001682642032392323,
+                  -0.043571215122938156,
+                  -0.008669584058225155
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 236,
+                "time_s": 7.866666666666666
+              },
+              {
+                "type": "open",
+                "frame": 1305,
+                "time_s": 43.5
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.0,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 16.489488271839328,
+                "p95": 37.530106225311805,
+                "max": 61.60931608846766
+              },
+              "rmse_mm": 20.66383567914889,
+              "signed_xyz_mean_mm": [
+                -7.323483610983439,
+                -5.873723306997264,
+                -1.3050658226544263
+              ],
+              "abs_xyz_median_mm": [
+                6.4319900370866385,
+                5.91331568441298,
+                8.907173172583992
+              ],
+              "joint_mae_rad": [
+                0.022258810698986053,
+                0.04689396172761917,
+                0.00035206691245548427,
+                0.0242044348269701,
+                0.02364335209131241,
+                0.039722245186567307,
+                0.024148743599653244
+              ],
+              "joint_signed_mean_rad": [
+                -0.013375758193433285,
+                -0.02413099631667137,
+                -0.00019457870803307742,
+                -0.02093598060309887,
+                0.0026805992238223553,
+                -0.005537714809179306,
+                -0.009152615442872047
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 4.543220076861497,
+                  "p95": 8.285077583662009,
+                  "max": 9.02637197206621
+                },
+                "rmse_mm": 5.223929658961309,
+                "signed_xyz_mean_mm": [
+                  0.4347333566232149,
+                  -0.029797378226104815,
+                  -2.744572553366851
+                ],
+                "abs_xyz_median_mm": [
+                  0.48386980449743877,
+                  0.3305367833509043,
+                  4.507118976058266
+                ],
+                "joint_mae_rad": [
+                  0.0007067644037306309,
+                  0.006335447542369366,
+                  0.00013513759768102318,
+                  0.0030175100546330214,
+                  0.013562197797000408,
+                  0.008145914413034916,
+                  0.004378420766443014
+                ],
+                "joint_signed_mean_rad": [
+                  -0.0005287542007863522,
+                  0.00425574230030179,
+                  -0.00013513759768102318,
+                  -0.0009086824138648808,
+                  0.013562197797000408,
+                  0.005089568439871073,
+                  -0.00431686919182539
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 18.170750124433855,
+                  "p95": 42.03484811155704,
+                  "max": 61.60931608846766
+                },
+                "rmse_mm": 22.969180455901135,
+                "signed_xyz_mean_mm": [
+                  -7.834533411738186,
+                  -7.1448369292707286,
+                  -6.2262128442291065
+                ],
+                "abs_xyz_median_mm": [
+                  4.3455994467465064,
+                  9.406334295478075,
+                  8.478413864552003
+                ],
+                "joint_mae_rad": [
+                  0.026592668145895004,
+                  0.048311714082956314,
+                  0.00045514802332036197,
+                  0.03425528481602669,
+                  0.031434301286935806,
+                  0.03809205815196037,
+                  0.033839207142591476
+                ],
+                "joint_signed_mean_rad": [
+                  -0.012668032199144363,
+                  -0.015080773271620274,
+                  -0.000245546834776178,
+                  -0.03111850470304489,
+                  0.003732193959876895,
+                  0.011783448979258537,
+                  -0.010715187527239323
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 16.829651642707145,
+                  "p95": 32.03960923893883,
+                  "max": 33.97420377715119
+                },
+                "rmse_mm": 19.281206360184754,
+                "signed_xyz_mean_mm": [
+                  -10.134593431265154,
+                  -5.603862296104662,
+                  12.729698318962456
+                ],
+                "abs_xyz_median_mm": [
+                  10.703159317613398,
+                  5.49990073150939,
+                  11.369245867172861
+                ],
+                "joint_mae_rad": [
+                  0.02221716195344925,
+                  0.06496817618608475,
+                  0.00019146116392221302,
+                  0.008563894778490067,
+                  0.00809609703719616,
+                  0.06115898862481117,
+                  0.008714433759450912
+                ],
+                "joint_signed_mean_rad": [
+                  -0.02221716195344925,
+                  -0.06383581459522247,
+                  -8.93554461072199e-05,
+                  -0.00431476067751646,
+                  -0.006026314105838537,
+                  -0.057938091456890106,
+                  -0.0075533329509198666
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 233,
+                "time_s": 7.766666666666667
+              },
+              {
+                "type": "open",
+                "frame": 1303,
+                "time_s": 43.43333333333333
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.0005,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 18.944846820010923,
+                "p95": 38.90269839832908,
+                "max": 60.45089133085375
+              },
+              "rmse_mm": 21.840372787423497,
+              "signed_xyz_mean_mm": [
+                -8.312694040360983,
+                -5.09598168117798,
+                -0.5719971256647005
+              ],
+              "abs_xyz_median_mm": [
+                6.619534251112613,
+                5.287747317807893,
+                9.77841568352908
+              ],
+              "joint_mae_rad": [
+                0.022625289857387543,
+                0.049497127532958984,
+                0.000369713525287807,
+                0.02600092999637127,
+                0.025437787175178528,
+                0.04131171852350235,
+                0.02522900328040123
+              ],
+              "joint_signed_mean_rad": [
+                -0.011000263504683971,
+                -0.03011874109506607,
+                -0.00018893431115429848,
+                -0.022803325206041336,
+                0.0008193033863790333,
+                -0.008233034051954746,
+                -0.00567474914714694
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 6.838647611112436,
+                  "p95": 10.209696657705782,
+                  "max": 10.775396870467839
+                },
+                "rmse_mm": 6.576950241939932,
+                "signed_xyz_mean_mm": [
+                  0.6654234411540845,
+                  -0.695843293224987,
+                  -4.972513642347478
+                ],
+                "abs_xyz_median_mm": [
+                  0.7399941191401638,
+                  0.5856476018157863,
+                  6.7820296017157
+                ],
+                "joint_mae_rad": [
+                  0.00139332446269691,
+                  0.00730098458006978,
+                  0.00010203518468188122,
+                  0.003843111451715231,
+                  0.017972363159060478,
+                  0.01015948411077261,
+                  0.008250027894973755
+                ],
+                "joint_signed_mean_rad": [
+                  -0.0013816908467561007,
+                  0.006889322306960821,
+                  -0.00010203518468188122,
+                  -0.002835129154846072,
+                  0.017972363159060478,
+                  0.00945719238370657,
+                  -0.008250027894973755
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 18.794415994884012,
+                  "p95": 42.92870820493997,
+                  "max": 60.45089133085375
+                },
+                "rmse_mm": 23.75882912580205,
+                "signed_xyz_mean_mm": [
+                  -9.040712488578043,
+                  -5.932425404431178,
+                  -5.682431412796162
+                ],
+                "abs_xyz_median_mm": [
+                  5.443362595119961,
+                  8.545278336124618,
+                  9.36580775046808
+                ],
+                "joint_mae_rad": [
+                  0.027367979288101196,
+                  0.047996584326028824,
+                  0.0004774747067131102,
+                  0.036343056708574295,
+                  0.031813960522413254,
+                  0.03711768239736557,
+                  0.03427363932132721
+                ],
+                "joint_signed_mean_rad": [
+                  -0.009100859984755516,
+                  -0.02044847048819065,
+                  -0.00023434837930835783,
+                  -0.0336666963994503,
+                  0.001941853086464107,
+                  0.010433495976030827,
+                  -0.003941183909773827
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 19.171638404099873,
+                  "p95": 36.333443169940516,
+                  "max": 37.8950507387209
+                },
+                "rmse_mm": 21.805142822749893,
+                "signed_xyz_mean_mm": [
+                  -11.197787358942291,
+                  -5.217776402328702,
+                  15.571068588473473
+                ],
+                "abs_xyz_median_mm": [
+                  12.327844195802296,
+                  5.263865080163201,
+                  13.533889521968879
+                ],
+                "joint_mae_rad": [
+                  0.021309437230229378,
+                  0.07631703466176987,
+                  0.00022389268269762397,
+                  0.010099858976900578,
+                  0.012290049344301224,
+                  0.069426529109478,
+                  0.010027755983173847
+                ],
+                "joint_signed_mean_rad": [
+                  -0.021309437230229378,
+                  -0.07614775002002716,
+                  -0.00011349569831509143,
+                  -0.004316024482250214,
+                  -0.011464091949164867,
+                  -0.06807044893503189,
+                  -0.00895489938557148
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 230,
+                "time_s": 7.666666666666667
+              },
+              {
+                "type": "open",
+                "frame": 1299,
+                "time_s": 43.3
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.001,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 20.052923144808826,
+                "p95": 40.896643522512,
+                "max": 59.4086107218411
+              },
+              "rmse_mm": 23.074224375229463,
+              "signed_xyz_mean_mm": [
+                -9.16843180760473,
+                -4.338661670746064,
+                -0.05149960636928176
+              ],
+              "abs_xyz_median_mm": [
+                7.2853265890460985,
+                5.3466805941670135,
+                10.172938477162996
+              ],
+              "joint_mae_rad": [
+                0.02363695576786995,
+                0.05054115876555443,
+                0.0003803331055678427,
+                0.027649132534861565,
+                0.02640620805323124,
+                0.04129863157868385,
+                0.026229362934827805
+              ],
+              "joint_signed_mean_rad": [
+                -0.008746562525629997,
+                -0.035191863775253296,
+                -0.00018037500558421016,
+                -0.024461649358272552,
+                -0.0009006902109831572,
+                -0.010350697673857212,
+                -0.0017405295511707664
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 8.907431519479783,
+                  "p95": 12.845248573860115,
+                  "max": 13.505878907639143
+                },
+                "rmse_mm": 8.518447070355633,
+                "signed_xyz_mean_mm": [
+                  0.900319117360031,
+                  -1.2969962923788214,
+                  -7.217442417478172
+                ],
+                "abs_xyz_median_mm": [
+                  1.0182987918629927,
+                  1.1857399942830082,
+                  8.768081940746741
+                ],
+                "joint_mae_rad": [
+                  0.002168128499761224,
+                  0.009652117267251015,
+                  7.26001089788042e-05,
+                  0.00493464432656765,
+                  0.02236451394855976,
+                  0.013711469247937202,
+                  0.011649474501609802
+                ],
+                "joint_signed_mean_rad": [
+                  -0.002168128499761224,
+                  0.009652117267251015,
+                  -7.216254743980244e-05,
+                  -0.004585607443004847,
+                  0.02236451394855976,
+                  0.013711469247937202,
+                  -0.011649474501609802
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 18.622842433476738,
+                  "p95": 44.48200453530014,
+                  "max": 59.4086107218411
+                },
+                "rmse_mm": 24.93174208178607,
+                "signed_xyz_mean_mm": [
+                  -10.232889642024219,
+                  -4.663411552355274,
+                  -5.001603600842835
+                ],
+                "abs_xyz_median_mm": [
+                  6.387200799536474,
+                  7.628664791280437,
+                  8.283780173048482
+                ],
+                "joint_mae_rad": [
+                  0.02888582833111286,
+                  0.046748124063014984,
+                  0.0004935480537824333,
+                  0.03830403462052345,
+                  0.031507715582847595,
+                  0.03482351824641228,
+                  0.03475131839513779
+                ],
+                "joint_signed_mean_rad": [
+                  -0.005484690424054861,
+                  -0.026493730023503304,
+                  -0.00022013041598256677,
+                  -0.03594663739204407,
+                  -0.00040596042526885867,
+                  0.008233017288148403,
+                  0.003454203950241208
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 20.263502342960663,
+                  "p95": 39.085217022893175,
+                  "max": 40.17977490818064
+                },
+                "rmse_mm": 23.246906223035584,
+                "signed_xyz_mean_mm": [
+                  -11.735872394771501,
+                  -5.105669793439897,
+                  17.15241137876875
+                ],
+                "abs_xyz_median_mm": [
+                  13.199113876725399,
+                  5.334469436926712,
+                  14.296855426544326
+                ],
+                "joint_mae_rad": [
+                  0.02108519896864891,
+                  0.08283156901597977,
+                  0.00024144358758348972,
+                  0.011205654591321945,
+                  0.014844359830021858,
+                  0.07363433390855789,
+                  0.011141222901642323
+                ],
+                "joint_signed_mean_rad": [
+                  -0.02108519896864891,
+                  -0.08283156901597977,
+                  -0.00013168594159651548,
+                  -0.004249791614711285,
+                  -0.014792085625231266,
+                  -0.07340459525585175,
+                  -0.010386432521045208
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 229,
+                "time_s": 7.633333333333334
+              },
+              {
+                "type": "open",
+                "frame": 1295,
+                "time_s": 43.166666666666664
+              }
+            ]
+          }
+        ]
+      },
+      "4": {
+        "reference_events": [
+          {
+            "type": "close",
+            "frame": 183,
+            "time_s": 6.1
+          },
+          {
+            "type": "open",
+            "frame": 1164,
+            "time_s": 38.8
+          }
+        ],
+        "phases": {
+          "approach": [
+            0,
+            184
+          ],
+          "closed_carry": [
+            184,
+            1164
+          ],
+          "after_release": [
+            1164,
+            1704
+          ]
+        },
+        "methods": {
+          "first_1": {
+            "whole": {
+              "distance_mm": {
+                "p50": 22.459791687317683,
+                "p95": 57.02015158155085,
+                "max": 100.88559574585314
+              },
+              "rmse_mm": 30.148722481645045,
+              "signed_xyz_mean_mm": [
+                -7.349477023091125,
+                8.106487393966937,
+                8.461743842414732
+              ],
+              "abs_xyz_median_mm": [
+                10.246347755146683,
+                9.343187077481218,
+                12.66083876040186
+              ],
+              "joint_mae_rad": [
+                0.051544539630413055,
+                0.055472616106271744,
+                0.0003914977132808417,
+                0.028774794191122055,
+                0.028576595708727837,
+                0.03169579058885574,
+                0.07734111696481705
+              ],
+              "joint_signed_mean_rad": [
+                0.01625187136232853,
+                -0.041689228266477585,
+                -0.0001764839980751276,
+                -0.004792606923729181,
+                -0.025113357231020927,
+                -0.022376373410224915,
+                0.07680308818817139
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 3.968569950722424,
+                  "p95": 16.092551239806397,
+                  "max": 17.785469767927612
+                },
+                "rmse_mm": 7.71651760845325,
+                "signed_xyz_mean_mm": [
+                  0.5947514971224777,
+                  -0.2524281480241464,
+                  -4.901508149065828
+                ],
+                "abs_xyz_median_mm": [
+                  0.5460562682541026,
+                  0.4514881421591316,
+                  3.9414664063372182
+                ],
+                "joint_mae_rad": [
+                  0.001152056735008955,
+                  0.009583704173564911,
+                  0.00016104105452541262,
+                  0.003119098022580147,
+                  0.006039907224476337,
+                  0.006742614787071943,
+                  0.004370658192783594
+                ],
+                "joint_signed_mean_rad": [
+                  -0.0008436396019533277,
+                  0.009035119786858559,
+                  -0.00016104105452541262,
+                  0.002570385579019785,
+                  0.000923719082493335,
+                  -0.00033526058541610837,
+                  0.0032406405080109835
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 30.011973616603782,
+                  "p95": 65.18389030394556,
+                  "max": 100.88559574585314
+                },
+                "rmse_mm": 35.631677554644945,
+                "signed_xyz_mean_mm": [
+                  -4.464930833655547,
+                  19.388002351164808,
+                  7.885649068187805
+                ],
+                "abs_xyz_median_mm": [
+                  6.479182572233788,
+                  15.586367160219591,
+                  8.099734257889985
+                ],
+                "joint_mae_rad": [
+                  0.06206435710191727,
+                  0.04658932238817215,
+                  0.0005447225412353873,
+                  0.03059624321758747,
+                  0.025776028633117676,
+                  0.047106560319662094,
+                  0.10079079866409302
+                ],
+                "joint_signed_mean_rad": [
+                  0.05541142448782921,
+                  -0.026283444836735725,
+                  -0.00026207903283648193,
+                  0.009761689230799675,
+                  -0.021132195368409157,
+                  -0.04391959682106972,
+                  0.10006744414567947
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.423791760280533,
+                  "p95": 28.07460871587108,
+                  "max": 50.83772361918906
+                },
+                "rmse_mm": 23.31994636967785,
+                "signed_xyz_mean_mm": [
+                  -15.291316492287745,
+                  -9.51915001034339,
+                  14.060653555701402
+                ],
+                "abs_xyz_median_mm": [
+                  15.552418334872975,
+                  9.372312323903316,
+                  13.180190713962038
+                ],
+                "joint_mae_rad": [
+                  0.049623578786849976,
+                  0.0872303768992424,
+                  0.0001919472124427557,
+                  0.034211065620183945,
+                  0.04133834317326546,
+                  0.01223074086010456,
+                  0.05964823067188263
+                ],
+                "joint_signed_mean_rad": [
+                  -0.048990361392498016,
+                  -0.08693171292543411,
+                  -2.640690036059823e-05,
+                  -0.033714815974235535,
+                  -0.04121038690209389,
+                  0.009210322052240372,
+                  0.05964823067188263
+                ]
+              }
+            },
+            "single_joint_oracle": [
+              {
+                "joint": 1,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 17.052289066092207,
+                    "p95": 37.6310968033195,
+                    "max": 49.57175200429474
+                  },
+                  "rmse_mm": 18.731476486758474,
+                  "signed_xyz_mean_mm": [
+                    -3.509516028250251,
+                    1.88182934641603,
+                    8.461743842414732
+                  ],
+                  "abs_xyz_median_mm": [
+                    7.906000973481903,
+                    4.754742443606918,
+                    12.66083876040186
+                  ],
+                  "joint_mae_rad": [
+                    0.0,
+                    0.055472616106271744,
+                    0.0003914977132808417,
+                    0.028774794191122055,
+                    0.028576595708727837,
+                    0.03169579058885574,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0,
+                    -0.041689228266477585,
+                    -0.0001764839980751276,
+                    -0.004792606923729181,
+                    -0.025113357231020927,
+                    -0.022376373410224915,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.9469565308737495,
+                  "closed_carry": 13.399164036865514,
+                  "after_release": 17.09610395551175
+                }
+              },
+              {
+                "joint": 2,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 21.63353977264886,
+                    "p95": 60.957698554092964,
+                    "max": 102.52033791063121
+                  },
+                  "rmse_mm": 29.282267574029536,
+                  "signed_xyz_mean_mm": [
+                    -7.03765279827125,
+                    8.033856618115422,
+                    -4.017147203275062
+                  ],
+                  "abs_xyz_median_mm": [
+                    10.092557928168016,
+                    9.438470722112775,
+                    12.109801397065828
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.0,
+                    0.0003914977132808417,
+                    0.028774794191122055,
+                    0.028576595708727837,
+                    0.03169579058885574,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    0.0,
+                    -0.0001764839980751276,
+                    -0.004792606923729181,
+                    -0.025113357231020927,
+                    -0.022376373410224915,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 1.8027485288931215,
+                  "closed_carry": 27.004503053974155,
+                  "after_release": 21.688759428420283
+                }
+              },
+              {
+                "joint": 3,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.45007767426121,
+                    "p95": 56.99053350853014,
+                    "max": 101.63282839979327
+                  },
+                  "rmse_mm": 30.221242203872386,
+                  "signed_xyz_mean_mm": [
+                    -7.366485259585688,
+                    8.158578233184391,
+                    8.470435417532407
+                  ],
+                  "abs_xyz_median_mm": [
+                    10.171048238123065,
+                    9.315510698000281,
+                    12.666850951075615
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.055472616106271744,
+                    0.0,
+                    0.028774794191122055,
+                    0.028576595708727837,
+                    0.03169579058885574,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    -0.041689228266477585,
+                    0.0,
+                    -0.004792606923729181,
+                    -0.025113357231020927,
+                    -0.022376373410224915,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.021013697205687,
+                  "closed_carry": 30.00604553190894,
+                  "after_release": 22.409342508637984
+                }
+              },
+              {
+                "joint": 4,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 34.0712462863079,
+                    "p95": 55.4625817305017,
+                    "max": 107.11276965677617
+                  },
+                  "rmse_mm": 34.80071715466504,
+                  "signed_xyz_mean_mm": [
+                    -7.059844581036639,
+                    5.021198629521455,
+                    10.72128118899679
+                  ],
+                  "abs_xyz_median_mm": [
+                    8.505391023705815,
+                    16.243185177075667,
+                    23.560447221583928
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.055472616106271744,
+                    0.0003914977132808417,
+                    0.0,
+                    0.028576595708727837,
+                    0.03169579058885574,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    -0.041689228266477585,
+                    -0.0001764839980751276,
+                    0.0,
+                    -0.025113357231020927,
+                    -0.022376373410224915,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 5.038305000370745,
+                  "closed_carry": 31.40478430806581,
+                  "after_release": 34.202477779753124
+                }
+              },
+              {
+                "joint": 5,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.106369834522745,
+                    "p95": 57.20725716061618,
+                    "max": 101.05490571460479
+                  },
+                  "rmse_mm": 30.18901898862917,
+                  "signed_xyz_mean_mm": [
+                    -7.3120178219004375,
+                    8.416208819537541,
+                    8.482525934140462
+                  ],
+                  "abs_xyz_median_mm": [
+                    10.223502020312775,
+                    8.717918410907728,
+                    12.710749806594702
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.055472616106271744,
+                    0.0003914977132808417,
+                    0.028774794191122055,
+                    0.0,
+                    0.03169579058885574,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    -0.041689228266477585,
+                    -0.0001764839980751276,
+                    -0.004792606923729181,
+                    0.0,
+                    -0.022376373410224915,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.9702536689019787,
+                  "closed_carry": 30.149438107592193,
+                  "after_release": 22.056982727821115
+                }
+              },
+              {
+                "joint": 6,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.486897658432135,
+                    "p95": 57.54454707837762,
+                    "max": 106.18189664792176
+                  },
+                  "rmse_mm": 32.07916002378633,
+                  "signed_xyz_mean_mm": [
+                    -5.452346336335323,
+                    8.785639917685701,
+                    10.725716190371964
+                  ],
+                  "abs_xyz_median_mm": [
+                    10.730509822835494,
+                    9.020960542925103,
+                    11.686842736602005
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.055472616106271744,
+                    0.0003914977132808417,
+                    0.028774794191122055,
+                    0.028576595708727837,
+                    0.0,
+                    0.07734111696481705
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    -0.041689228266477585,
+                    -0.0001764839980751276,
+                    -0.004792606923729181,
+                    -0.025113357231020927,
+                    0.0,
+                    0.07680308818817139
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 4.2002005516995915,
+                  "closed_carry": 32.28330057738938,
+                  "after_release": 22.41532295884865
+                }
+              },
+              {
+                "joint": 7,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.459791687317683,
+                    "p95": 57.02015158155085,
+                    "max": 100.88559574585314
+                  },
+                  "rmse_mm": 30.148722481645045,
+                  "signed_xyz_mean_mm": [
+                    -7.349477023091125,
+                    8.106487393966937,
+                    8.461743842414732
+                  ],
+                  "abs_xyz_median_mm": [
+                    10.246347755146683,
+                    9.343187077481218,
+                    12.66083876040186
+                  ],
+                  "joint_mae_rad": [
+                    0.051544539630413055,
+                    0.055472616106271744,
+                    0.0003914977132808417,
+                    0.028774794191122055,
+                    0.028576595708727837,
+                    0.03169579058885574,
+                    0.0
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.01625187136232853,
+                    -0.041689228266477585,
+                    -0.0001764839980751276,
+                    -0.004792606923729181,
+                    -0.025113357231020927,
+                    -0.022376373410224915,
+                    0.0
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.968569950722424,
+                  "closed_carry": 30.011973616603782,
+                  "after_release": 22.423791760280533
+                }
+              }
+            ],
+            "time_alignment_search": {
+              "lag_range_frames": [
+                -60,
+                60
+              ],
+              "original": {
+                "extra_lag_frames": 0,
+                "extra_lag_s": 0.0,
+                "rmse_mm": 30.953011522215387,
+                "distance_median_mm": 22.50800025448377
+              },
+              "best_rmse": {
+                "extra_lag_frames": -5,
+                "extra_lag_s": -0.16666666666666666,
+                "rmse_mm": 30.64351807520239,
+                "distance_median_mm": 22.467372897278732
+              }
+            },
+            "at_reference_close_xyz_error_mm": [
+              0.764134887697443,
+              -0.45050811936267476,
+              2.6733349857348543
+            ]
+          },
+          "ensemble_0.01": {
+            "whole": {
+              "distance_mm": {
+                "p50": 22.5914231790169,
+                "p95": 47.003481458531226,
+                "max": 55.720513731914984
+              },
+              "rmse_mm": 26.40365051476011,
+              "signed_xyz_mean_mm": [
+                -5.8905928139292865,
+                3.8671461500045026,
+                11.519072011638398
+              ],
+              "abs_xyz_median_mm": [
+                12.008655920657446,
+                9.394507365483403,
+                13.13627599689643
+              ],
+              "joint_mae_rad": [
+                0.038825277239084244,
+                0.0635281428694725,
+                0.00044922251254320145,
+                0.037866488099098206,
+                0.03532480448484421,
+                0.04358263686299324,
+                0.06825023889541626
+              ],
+              "joint_signed_mean_rad": [
+                0.0017357346368953586,
+                -0.04656108096241951,
+                -0.00034678849624469876,
+                0.002853219397366047,
+                -0.027517804875969887,
+                -0.035134244710206985,
+                0.06821250170469284
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 2.3065059494355635,
+                  "p95": 5.357871426492997,
+                  "max": 5.73732384125957
+                },
+                "rmse_mm": 3.12140953646144,
+                "signed_xyz_mean_mm": [
+                  0.4365853264144071,
+                  0.6634920309884393,
+                  1.033264214253703
+                ],
+                "abs_xyz_median_mm": [
+                  0.5439314339404921,
+                  0.6837649553481789,
+                  2.142500563942412
+                ],
+                "joint_mae_rad": [
+                  0.0006425853935070336,
+                  0.002206940669566393,
+                  0.00016310892533510923,
+                  0.00776295829564333,
+                  0.004656887147575617,
+                  0.012501627206802368,
+                  0.006707309279590845
+                ],
+                "joint_signed_mean_rad": [
+                  -0.00042082692380063236,
+                  0.0017692307010293007,
+                  -0.00016310892533510923,
+                  0.007516327314078808,
+                  -0.004417932126671076,
+                  -0.012144121341407299,
+                  0.006707309279590845
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 24.857698616762736,
+                  "p95": 49.632289479723376,
+                  "max": 55.720513731914984
+                },
+                "rmse_mm": 29.66974336270254,
+                "signed_xyz_mean_mm": [
+                  -1.8286500666553314,
+                  11.980541463187361,
+                  11.324911518246642
+                ],
+                "abs_xyz_median_mm": [
+                  9.31876506844953,
+                  10.499995510259783,
+                  9.34757687720475
+                ],
+                "joint_mae_rad": [
+                  0.04044501483440399,
+                  0.06016983464360237,
+                  0.0006147266831248999,
+                  0.04702417552471161,
+                  0.03723164275288582,
+                  0.06390795856714249,
+                  0.08248959481716156
+                ],
+                "joint_signed_mean_rad": [
+                  0.0300398301333189,
+                  -0.03141449764370918,
+                  -0.0005158198182471097,
+                  0.02090948447585106,
+                  -0.023701919242739677,
+                  -0.06004951521754265,
+                  0.08242399245500565
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.59422130162922,
+                  "p95": 33.66737312013819,
+                  "max": 35.74357232922259
+                },
+                "rmse_mm": 24.474769993929876,
+                "signed_xyz_mean_mm": [
+                  -15.418194054950982,
+                  -9.765548385218185,
+                  15.444379267643349
+                ],
+                "abs_xyz_median_mm": [
+                  15.734486286121257,
+                  9.410234004462449,
+                  13.194244393038318
+                ],
+                "joint_mae_rad": [
+                  0.04889615252614021,
+                  0.09051746875047684,
+                  0.00024635338922962546,
+                  0.03150450438261032,
+                  0.042314041405916214,
+                  0.01728641800582409,
+                  0.06337860971689224
+                ],
+                "joint_signed_mean_rad": [
+                  -0.04889615252614021,
+                  -0.09051746875047684,
+                  -0.00010261436545988545,
+                  -0.03150450438261032,
+                  -0.042314041405916214,
+                  0.00224869791418314,
+                  0.06337860971689224
+                ]
+              }
+            },
+            "single_joint_oracle": [
+              {
+                "joint": 1,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 17.20693999834344,
+                    "p95": 46.362859609891906,
+                    "max": 51.871208465568124
+                  },
+                  "rmse_mm": 21.744124388574814,
+                  "signed_xyz_mean_mm": [
+                    -3.213305420484516,
+                    3.564239997661375,
+                    11.519072011638398
+                  ],
+                  "abs_xyz_median_mm": [
+                    8.920579970988468,
+                    5.289194658296095,
+                    13.13627599689643
+                  ],
+                  "joint_mae_rad": [
+                    0.0,
+                    0.0635281428694725,
+                    0.00044922251254320145,
+                    0.037866488099098206,
+                    0.03532480448484421,
+                    0.04358263686299324,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0,
+                    -0.04656108096241951,
+                    -0.00034678849624469876,
+                    0.002853219397366047,
+                    -0.027517804875969887,
+                    -0.035134244710206985,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.422455367079686,
+                  "closed_carry": 16.535160535678408,
+                  "after_release": 17.20944111446196
+                }
+              },
+              {
+                "joint": 2,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 21.779414577018898,
+                    "p95": 57.31099763043754,
+                    "max": 89.81691150256422
+                  },
+                  "rmse_mm": 28.96304872283797,
+                  "signed_xyz_mean_mm": [
+                    -5.900095396768523,
+                    3.661991630499512,
+                    -1.5374094345769893
+                  ],
+                  "abs_xyz_median_mm": [
+                    12.53365245001395,
+                    9.500927434515457,
+                    12.816555571761228
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0,
+                    0.00044922251254320145,
+                    0.037866488099098206,
+                    0.03532480448484421,
+                    0.04358263686299324,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    0.0,
+                    -0.00034678849624469876,
+                    0.002853219397366047,
+                    -0.027517804875969887,
+                    -0.035134244710206985,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.446232848267135,
+                  "closed_carry": 23.731032158797618,
+                  "after_release": 21.79179405844939
+                }
+              },
+              {
+                "joint": 3,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.567289527077115,
+                    "p95": 46.994424890601856,
+                    "max": 55.8248729240954
+                  },
+                  "rmse_mm": 26.44755977569371,
+                  "signed_xyz_mean_mm": [
+                    -5.903692465077826,
+                    3.9699485107138233,
+                    11.537586676521295
+                  ],
+                  "abs_xyz_median_mm": [
+                    12.001405706473234,
+                    9.35055151474068,
+                    13.15083693429467
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0635281428694725,
+                    0.0,
+                    0.037866488099098206,
+                    0.03532480448484421,
+                    0.04358263686299324,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    -0.04656108096241951,
+                    0.0,
+                    0.002853219397366047,
+                    -0.027517804875969887,
+                    -0.035134244710206985,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.3142425093953176,
+                  "closed_carry": 24.910945544043024,
+                  "after_release": 22.569943706922498
+                }
+              },
+              {
+                "joint": 4,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 33.9297693857893,
+                    "p95": 57.10731679699104,
+                    "max": 72.18815409265407
+                  },
+                  "rmse_mm": 33.84576273884839,
+                  "signed_xyz_mean_mm": [
+                    -7.142296860734122,
+                    -0.8409237898070625,
+                    10.3476485486486
+                  ],
+                  "abs_xyz_median_mm": [
+                    8.666906884701646,
+                    15.619869177592546,
+                    27.775088156868158
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0635281428694725,
+                    0.00044922251254320145,
+                    0.0,
+                    0.03532480448484421,
+                    0.04358263686299324,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    -0.04656108096241951,
+                    -0.00034678849624469876,
+                    0.0,
+                    -0.027517804875969887,
+                    -0.035134244710206985,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.4850262384051143,
+                  "closed_carry": 28.60157987161528,
+                  "after_release": 34.36565558119455
+                }
+              },
+              {
+                "joint": 5,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.207301189713334,
+                    "p95": 47.17955532639977,
+                    "max": 55.78234998581759
+                  },
+                  "rmse_mm": 26.44940642207636,
+                  "signed_xyz_mean_mm": [
+                    -5.825585021681534,
+                    4.164806348007553,
+                    11.542965980689926
+                  ],
+                  "abs_xyz_median_mm": [
+                    11.888840200727586,
+                    8.680125290813592,
+                    13.190438222487888
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0635281428694725,
+                    0.00044922251254320145,
+                    0.037866488099098206,
+                    0.0,
+                    0.04358263686299324,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    -0.04656108096241951,
+                    -0.00034678849624469876,
+                    0.002853219397366047,
+                    0.0,
+                    -0.035134244710206985,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.3574800891801484,
+                  "closed_carry": 24.994502071160525,
+                  "after_release": 22.2094960124419
+                }
+              },
+              {
+                "joint": 6,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 23.54310598067029,
+                    "p95": 57.36205127769706,
+                    "max": 63.958655307290265
+                  },
+                  "rmse_mm": 30.465204034233672,
+                  "signed_xyz_mean_mm": [
+                    -2.881736149811036,
+                    4.584438963686965,
+                    15.111006448877198
+                  ],
+                  "abs_xyz_median_mm": [
+                    11.062660742792552,
+                    9.048235743542909,
+                    11.933639230971682
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0635281428694725,
+                    0.00044922251254320145,
+                    0.037866488099098206,
+                    0.03532480448484421,
+                    0.0,
+                    0.06825023889541626
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    -0.04656108096241951,
+                    -0.00034678849624469876,
+                    0.002853219397366047,
+                    -0.027517804875969887,
+                    0.0,
+                    0.06821250170469284
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 3.8891149556340694,
+                  "closed_carry": 30.17665352640246,
+                  "after_release": 22.595768848655858
+                }
+              },
+              {
+                "joint": 7,
+                "whole": {
+                  "distance_mm": {
+                    "p50": 22.5914231790169,
+                    "p95": 47.003481458531226,
+                    "max": 55.720513731914984
+                  },
+                  "rmse_mm": 26.40365051476011,
+                  "signed_xyz_mean_mm": [
+                    -5.8905928139292865,
+                    3.8671461500045026,
+                    11.519072011638398
+                  ],
+                  "abs_xyz_median_mm": [
+                    12.008655920657446,
+                    9.394507365483403,
+                    13.13627599689643
+                  ],
+                  "joint_mae_rad": [
+                    0.038825277239084244,
+                    0.0635281428694725,
+                    0.00044922251254320145,
+                    0.037866488099098206,
+                    0.03532480448484421,
+                    0.04358263686299324,
+                    0.0
+                  ],
+                  "joint_signed_mean_rad": [
+                    0.0017357346368953586,
+                    -0.04656108096241951,
+                    -0.00034678849624469876,
+                    0.002853219397366047,
+                    -0.027517804875969887,
+                    -0.035134244710206985,
+                    0.0
+                  ]
+                },
+                "phase_distance_median_mm": {
+                  "approach": 2.3065059494355635,
+                  "closed_carry": 24.857698616762736,
+                  "after_release": 22.59422130162922
+                }
+              }
+            ],
+            "time_alignment_search": {
+              "lag_range_frames": [
+                -60,
+                60
+              ],
+              "original": {
+                "extra_lag_frames": 0,
+                "extra_lag_s": 0.0,
+                "rmse_mm": 27.02119860810159,
+                "distance_median_mm": 22.60188325524583
+              },
+              "best_rmse": {
+                "extra_lag_frames": -8,
+                "extra_lag_s": -0.26666666666666666,
+                "rmse_mm": 26.23041957067898,
+                "distance_median_mm": 22.586660385195977
+              }
+            },
+            "at_reference_close_xyz_error_mm": [
+              0.5241730330258765,
+              -0.21895405996447126,
+              1.3347406481807322
+            ]
+          }
+        },
+        "input_q3_offset_probes": [
+          {
+            "offset_rad": -0.001,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 22.78630086194993,
+                "p95": 49.72801446861117,
+                "max": 54.52753883616327
+              },
+              "rmse_mm": 24.915564347592213,
+              "signed_xyz_mean_mm": [
+                -4.841781834957957,
+                -0.3745267369424716,
+                12.30624583429295
+              ],
+              "abs_xyz_median_mm": [
+                10.763788153573788,
+                9.15630692824194,
+                13.113783870639494
+              ],
+              "joint_mae_rad": [
+                0.028946055099368095,
+                0.0617910660803318,
+                0.00048806340782903135,
+                0.03656706586480141,
+                0.03442477434873581,
+                0.046143509447574615,
+                0.061637215316295624
+              ],
+              "joint_signed_mean_rad": [
+                -0.009875020012259483,
+                -0.04487476497888565,
+                -0.0004020569031126797,
+                0.005471180193126202,
+                -0.027171175926923752,
+                -0.037628933787345886,
+                0.06133224442601204
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 7.067934320986421,
+                  "p95": 13.635083737612346,
+                  "max": 14.20561758522112
+                },
+                "rmse_mm": 8.101542526052999,
+                "signed_xyz_mean_mm": [
+                  -0.24186642261453328,
+                  1.8063993570700152,
+                  6.192213244704281
+                ],
+                "abs_xyz_median_mm": [
+                  0.37167395190845776,
+                  1.8641568650840656,
+                  6.800361492226598
+                ],
+                "joint_mae_rad": [
+                  0.0012190400157123804,
+                  0.006109281908720732,
+                  0.00028028193628415465,
+                  0.01046789437532425,
+                  0.011941039003431797,
+                  0.02139417827129364,
+                  0.014896673150360584
+                ],
+                "joint_signed_mean_rad": [
+                  0.0012186662061139941,
+                  -0.005258792545646429,
+                  -0.00028028193628415465,
+                  0.01046789437532425,
+                  -0.011941039003431797,
+                  -0.02139417827129364,
+                  0.014896673150360584
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 20.263966990446445,
+                  "p95": 51.531260509316176,
+                  "max": 54.52753883616327
+                },
+                "rmse_mm": 27.229825013164294,
+                "signed_xyz_mean_mm": [
+                  0.07096586695906275,
+                  4.660870754737727,
+                  11.876793118095517
+                ],
+                "abs_xyz_median_mm": [
+                  7.9394760410962935,
+                  4.081850724214586,
+                  8.330330731856183
+                ],
+                "joint_mae_rad": [
+                  0.02249711938202381,
+                  0.05749019235372543,
+                  0.0006717313081026077,
+                  0.04452526941895485,
+                  0.035096727311611176,
+                  0.06718867272138596,
+                  0.06979510188102722
+                ],
+                "joint_signed_mean_rad": [
+                  0.010205432772636414,
+                  -0.028236210346221924,
+                  -0.0005924705183133483,
+                  0.024638956412672997,
+                  -0.022484350949525833,
+                  -0.06334594637155533,
+                  0.06926481425762177
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.79283662211071,
+                  "p95": 32.04583696448864,
+                  "max": 34.550804193378475
+                },
+                "rmse_mm": 24.309245674239502,
+                "signed_xyz_mean_mm": [
+                  -15.324887730791048,
+                  -10.255971076099684,
+                  15.168922979399921
+                ],
+                "abs_xyz_median_mm": [
+                  15.654444421837887,
+                  9.776840974630968,
+                  13.324270498846296
+                ],
+                "joint_mae_rad": [
+                  0.05009741708636284,
+                  0.08856934309005737,
+                  0.00022554043971467763,
+                  0.031017420813441277,
+                  0.040866490453481674,
+                  0.016383735463023186,
+                  0.0627586618065834
+                ],
+                "joint_signed_mean_rad": [
+                  -0.05009741708636284,
+                  -0.08856934309005737,
+                  -9.798584505915642e-05,
+                  -0.031017420813441277,
+                  -0.040866490453481674,
+                  0.00351096224039793,
+                  0.0627586618065834
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 187,
+                "time_s": 6.233333333333333
+              },
+              {
+                "type": "open",
+                "frame": 1162,
+                "time_s": 38.733333333333334
+              }
+            ]
+          },
+          {
+            "offset_rad": -0.0005,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 22.749480632853267,
+                "p95": 47.66159002509278,
+                "max": 53.52518740995753
+              },
+              "rmse_mm": 25.321884500751388,
+              "signed_xyz_mean_mm": [
+                -5.3851123187998775,
+                1.7447897234592917,
+                11.947527012543546
+              ],
+              "abs_xyz_median_mm": [
+                11.324709249649484,
+                9.640266026100921,
+                13.195276859505721
+              ],
+              "joint_mae_rad": [
+                0.033606238663196564,
+                0.06234531104564667,
+                0.0004618055245373398,
+                0.0371781550347805,
+                0.0346357524394989,
+                0.04486549273133278,
+                0.06446334719657898
+              ],
+              "joint_signed_mean_rad": [
+                -0.004198108799755573,
+                -0.045714396983385086,
+                -0.0003703351248987019,
+                0.004265818744897842,
+                -0.027265634387731552,
+                -0.036409977823495865,
+                0.06446334719657898
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 3.9667040136205944,
+                  "p95": 8.878317880716038,
+                  "max": 9.43311725614953
+                },
+                "rmse_mm": 5.188075086250052,
+                "signed_xyz_mean_mm": [
+                  0.14245952578368948,
+                  1.3633154925626623,
+                  3.4203601708168128
+                ],
+                "abs_xyz_median_mm": [
+                  0.32088548463538036,
+                  1.3581113057316574,
+                  3.67517943984208
+                ],
+                "joint_mae_rad": [
+                  0.0005613954272121191,
+                  0.0035247444175183773,
+                  0.00021955143893137574,
+                  0.009216505102813244,
+                  0.007870444096624851,
+                  0.01651191897690296,
+                  0.010300904512405396
+                ],
+                "joint_signed_mean_rad": [
+                  0.000507987046148628,
+                  -0.0012623482616618276,
+                  -0.00021955143893137574,
+                  0.009216505102813244,
+                  -0.007870444096624851,
+                  -0.01651191897690296,
+                  0.010300904512405396
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 22.060462077671716,
+                  "p95": 50.0156050267381,
+                  "max": 53.52518740995753
+                },
+                "rmse_mm": 27.925226261596798,
+                "signed_xyz_mean_mm": [
+                  -0.9115480754722141,
+                  8.357453072463763,
+                  11.678343335496916
+                ],
+                "abs_xyz_median_mm": [
+                  8.761351397239132,
+                  7.490225690032418,
+                  8.806189372776108
+                ],
+                "joint_mae_rad": [
+                  0.030894238501787186,
+                  0.05843910202383995,
+                  0.000631054223049432,
+                  0.04576912522315979,
+                  0.035843897610902786,
+                  0.0655892938375473,
+                  0.07543917000293732
+                ],
+                "joint_signed_mean_rad": [
+                  0.0200391486287117,
+                  -0.029946405440568924,
+                  -0.0005478831008076668,
+                  0.0228317491710186,
+                  -0.023028945550322533,
+                  -0.0617484487593174,
+                  0.07543917000293732
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.75513250431419,
+                  "p95": 33.04118069318132,
+                  "max": 35.31217163811489
+                },
+                "rmse_mm": 24.473214651335816,
+                "signed_xyz_mean_mm": [
+                  -15.38727190743783,
+                  -10.12598587568776,
+                  15.341598683623943
+                ],
+                "abs_xyz_median_mm": [
+                  15.68762530637699,
+                  9.669782509724417,
+                  13.300250176554368
+                ],
+                "joint_mae_rad": [
+                  0.04978777468204498,
+                  0.08947692811489105,
+                  0.0002371967420913279,
+                  0.03111477568745613,
+                  0.04156320169568062,
+                  0.01691674254834652,
+                  0.0629996582865715
+                ],
+                "joint_signed_mean_rad": [
+                  -0.04978777468204498,
+                  -0.08947692811489105,
+                  -9.949842205969617e-05,
+                  -0.03111477568745613,
+                  -0.04156320169568062,
+                  0.002794607076793909,
+                  0.0629996582865715
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 185,
+                "time_s": 6.166666666666667
+              },
+              {
+                "type": "open",
+                "frame": 1161,
+                "time_s": 38.7
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.0,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 22.5914231790169,
+                "p95": 47.003481458531226,
+                "max": 55.720513731914984
+              },
+              "rmse_mm": 26.40365051476011,
+              "signed_xyz_mean_mm": [
+                -5.8905928139292865,
+                3.8671461500045026,
+                11.519072011638398
+              ],
+              "abs_xyz_median_mm": [
+                12.008655920657446,
+                9.394507365483403,
+                13.13627599689643
+              ],
+              "joint_mae_rad": [
+                0.038825277239084244,
+                0.0635281428694725,
+                0.00044922251254320145,
+                0.037866488099098206,
+                0.03532480448484421,
+                0.04358263686299324,
+                0.06825023889541626
+              ],
+              "joint_signed_mean_rad": [
+                0.0017357346368953586,
+                -0.04656108096241951,
+                -0.00034678849624469876,
+                0.002853219397366047,
+                -0.027517804875969887,
+                -0.035134244710206985,
+                0.06821250170469284
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 2.3065059494355635,
+                  "p95": 5.357871426492997,
+                  "max": 5.73732384125957
+                },
+                "rmse_mm": 3.12140953646144,
+                "signed_xyz_mean_mm": [
+                  0.4365853264144071,
+                  0.6634920309884393,
+                  1.033264214253703
+                ],
+                "abs_xyz_median_mm": [
+                  0.5439314339404921,
+                  0.6837649553481789,
+                  2.142500563942412
+                ],
+                "joint_mae_rad": [
+                  0.0006425853935070336,
+                  0.002206940669566393,
+                  0.00016310892533510923,
+                  0.00776295829564333,
+                  0.004656887147575617,
+                  0.012501627206802368,
+                  0.006707309279590845
+                ],
+                "joint_signed_mean_rad": [
+                  -0.00042082692380063236,
+                  0.0017692307010293007,
+                  -0.00016310892533510923,
+                  0.007516327314078808,
+                  -0.004417932126671076,
+                  -0.012144121341407299,
+                  0.006707309279590845
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 24.857698616762736,
+                  "p95": 49.632289479723376,
+                  "max": 55.720513731914984
+                },
+                "rmse_mm": 29.66974336270254,
+                "signed_xyz_mean_mm": [
+                  -1.8286500666553314,
+                  11.980541463187361,
+                  11.324911518246642
+                ],
+                "abs_xyz_median_mm": [
+                  9.31876506844953,
+                  10.499995510259783,
+                  9.34757687720475
+                ],
+                "joint_mae_rad": [
+                  0.04044501483440399,
+                  0.06016983464360237,
+                  0.0006147266831248999,
+                  0.04702417552471161,
+                  0.03723164275288582,
+                  0.06390795856714249,
+                  0.08248959481716156
+                ],
+                "joint_signed_mean_rad": [
+                  0.0300398301333189,
+                  -0.03141449764370918,
+                  -0.0005158198182471097,
+                  0.02090948447585106,
+                  -0.023701919242739677,
+                  -0.06004951521754265,
+                  0.08242399245500565
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.59422130162922,
+                  "p95": 33.66737312013819,
+                  "max": 35.74357232922259
+                },
+                "rmse_mm": 24.474769993929876,
+                "signed_xyz_mean_mm": [
+                  -15.418194054950982,
+                  -9.765548385218185,
+                  15.444379267643349
+                ],
+                "abs_xyz_median_mm": [
+                  15.734486286121257,
+                  9.410234004462449,
+                  13.194244393038318
+                ],
+                "joint_mae_rad": [
+                  0.04889615252614021,
+                  0.09051746875047684,
+                  0.00024635338922962546,
+                  0.03150450438261032,
+                  0.042314041405916214,
+                  0.01728641800582409,
+                  0.06337860971689224
+                ],
+                "joint_signed_mean_rad": [
+                  -0.04889615252614021,
+                  -0.09051746875047684,
+                  -0.00010261436545988545,
+                  -0.03150450438261032,
+                  -0.042314041405916214,
+                  0.00224869791418314,
+                  0.06337860971689224
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 184,
+                "time_s": 6.133333333333334
+              },
+              {
+                "type": "open",
+                "frame": 1161,
+                "time_s": 38.7
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.0005,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 22.42156276955435,
+                "p95": 47.62489245879282,
+                "max": 62.96406870553453
+              },
+              "rmse_mm": 27.8271665978743,
+              "signed_xyz_mean_mm": [
+                -6.243411024643575,
+                5.859759649034619,
+                10.990495127626994
+              ],
+              "abs_xyz_median_mm": [
+                12.217152052096253,
+                9.022106575789168,
+                12.999261321740619
+              ],
+              "joint_mae_rad": [
+                0.04348453879356384,
+                0.06520307064056396,
+                0.0004597760271281004,
+                0.03867563605308533,
+                0.03617330640554428,
+                0.04253828898072243,
+                0.07255861908197403
+              ],
+              "joint_signed_mean_rad": [
+                0.007474974729120731,
+                -0.04717336967587471,
+                -0.0003302592667751014,
+                0.0014099758118391037,
+                -0.027842093259096146,
+                -0.03379836678504944,
+                0.07222569733858109
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 1.6036922707799395,
+                  "p95": 8.414725590624618,
+                  "max": 8.851260147836786
+                },
+                "rmse_mm": 3.627992268820529,
+                "signed_xyz_mean_mm": [
+                  0.8319442254150692,
+                  -0.10443165508915478,
+                  -1.5512989344548667
+                ],
+                "abs_xyz_median_mm": [
+                  0.813960541684422,
+                  0.21011487446913335,
+                  1.3416346214092656
+                ],
+                "joint_mae_rad": [
+                  0.0015779960667714477,
+                  0.005374713335186243,
+                  0.00011255235585849732,
+                  0.0070152245461940765,
+                  0.002999849384650588,
+                  0.00969780795276165,
+                  0.0039141117595136166
+                ],
+                "joint_signed_mean_rad": [
+                  -0.0015779960667714477,
+                  0.005374713335186243,
+                  -0.00011234082921873778,
+                  0.006304293870925903,
+                  -0.0005343483644537628,
+                  -0.008154207840561867,
+                  0.003598267212510109
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 27.85572411691802,
+                  "p95": 49.20478074809163,
+                  "max": 62.96406870553453
+                },
+                "rmse_mm": 31.904287473879425,
+                "signed_xyz_mean_mm": [
+                  -2.5155923309302453,
+                  15.28413442799574,
+                  10.880407741638408
+                ],
+                "abs_xyz_median_mm": [
+                  9.513910966967826,
+                  13.584655974921667,
+                  9.3981425690646
+                ],
+                "joint_mae_rad": [
+                  0.04913879185914993,
+                  0.06191689893603325,
+                  0.0006381446728482842,
+                  0.04823416471481323,
+                  0.038556285202503204,
+                  0.06247318163514137,
+                  0.09026028215885162
+                ],
+                "joint_signed_mean_rad": [
+                  0.03946829214692116,
+                  -0.03258563578128815,
+                  -0.0004937921767123044,
+                  0.018964894115924835,
+                  -0.024533119052648544,
+                  -0.05824533477425575,
+                  0.08974069356918335
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 22.330353751799954,
+                  "p95": 33.898582435321835,
+                  "max": 35.739648158963746
+                },
+                "rmse_mm": 24.3259764338951,
+                "signed_xyz_mean_mm": [
+                  -15.419573405847004,
+                  -9.211492357304515,
+                  15.463783545574902
+                ],
+                "abs_xyz_median_mm": [
+                  15.705067973614206,
+                  9.02233832388788,
+                  13.064427341971552
+                ],
+                "joint_mae_rad": [
+                  0.047502193599939346,
+                  0.09155275672674179,
+                  0.0002543824666645378,
+                  0.032116640359163284,
+                  0.04315219074487686,
+                  0.017550284042954445,
+                  0.06382345408201218
+                ],
+                "joint_signed_mean_rad": [
+                  -0.047502193599939346,
+                  -0.09155275672674179,
+                  -0.0001077305423677899,
+                  -0.032116640359163284,
+                  -0.04315219074487686,
+                  0.0018303429242223501,
+                  0.06382345408201218
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 183,
+                "time_s": 6.1
+              },
+              {
+                "type": "open",
+                "frame": 1163,
+                "time_s": 38.766666666666666
+              }
+            ]
+          },
+          {
+            "offset_rad": 0.001,
+            "clipped_input_fraction": 0.0,
+            "whole": {
+              "distance_mm": {
+                "p50": 22.41590063824628,
+                "p95": 50.18443718778042,
+                "max": 66.97520555032082
+              },
+              "rmse_mm": 29.187053144344492,
+              "signed_xyz_mean_mm": [
+                -6.387558524256233,
+                7.5279528666961255,
+                10.406113693512811
+              ],
+              "abs_xyz_median_mm": [
+                12.603201644113216,
+                8.444918189673912,
+                12.777797529434338
+              ],
+              "joint_mae_rad": [
+                0.04721583425998688,
+                0.06693145632743835,
+                0.00047662141150794923,
+                0.039574239403009415,
+                0.03751100227236748,
+                0.04155076667666435,
+                0.07680787146091461
+              ],
+              "joint_signed_mean_rad": [
+                0.012232193723320961,
+                -0.04732418805360794,
+                -0.00031929899705573916,
+                0.0003088714147452265,
+                -0.02807576209306717,
+                -0.03251653164625168,
+                0.07575052976608276
+              ]
+            },
+            "phase_metrics": {
+              "approach": {
+                "distance_mm": {
+                  "p50": 3.6660737097066844,
+                  "p95": 12.118229188436095,
+                  "max": 12.6483781650825
+                },
+                "rmse_mm": 6.262483489503354,
+                "signed_xyz_mean_mm": [
+                  1.3380278114327626,
+                  -0.8665927996618686,
+                  -4.102480441125638
+                ],
+                "abs_xyz_median_mm": [
+                  1.2459039109526393,
+                  0.7826913159133114,
+                  3.1722926961215148
+                ],
+                "joint_mae_rad": [
+                  0.002922556595876813,
+                  0.009401650168001652,
+                  8.75538753462024e-05,
+                  0.006855152081698179,
+                  0.005882203113287687,
+                  0.007925239391624928,
+                  0.003640009555965662
+                ],
+                "joint_signed_mean_rad": [
+                  -0.002922556595876813,
+                  0.009401650168001652,
+                  -7.006606756476685e-05,
+                  0.005957608576864004,
+                  0.003750658594071865,
+                  -0.005005008541047573,
+                  0.0009868935449048877
+                ]
+              },
+              "closed_carry": {
+                "distance_mm": {
+                  "p50": 30.45904771048888,
+                  "p95": 55.50896549325001,
+                  "max": 66.97520555032082
+                },
+                "rmse_mm": 33.99015983303102,
+                "signed_xyz_mean_mm": [
+                  -2.8514937763100328,
+                  17.9371431600656,
+                  10.403087986868483
+                ],
+                "abs_xyz_median_mm": [
+                  9.622238457086652,
+                  16.155283814329557,
+                  10.266088134868816
+                ],
+                "joint_mae_rad": [
+                  0.056314144283533096,
+                  0.0636020228266716,
+                  0.000669155444484204,
+                  0.049300894141197205,
+                  0.03978228196501732,
+                  0.061007238924503326,
+                  0.09752023965120316
+                ],
+                "joint_signed_mean_rad": [
+                  0.04705255106091499,
+                  -0.033039700239896774,
+                  -0.00047928851563483477,
+                  0.017641250044107437,
+                  -0.02518511563539505,
+                  -0.05649830400943756,
+                  0.09617993235588074
+                ]
+              },
+              "after_release": {
+                "distance_mm": {
+                  "p50": 21.93774871332739,
+                  "p95": 33.7380420738424,
+                  "max": 35.50680303975551
+                },
+                "rmse_mm": 24.043551169965724,
+                "signed_xyz_mean_mm": [
+                  -15.437283225652623,
+                  -8.502436179400565,
+                  15.355273903299702
+                ],
+                "abs_xyz_median_mm": [
+                  15.67137928073911,
+                  8.427984983278778,
+                  12.841369275199549
+                ],
+                "joint_mae_rad": [
+                  0.04579644277691841,
+                  0.09257672727108002,
+                  0.00025977889890782535,
+                  0.03307094797492027,
+                  0.04416632652282715,
+                  0.017698531970381737,
+                  0.0641498863697052
+                ],
+                "joint_signed_mean_rad": [
+                  -0.04579644277691841,
+                  -0.09257672727108002,
+                  -0.00011387102858861908,
+                  -0.03307094797492027,
+                  -0.04416632652282715,
+                  0.0016315990360453725,
+                  0.0641498863697052
+                ]
+              }
+            },
+            "gripper_events": [
+              {
+                "type": "close",
+                "frame": 183,
+                "time_s": 6.1
+              },
+              {
+                "type": "open",
+                "frame": 1165,
+                "time_s": 38.833333333333336
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "q3_episode_distribution": [
+      {
+        "episode": 0,
+        "split": "train",
+        "mean": -0.40106555819511414,
+        "std": 0.0009155297302640975,
+        "min": -0.4040023982524872,
+        "max": -0.3986111879348755
+      },
+      {
+        "episode": 1,
+        "split": "train",
+        "mean": -0.40099266171455383,
+        "std": 0.0008867126307450235,
+        "min": -0.40377098321914673,
+        "max": -0.39900583028793335
+      },
+      {
+        "episode": 2,
+        "split": "held_out",
+        "mean": -0.4009886682033539,
+        "std": 0.0009703785181045532,
+        "min": -0.4052819013595581,
+        "max": -0.3969641923904419
+      },
+      {
+        "episode": 3,
+        "split": "train",
+        "mean": -0.4010133743286133,
+        "std": 0.0009930337546393275,
+        "min": -0.4045073390007019,
+        "max": -0.3984806537628174
+      },
+      {
+        "episode": 4,
+        "split": "held_out",
+        "mean": -0.4010629653930664,
+        "std": 0.000934636453166604,
+        "min": -0.4037257134914398,
+        "max": -0.3986563980579376
+      },
+      {
+        "episode": 5,
+        "split": "train",
+        "mean": -0.40105292201042175,
+        "std": 0.0010494363959878683,
+        "min": -0.40455886721611023,
+        "max": -0.39795151352882385
+      },
+      {
+        "episode": 6,
+        "split": "train",
+        "mean": -0.40128856897354126,
+        "std": 0.0011529038893058896,
+        "min": -0.4051746428012848,
+        "max": -0.398530513048172
+      },
+      {
+        "episode": 7,
+        "split": "train",
+        "mean": -0.4011717736721039,
+        "std": 0.0007007945096120238,
+        "min": -0.40360817313194275,
+        "max": -0.39957329630851746
+      },
+      {
+        "episode": 8,
+        "split": "train",
+        "mean": -0.4012952744960785,
+        "std": 0.0012226776452735066,
+        "min": -0.40534326434135437,
+        "max": -0.3983635902404785
+      },
+      {
+        "episode": 9,
+        "split": "train",
+        "mean": -0.4012854993343353,
+        "std": 0.0010189780732616782,
+        "min": -0.40484485030174255,
+        "max": -0.3988836407661438
+      },
+      {
+        "episode": 10,
+        "split": "train",
+        "mean": -0.40125772356987,
+        "std": 0.0011910554021596909,
+        "min": -0.40550482273101807,
+        "max": -0.3982451856136322
+      },
+      {
+        "episode": 11,
+        "split": "train",
+        "mean": -0.4013002812862396,
+        "std": 0.0013077986659482121,
+        "min": -0.4054345488548279,
+        "max": -0.39841511845588684
+      },
+      {
+        "episode": 12,
+        "split": "train",
+        "mean": -0.40123167634010315,
+        "std": 0.0011458067456260324,
+        "min": -0.4045647382736206,
+        "max": -0.39681386947631836
+      },
+      {
+        "episode": 13,
+        "split": "train",
+        "mean": -0.4012289345264435,
+        "std": 0.0015203814255073667,
+        "min": -0.4072858393192291,
+        "max": -0.3898167014122009
+      }
+    ],
+    "preprocessing_checks": [
+      {
+        "episode": 2,
+        "camera": "cam_head",
+        "frames": [
+          0,
+          226,
+          768,
+          1310,
+          1711
+        ],
+        "max_abs_difference": 0.0
+      },
+      {
+        "episode": 2,
+        "camera": "cam_wrist",
+        "frames": [
+          0,
+          226,
+          768,
+          1310,
+          1711
+        ],
+        "max_abs_difference": 0.0
+      },
+      {
+        "episode": 4,
+        "camera": "cam_head",
+        "frames": [
+          0,
+          193,
+          683,
+          1174,
+          1713
+        ],
+        "max_abs_difference": 0.0
+      },
+      {
+        "episode": 4,
+        "camera": "cam_wrist",
+        "frames": [
+          0,
+          193,
+          683,
+          1174,
+          1713
+        ],
+        "max_abs_difference": 0.0
+      }
+    ],
+    "q3_normalization_std_rad": 0.001116776270665626,
+    "ip_socket_attempts": [],
+    "source_files_unchanged": true
+  },
+  "additional_attribution": {
+    "held_out": {
+      "2": {
+        "terminal_reference_xyz_span_mm": [
+          0.0024749039959637287,
+          0.0029689263074950123,
+          0.004351922959333621
+        ],
+        "terminal_target_error_median_mm": 16.39105392618923,
+        "terminal_joint_error_mean_rad": [
+          -0.023766787722706795,
+          -0.059288475662469864,
+          -0.00014144911256153136,
+          -0.00639988062903285,
+          -0.0049178870394825935,
+          -0.05232711508870125,
+          -0.008755546063184738
+        ],
+        "terminal_joint_error_mean_normalized": [
+          -0.06737193772826151,
+          -0.11061350559041859,
+          -0.12665841026496205,
+          -0.011025928581680963,
+          -0.020013428970482222,
+          -0.5045147574327722,
+          -0.03177622873051318
+        ],
+        "terminal_ref_q": [
+          0.05603630095720291,
+          -0.5928122401237488,
+          -0.40080541372299194,
+          -2.84338641166687,
+          -0.25105470418930054,
+          2.3704628944396973,
+          0.7145460247993469
+        ],
+        "terminal_ref_joints_outside_train_terminal_range": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "terminal_ref_xyz_outside_train_terminal_range": [
+          true,
+          true,
+          false
+        ],
+        "output_clipped_fraction_per_dimension": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_clip_pose_difference_mm_max": 0.0,
+        "oracle_joint_group_phase_median_mm": {
+          "q1_q2": {
+            "approach": 0.7310375940287264,
+            "closed_carry": 5.955995935914718,
+            "after_release": 10.480644605757169
+          },
+          "q1_q2_q4": {
+            "approach": 1.05580322191253,
+            "closed_carry": 4.589000680697599,
+            "after_release": 7.425351648125247
+          },
+          "q1_q2_q4_q6": {
+            "approach": 0.4540682692427992,
+            "closed_carry": 0.3170579757169079,
+            "after_release": 0.1068695129730875
+          }
+        }
+      },
+      "4": {
+        "terminal_reference_xyz_span_mm": [
+          0.0029109012849026783,
+          0.0037199559977385555,
+          0.004151908552074701
+        ],
+        "terminal_target_error_median_mm": 22.58460418811662,
+        "terminal_joint_error_mean_rad": [
+          -0.04847535490989685,
+          -0.08636580407619476,
+          -0.00017150971689261496,
+          -0.03547508642077446,
+          -0.04197540506720543,
+          0.012594112195074558,
+          0.05532136932015419
+        ],
+        "terminal_joint_error_mean_normalized": [
+          -0.13741355452406745,
+          -0.16113118124087403,
+          -0.15357571677596546,
+          -0.06111766877367638,
+          -0.1708196841482476,
+          0.12142681202055725,
+          0.2007761384980237
+        ],
+        "terminal_ref_q": [
+          -0.007799826562404633,
+          -0.5833320021629333,
+          -0.4008048474788666,
+          -2.820963144302368,
+          -0.19269351661205292,
+          2.3124687671661377,
+          0.5351046323776245
+        ],
+        "terminal_ref_joints_outside_train_terminal_range": [
+          false,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "terminal_ref_xyz_outside_train_terminal_range": [
+          false,
+          false,
+          false
+        ],
+        "output_clipped_fraction_per_dimension": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.36032863849765256
+        ],
+        "output_clip_pose_difference_mm_max": 0.0,
+        "oracle_joint_group_phase_median_mm": {
+          "q1_q2": {
+            "approach": 2.5383277094605416,
+            "closed_carry": 17.58286368209563,
+            "after_release": 16.788189267447407
+          },
+          "q1_q2_q4": {
+            "approach": 1.8111763958038087,
+            "closed_carry": 8.64197627746055,
+            "after_release": 1.9222487111153008
+          },
+          "q1_q2_q4_q6": {
+            "approach": 0.2367408883104644,
+            "closed_carry": 0.3412808719215258,
+            "after_release": 0.866931074657876
+          }
+        }
+      }
+    },
+    "training_terminal_means": [
+      {
+        "episode": 0,
+        "q": [
+          0.011105237528681755,
+          -0.6138368248939514,
+          -0.4008021950721741,
+          -2.8630683422088623,
+          -0.2332765758037567,
+          2.354820489883423,
+          0.7252365946769714
+        ],
+        "xyz": [
+          0.3165023801932498,
+          -0.11353522851177554,
+          0.3511697217598678
+        ]
+      },
+      {
+        "episode": 1,
+        "q": [
+          -0.0017574961530044675,
+          -0.6305438876152039,
+          -0.40079447627067566,
+          -2.871774196624756,
+          -0.24518348276615143,
+          2.317910671234131,
+          0.6614103317260742
+        ],
+        "xyz": [
+          0.3089783102410007,
+          -0.1153214633776925,
+          0.34913452956474833
+        ]
+      },
+      {
+        "episode": 3,
+        "q": [
+          -0.001341557945124805,
+          -0.6510480046272278,
+          -0.40079548954963684,
+          -2.8448054790496826,
+          -0.2566523551940918,
+          2.2992944717407227,
+          0.6806567907333374
+        ],
+        "xyz": [
+          0.3129384277196566,
+          -0.12011938202391208,
+          0.36535130064172366
+        ]
+      },
+      {
+        "episode": 5,
+        "q": [
+          -0.024706659838557243,
+          -0.6677164435386658,
+          -0.40079265832901,
+          -2.8732638359069824,
+          -0.2842097878456116,
+          2.3229434490203857,
+          0.6444537043571472
+        ],
+        "xyz": [
+          0.3054590284944411,
+          -0.12288040220408429,
+          0.3604351208533128
+        ]
+      },
+      {
+        "episode": 6,
+        "q": [
+          -0.03203760087490082,
+          -0.7662007808685303,
+          -0.40101203322410583,
+          -2.924161195755005,
+          -0.2919732332229614,
+          2.2964627742767334,
+          0.6030867099761963
+        ],
+        "xyz": [
+          0.28829519222200745,
+          -0.1146367233088397,
+          0.36505828549031616
+        ]
+      },
+      {
+        "episode": 7,
+        "q": [
+          0.03378450125455856,
+          -0.5850653052330017,
+          -0.4010186791419983,
+          -2.8209903240203857,
+          -0.23164673149585724,
+          2.3298799991607666,
+          0.6651723384857178
+        ],
+        "xyz": [
+          0.3275382815603432,
+          -0.11337483275208265,
+          0.3576140640273462
+        ]
+      },
+      {
+        "episode": 8,
+        "q": [
+          0.00295013259164989,
+          -0.6322445869445801,
+          -0.4010094404220581,
+          -2.843294858932495,
+          -0.26645147800445557,
+          2.325836658477783,
+          0.606794536113739
+        ],
+        "xyz": [
+          0.31689023247921144,
+          -0.11979789677707026,
+          0.3626554999694719
+        ]
+      },
+      {
+        "episode": 9,
+        "q": [
+          0.0015920675359666348,
+          -0.6210060715675354,
+          -0.40101420879364014,
+          -2.8546977043151855,
+          -0.2615424394607544,
+          2.3460237979888916,
+          0.6445273160934448
+        ],
+        "xyz": [
+          0.31632905776772763,
+          -0.11838614444300023,
+          0.35614071580887535
+        ]
+      },
+      {
+        "episode": 10,
+        "q": [
+          -0.04549584910273552,
+          -0.6869610548019409,
+          -0.4010035991668701,
+          -2.905679225921631,
+          -0.25360924005508423,
+          2.3497140407562256,
+          0.5978059768676758
+        ],
+        "xyz": [
+          0.29785451546411357,
+          -0.12283996087234934,
+          0.35491261064516466
+        ]
+      },
+      {
+        "episode": 11,
+        "q": [
+          -0.055446334183216095,
+          -0.665386974811554,
+          -0.40100666880607605,
+          -2.8600738048553467,
+          -0.23350168764591217,
+          2.321570634841919,
+          0.6051388382911682
+        ],
+        "xyz": [
+          0.30446755292905636,
+          -0.1339917335789994,
+          0.3653485021495552
+        ]
+      },
+      {
+        "episode": 12,
+        "q": [
+          0.02587629109621048,
+          -0.6734247207641602,
+          -0.40099984407424927,
+          -2.854933977127075,
+          -0.26899707317352295,
+          2.3064424991607666,
+          0.6924768686294556
+        ],
+        "xyz": [
+          0.3136888464776858,
+          -0.11016209139867336,
+          0.36857546333451824
+        ]
+      },
+      {
+        "episode": 13,
+        "q": [
+          0.012871848419308662,
+          -0.7251905798912048,
+          -0.40102577209472656,
+          -2.885300636291504,
+          -0.3257597088813782,
+          2.278168201446533,
+          0.6937764286994934
+        ],
+        "xyz": [
+          0.3009420711369443,
+          -0.10946792162728954,
+          0.3682125364753448
+        ]
+      }
+    ]
+  },
+  "robot_started": false,
+  "runtime_input_bias_added": false
+}

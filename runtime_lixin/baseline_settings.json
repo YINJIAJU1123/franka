@@ -1,0 +1,38 @@
+{
+  "allow_motion": false,
+  "auto_reset": false,
+  "n_action_steps": 1,
+  "temporal_ensemble_coeff": 0.01,
+  "hz": 30,
+  "action_chunk_index": "Native temporal ensemble of overlapping chunks",
+  "training_action_offset_frames": 10,
+  "additional_runtime_offset_frames": 0,
+  "gripper_close_threshold_m": 0.0693,
+  "gripper_open_threshold_m": 0.074,
+  "gripper_reset": "hold",
+  "max_linear_velocity": 0.12,
+  "max_angular_velocity": 0.35,
+  "head_serial": "243722073540",
+  "wrist_serial": "135122078001",
+  "head_shape": [
+    480,
+    640,
+    3
+  ],
+  "wrist_shape": [
+    720,
+    1280,
+    3
+  ],
+  "head_preprocessing": "center",
+  "wrist_preprocessing": "pad",
+  "camera_profile_management": "External existing services; this baseline starts none",
+  "excluded_runtime_components": [
+    "franka_action_execution",
+    "franka_joint_client",
+    "ACTJ",
+    "Ruckig",
+    "automatic_joint_alignment",
+    "fresh_gripper_head"
+  ]
+}

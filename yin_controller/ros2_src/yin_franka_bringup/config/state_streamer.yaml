@@ -1,0 +1,4 @@
+fr3_state_streamer:
+  ros__parameters:
+    target_host: 10.10.10.1
+    target_port: 8896

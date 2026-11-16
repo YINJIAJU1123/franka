@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.8)
+project(yin_franka_bringup)
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+ament_python_install_package(${PROJECT_NAME})
+install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/state_streamer.py scripts/state_receiver.py
+  DESTINATION lib/${PROJECT_NAME})
+if(BUILD_TESTING)
+  find_package(ament_cmake_pytest REQUIRED)
+  ament_add_pytest_test(state_protocol_test test/test_state_protocol.py)
+endif()
+ament_package()

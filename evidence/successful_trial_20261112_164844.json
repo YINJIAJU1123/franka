@@ -1,0 +1,68 @@
+{
+  "user_report": "本轮正常完成了全流程",
+  "outcome_source": "User onsite confirmation, supported by command and width feedback logs",
+  "model": "run02 EMA step 30000",
+  "temporal_ensemble_coeff": 0.01,
+  "rows": 3205,
+  "log_duration_s": 107.22000002861023,
+  "mean_loop_hz": 29.882484603106278,
+  "gripper_events": [
+    {
+      "type": "close",
+      "step": 214,
+      "time_since_first_log_s": 7.136999845504761,
+      "wall_time": "2026-11-12T16:49:37.886",
+      "feedback_delay_s": 0.8380000591278076
+    },
+    {
+      "type": "open",
+      "step": 1647,
+      "time_since_first_log_s": 55.092000007629395,
+      "wall_time": "2026-11-12T16:50:25.841",
+      "feedback_delay_s": 0.7660000324249268
+    }
+  ],
+  "gripper_width_range_mm": [
+    59.32129546999931,
+    79.86314594745636
+  ],
+  "held_width_median_mm": 60.765307396650314,
+  "descent_until_close_mm": 71.25978275037725,
+  "lift_after_open_to_final_mm": 61.49239925835837,
+  "start_xyz_m": [
+    0.6761408457715946,
+    0.2072985513824809,
+    0.3640052955314661
+  ],
+  "open_xyz_m": [
+    0.32303182316269025,
+    -0.11858870645815137,
+    0.3024975131829067
+  ],
+  "final_xyz_m": [
+    0.3172451574309707,
+    -0.12035232909630254,
+    0.36398991244126505
+  ],
+  "exit_code": 0,
+  "stop_method": "Onsite C observed in console",
+  "policy_process_stopped": true,
+  "source_files_unchanged": true,
+  "existing_code_modified": false,
+  "control_profile": "/home/yin/act_run02_baseline_control_20261112/controllers_act.yaml",
+  "runtime_config": "/home/lixin/act_gripper_temporal_run02_20261112/runtime_config.json",
+  "limitations": [
+    "One successful onsite episode; success rate and variation robustness not established.",
+    "Previously measured held-out target bias remains; task success does not imply that bias was removed."
+  ],
+  "post_trial_controller_event": {
+    "time_local": "2026-11-12 16:52:13 Asia/Shanghai",
+    "type": "libfranka UDP receive timeout after policy exit",
+    "policy_exit_time_local": "2026-11-12 16:51:18 Asia/Shanghai",
+    "robot_current_errors_afterward": [],
+    "robot_last_errors_afterward": [],
+    "robot_mode_afterward": "idle",
+    "controller_process_afterward": "stopped",
+    "cause_not_established": true
+  }
+}

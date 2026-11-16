@@ -1,0 +1,434 @@
+{
+  "frame": "Same frozen FR3 URDF, fr3_link8; this is flange pose, not measured block position.",
+  "model": "run02 EMA step30000",
+  "temporal_ensemble_coeff": 0.01,
+  "user_confirmed_both_tasks_completed": true,
+  "alignment": "Gripper phase anchors + normalized arc length; real-time timing differences reported separately, no DTW.",
+  "runs": {
+    "first_success": {
+      "csv": "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_temporal/real_20261112_164844.csv",
+      "csv_sha256": "79a5e7ba7ed11f5ec1aa23781ad87c414a10a315981ee3283de7be0772044001",
+      "rows": 3205,
+      "wall_time_start": "2026-11-12T16:49:30.749",
+      "wall_time_last": "2026-11-12T16:51:17.969",
+      "record_duration_s": 107.22000002861023,
+      "average_policy_hz": 29.882484603106278,
+      "loop_interval_s": {
+        "median": 0.03299999237060547,
+        "p95": 0.04500007629394531,
+        "max": 0.05900001525878906
+      },
+      "steps_contiguous": true,
+      "episodes": [
+        0
+      ],
+      "repeated_state_sequence_fraction": 0.0,
+      "state_sequence_backwards_count": 0,
+      "one_close_one_open": true,
+      "command_events": [
+        {
+          "type": "close",
+          "index": 214,
+          "time_s": 7.136999845504761,
+          "wall_time": "2026-11-12T16:49:37.886",
+          "width_feedback_delay_s": 0.8380000591278076,
+          "xyz_m": [
+            0.6768157931336618,
+            0.20859960428496596,
+            0.29274551278108885
+          ],
+          "quaternion_xyzw": [
+            0.9264646575318505,
+            -0.37146206826789535,
+            0.044066428544555156,
+            -0.04168117150292348
+          ]
+        },
+        {
+          "type": "open",
+          "index": 1647,
+          "time_s": 55.092000007629395,
+          "wall_time": "2026-11-12T16:50:25.841",
+          "width_feedback_delay_s": 0.7660000324249268,
+          "xyz_m": [
+            0.32303182316269025,
+            -0.11858870645815137,
+            0.3024975131829067
+          ],
+          "quaternion_xyzw": [
+            0.9289318321502948,
+            -0.36743150617255077,
+            0.042078174964885647,
+            -0.017583136275751532
+          ]
+        }
+      ],
+      "feedback_event_count": 2,
+      "width_range_mm": [
+        59.32129546999931,
+        79.86314594745636
+      ],
+      "held_width_median_mm": 60.765307396650314,
+      "start_xyz_m": [
+        0.6761408457715946,
+        0.2072985513824809,
+        0.3640052955314661
+      ],
+      "terminal_xyz_mean_m": [
+        0.31724763919747156,
+        -0.12035259570967831,
+        0.36399386002208345
+      ],
+      "terminal_joint_mean_rad": [
+        0.002647926533333333,
+        -0.6338474933333332,
+        -0.40131942166666673,
+        -2.8414812,
+        -0.2678525283333333,
+        2.3264887499999998,
+        0.5999184600000002
+      ],
+      "completion_proxy_definition": "After open, first sample within 2mm of terminal mean for all remaining samples, with at least 2 seconds observed afterwards.",
+      "completion_proxy_s": 59.894999980926514,
+      "post_completion_recorded_s": 47.325000047683716,
+      "phase_durations_s": {
+        "approach": 7.136999845504761,
+        "closed_carry": 47.955000162124634,
+        "post_release_lift": 4.802999973297119
+      },
+      "phase_path_lengths_mm": {
+        "approach": 71.60183506782852,
+        "closed_carry": 859.9535749138699,
+        "post_release_lift": 61.5178100944226
+      },
+      "tracking_position_error_mm": {
+        "median": 6.9900814228683,
+        "p95": 29.775206789754,
+        "max": 31.329300183693856
+      },
+      "approach_descent_until_close_mm": 71.25978275037725,
+      "lift_after_open_to_terminal_mm": 61.496346839176766,
+      "exit_code": 0,
+      "onsite_C_observed": true,
+      "exception_in_ACT_console": false,
+      "EMA_step30000_load_logged": true,
+      "temporal_001_banner_logged": true
+    },
+    "retest2": {
+      "csv": "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_temporal/real_20261112_170932.csv",
+      "csv_sha256": "faeb352e9d3e3447ccc3a5104b6786597b28caca5380c7424458f2e3126110f0",
+      "rows": 2130,
+      "wall_time_start": "2026-11-12T17:09:56.989",
+      "wall_time_last": "2026-11-12T17:11:08.222",
+      "record_duration_s": 71.23299980163574,
+      "average_policy_hz": 29.887832969672452,
+      "loop_interval_s": {
+        "median": 0.03299999237060547,
+        "p95": 0.04200005531311035,
+        "max": 0.051000118255615234
+      },
+      "steps_contiguous": true,
+      "episodes": [
+        0
+      ],
+      "repeated_state_sequence_fraction": 0.0,
+      "state_sequence_backwards_count": 0,
+      "one_close_one_open": true,
+      "command_events": [
+        {
+          "type": "close",
+          "index": 212,
+          "time_s": 7.080999851226807,
+          "wall_time": "2026-11-12T17:10:04.070",
+          "width_feedback_delay_s": 0.871999979019165,
+          "xyz_m": [
+            0.6763096379033647,
+            0.20915939870184275,
+            0.2923225520201695
+          ],
+          "quaternion_xyzw": [
+            0.9263836350347731,
+            -0.3715102532678927,
+            0.044755098201161386,
+            -0.04231398872230119
+          ]
+        },
+        {
+          "type": "open",
+          "index": 1332,
+          "time_s": 44.556999921798706,
+          "wall_time": "2026-11-12T17:10:41.546",
+          "width_feedback_delay_s": 0.8050000667572021,
+          "xyz_m": [
+            0.3103857086388688,
+            -0.12229849184021949,
+            0.3018420273667996
+          ],
+          "quaternion_xyzw": [
+            0.9245308306137927,
+            -0.37738344085749054,
+            0.04773552952261785,
+            -0.0233623849879875
+          ]
+        }
+      ],
+      "feedback_event_count": 2,
+      "width_range_mm": [
+        59.20572206377983,
+        79.86051589250565
+      ],
+      "held_width_median_mm": 60.741011053323746,
+      "start_xyz_m": [
+        0.6759636259901368,
+        0.20740389974798265,
+        0.3634797494828964
+      ],
+      "terminal_xyz_mean_m": [
+        0.2975428325541184,
+        -0.1245528825896891,
+        0.35463417977543793
+      ],
+      "terminal_joint_mean_rad": [
+        -0.05050059999999999,
+        -0.6845622333333335,
+        -0.4013185166666667,
+        -2.904786933333334,
+        -0.24947695000000003,
+        2.3505353500000004,
+        0.5962582666666666
+      ],
+      "completion_proxy_definition": "After open, first sample within 2mm of terminal mean for all remaining samples, with at least 2 seconds observed afterwards.",
+      "completion_proxy_s": 60.75399994850159,
+      "post_completion_recorded_s": 10.478999853134155,
+      "phase_durations_s": {
+        "approach": 7.080999851226807,
+        "closed_carry": 37.4760000705719,
+        "post_release_lift": 16.19700002670288
+      },
+      "phase_path_lengths_mm": {
+        "approach": 71.60718977582152,
+        "closed_carry": 854.5342685977129,
+        "post_release_lift": 62.69067886845224
+      },
+      "tracking_position_error_mm": {
+        "median": 7.543081664677905,
+        "p95": 30.119723320686802,
+        "max": 32.634132269757075
+      },
+      "approach_descent_until_close_mm": 71.15719746272691,
+      "lift_after_open_to_terminal_mm": 52.79215240863833,
+      "exit_code": 0,
+      "onsite_C_observed": true,
+      "exception_in_ACT_console": false,
+      "EMA_step30000_load_logged": true,
+      "temporal_001_banner_logged": true
+    }
+  },
+  "comparison": {
+    "start": {
+      "xyz_delta_mm": [
+        -0.1772197814577936,
+        0.10534836550174509,
+        -0.5255460485696917
+      ],
+      "distance_mm": 0.5645385533522526,
+      "orientation_difference_deg": 0.05870807926054369,
+      "max_joint_difference_rad": 0.0007139999999998814
+    },
+    "close": {
+      "xyz_delta_mm": [
+        -0.5061552302970673,
+        0.5597944168767854,
+        -0.4229607609193553
+      ],
+      "distance_mm": 0.8651350828633512,
+      "orientation_difference_deg": 0.10771667704779206,
+      "max_joint_difference_rad": 0.003976999999999897
+    },
+    "open": {
+      "xyz_delta_mm": [
+        -12.646114523821472,
+        -3.7097853820681204,
+        -0.655485816107082
+      ],
+      "distance_mm": 13.195316661063206,
+      "orientation_difference_deg": 1.5536266374300014,
+      "max_joint_difference_rad": 0.038466
+    },
+    "end": {
+      "xyz_delta_mm": [
+        -19.598955087924917,
+        -4.37663057494031,
+        -9.167539808999814
+      ],
+      "distance_mm": 22.07527399326216,
+      "orientation_difference_deg": 3.3582138306095657,
+      "max_joint_difference_rad": 0.06258499999999989
+    },
+    "phases": {
+      "approach": {
+        "arc_normalized_point_distance_mm": {
+          "median": 0.7144755325861667,
+          "p95": 0.8733892417505819,
+          "max": 1.0120473722939982
+        },
+        "symmetric_nearest_curve_distance_mm": {
+          "median": 0.38019508437071586,
+          "p95": 0.6220099265792035,
+          "max": 0.9598859699997199
+        },
+        "duration_delta_s": -0.0559999942779541
+      },
+      "closed_carry": {
+        "arc_normalized_point_distance_mm": {
+          "median": 4.237421592302569,
+          "p95": 6.818181654000895,
+          "max": 13.195316661063206
+        },
+        "symmetric_nearest_curve_distance_mm": {
+          "median": 1.9208487703987462,
+          "p95": 5.0988647768471544,
+          "max": 13.195316661063206
+        },
+        "duration_delta_s": -10.479000091552734
+      },
+      "post_release_lift": {
+        "arc_normalized_point_distance_mm": {
+          "median": 18.44191393423374,
+          "p95": 24.003419349464806,
+          "max": 24.369815780193186
+        },
+        "symmetric_nearest_curve_distance_mm": {
+          "median": 18.37297620333802,
+          "p95": 23.3284071163952,
+          "max": 24.312027905614773
+        },
+        "duration_delta_s": 11.394000053405762
+      }
+    },
+    "close_time_delta_s": -0.0559999942779541,
+    "open_time_delta_s": -10.535000085830688,
+    "completion_proxy_delta_s": 0.8589999675750732
+  },
+  "limitations": [
+    "No runtime images saved; actual block landing coordinates cannot be measured from these logs.",
+    "Two successes in the same setup do not establish general robustness.",
+    "Completion is a defined position-settling proxy, not a vision-based task-completion timestamp."
+  ],
+  "existing_source_files_unchanged": true,
+  "robot_commands_sent_by_analysis": 0,
+  "settling_threshold_sensitivity": {
+    "first_success": {
+      "2mm": 59.894999980926514,
+      "5mm": 59.32099986076355,
+      "10mm": 58.89299988746643
+    },
+    "retest2": {
+      "2mm": 60.75399994850159,
+      "5mm": 55.83399987220764,
+      "10mm": 49.40999984741211
+    }
+  },
+  "additional_phase_timing_detail": {
+    "first_success": {
+      "time_to_rise_after_open": [
+        {
+          "rise_mm": 2,
+          "after_open_s": 1.1679999828338623
+        },
+        {
+          "rise_mm": 5,
+          "after_open_s": 1.4399998188018799
+        },
+        {
+          "rise_mm": 10,
+          "after_open_s": 1.804999828338623
+        },
+        {
+          "rise_mm": 30,
+          "after_open_s": 2.743000030517578
+        },
+        {
+          "rise_mm": 50,
+          "after_open_s": 3.697999954223633
+        }
+      ],
+      "carry_low_speed_below_2mm_s_total_s": 2.059000253677368,
+      "carry_moving_time_at_least_2mm_s": 45.895999908447266,
+      "carry_speed_moving_mm_s_median": 10.904467222694985,
+      "lift_low_speed_below_2mm_s_total_s": 0.5429999828338623,
+      "loop_interval_s": {
+        "median": 0.03299999237060547,
+        "p95": 0.04500007629394531,
+        "max": 0.05900001525878906
+      },
+      "q3_ranges_per_phase": {
+        "approach": [
+          -0.401269,
+          -0.401059,
+          -0.4011350790697674
+        ],
+        "carry": [
+          -0.405128,
+          -0.399282,
+          -0.40170431269177126
+        ],
+        "lift": [
+          -0.40151,
+          -0.400726,
+          -0.4010482513888889
+        ]
+      }
+    },
+    "retest2": {
+      "time_to_rise_after_open": [
+        {
+          "rise_mm": 2,
+          "after_open_s": 1.2369999885559082
+        },
+        {
+          "rise_mm": 5,
+          "after_open_s": 1.6359999179840088
+        },
+        {
+          "rise_mm": 10,
+          "after_open_s": 2.078000068664551
+        },
+        {
+          "rise_mm": 30,
+          "after_open_s": 3.75600004196167
+        },
+        {
+          "rise_mm": 50,
+          "after_open_s": 5.691999912261963
+        }
+      ],
+      "carry_low_speed_below_2mm_s_total_s": 1.5550000667572021,
+      "carry_moving_time_at_least_2mm_s": 35.9210000038147,
+      "carry_speed_moving_mm_s_median": 21.433260602992032,
+      "lift_low_speed_below_2mm_s_total_s": 9.60699987411499,
+      "loop_interval_s": {
+        "median": 0.03299999237060547,
+        "p95": 0.04200005531311035,
+        "max": 0.051000118255615234
+      },
+      "q3_ranges_per_phase": {
+        "approach": [
+          -0.401303,
+          -0.401005,
+          -0.40108700938967135
+        ],
+        "carry": [
+          -0.405121,
+          -0.399217,
+          -0.40178453443354145
+        ],
+        "lift": [
+          -0.401438,
+          -0.400945,
+          -0.40122459793814436
+        ]
+      }
+    }
+  }
+}

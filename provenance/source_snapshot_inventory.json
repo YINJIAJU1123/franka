@@ -1,0 +1,972 @@
+{
+  "purpose": "Byte-preserving snapshot of code/config/model used by two onsite-confirmed successful trials",
+  "model_step": 30000,
+  "ema_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+  "temporal_ensemble_coeff": 0.01,
+  "items": [
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/buffer_cache_utils.py",
+      "bundle": "runtime_lixin/buffer_cache_utils.py",
+      "bytes": 5646,
+      "sha256": "d639af513042c9a631f0f88b895dfb4054b4624e48b77924c84569f2d1d27a3a"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/REAL_RUN_GUIDE.txt",
+      "bundle": "runtime_lixin/REAL_RUN_GUIDE.txt",
+      "bytes": 804,
+      "sha256": "97fda1125a775d3628c6ad48f578f1454d6e6793011dcf01ef8a5fce179a4b51"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/act_gripper_policy.py",
+      "bundle": "runtime_lixin/act_gripper_policy.py",
+      "bytes": 3889,
+      "sha256": "4df73293aa4bad93020fa3f1e230b76b0b614cf9387a5670b2fe96f263dca400"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/protected_source_hashes.json",
+      "bundle": "runtime_lixin/protected_source_hashes.json",
+      "bytes": 9714,
+      "sha256": "0f83b2ee210b13cdfae777a59cf0ee45180954aaf1de98c227a4f946c8e7cc97"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/manifest.json",
+      "bundle": "runtime_lixin/manifest.json",
+      "bytes": 17457,
+      "sha256": "c13af749f5401d01c0cc7eb130ce4c17793fcc8c1ee9afd628cfd13944fc9819"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/offline_check.sh",
+      "bundle": "runtime_lixin/offline_check.sh",
+      "bytes": 138,
+      "sha256": "e1390cbc4cd60d2275fea1a43cc7110f076f0703c483abc1cf137ee2ff1c1433"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/offline_checks.py",
+      "bundle": "runtime_lixin/offline_checks.py",
+      "bytes": 18502,
+      "sha256": "b306ca40b0096ec2567668989a30a60de3df35375414846ca9b1331c7c70a4c4"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/runtime_config.json",
+      "bundle": "runtime_lixin/runtime_config.json",
+      "bytes": 2549,
+      "sha256": "6b69dc8be92c6dfde8bd9bb36e16a9d806d0987a0a642ff700410064620c4ac1"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/LICENSE",
+      "bundle": "runtime_lixin/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_transport.py",
+      "bundle": "runtime_lixin/franka_gripper_transport.py",
+      "bytes": 13814,
+      "sha256": "61a4ac721291fc5a1c3c38efbff6e8db58736c09cd832988256ed8191ababe12"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/source_integrity.json",
+      "bundle": "runtime_lixin/source_integrity.json",
+      "bytes": 20721,
+      "sha256": "a5cfa5fd6accf9627ad06b930451ff3f469071dcf6cc4479d1b370b935ee0334"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/real_launch.py",
+      "bundle": "runtime_lixin/real_launch.py",
+      "bytes": 6772,
+      "sha256": "1bf440c436aebb1d99d8d908c114b26f53bdfec535f342a3924bfeed205687c7"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/README.txt",
+      "bundle": "runtime_lixin/README.txt",
+      "bytes": 804,
+      "sha256": "97fda1125a775d3628c6ad48f578f1454d6e6793011dcf01ef8a5fce179a4b51"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/env.sh",
+      "bundle": "runtime_lixin/env.sh",
+      "bytes": 773,
+      "sha256": "38a71707cf1bb08217c99f2ddca14a01e3e8f01d502c850511072cd1d616e12a"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/original_runner.py",
+      "bundle": "runtime_lixin/original_runner.py",
+      "bytes": 21634,
+      "sha256": "5deea3cf877b51dce0380e1064ac86e78de5888c9e2bbd3efef0e9efd558167c"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/real_launch_manifest.json",
+      "bundle": "runtime_lixin/real_launch_manifest.json",
+      "bytes": 360,
+      "sha256": "eb8e8175eb060b91caa96778eaba129b194f204de008f2b6e90681c139b27dcb"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/ACT_CONTROL_PROFILE_20261112.txt",
+      "bundle": "runtime_lixin/ACT_CONTROL_PROFILE_20261112.txt",
+      "bytes": 737,
+      "sha256": "c228fada91570fe859c1146dea67765517c753fb435f87fc7d4bae5330374127"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/franka_gripper_control.py",
+      "bundle": "runtime_lixin/franka_gripper_control.py",
+      "bytes": 6747,
+      "sha256": "c6935f8a55a6438b0d5b59afd30ed2e10af7be608a412ac6ae71260fc0939755"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/baseline_settings.json",
+      "bundle": "runtime_lixin/baseline_settings.json",
+      "bytes": 940,
+      "sha256": "18cde5ff47c90f9f56bb006455611c909cbfbd376d12a6494e4e159df9d9fc20"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/offline_sources.json",
+      "bundle": "runtime_lixin/offline_sources.json",
+      "bytes": 192,
+      "sha256": "2426a13cbfa0abdb25c9ba6101c7dda23b8f4e00a16f1ccacb79039ff08ba595"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/image_preprocessing.py",
+      "bundle": "runtime_lixin/image_preprocessing.py",
+      "bytes": 1661,
+      "sha256": "65438210535450cc00035a739b163069c94ab20727a8314447a0be01e348b847"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/fr3.urdf",
+      "bundle": "runtime_lixin/fr3.urdf",
+      "bytes": 15293,
+      "sha256": "ed07431426465f5cba2689989f3801a8e5ece8f7706aa46778fe26ad8c1a98cd"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/observe_only.sh",
+      "bundle": "runtime_lixin/observe_only.sh",
+      "bytes": 787,
+      "sha256": "0884c78dea9f7fe5b42cf55bafc985d60d890168483e7597f9fd97e72eca98bf"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/run_real.sh",
+      "bundle": "runtime_lixin/run_real.sh",
+      "bytes": 364,
+      "sha256": "455fc448edc46993d6280067bf3eff28a3eacb8936bb772220f4d4e89aace022"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/split.json",
+      "bundle": "runtime_lixin/recorded_metadata/split.json",
+      "bytes": 344,
+      "sha256": "9c776e825a93f49d9e1b291c3606f0d785b5a86505b07c9d3e4fd4baa3462f8f"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/episode_selection.json",
+      "bundle": "runtime_lixin/recorded_metadata/episode_selection.json",
+      "bytes": 7088,
+      "sha256": "25035d89f5471d602baf1369f7392c811fcfc56b2bf03c4f4158532a12db881e"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/checkpoint/act_config.json",
+      "bundle": "runtime_lixin/checkpoint/act_config.json",
+      "bytes": 2541,
+      "sha256": "1851625995dc503c7c78e5ce1698978548af9d3eebb0426793497a8ea1dc5351"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/checkpoint/act_policy_ema.pth",
+      "bundle": "runtime_lixin/checkpoint/act_policy_ema.pth",
+      "bytes": 206773010,
+      "sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/checkpoint/dataset_stats.pth",
+      "bundle": "runtime_lixin/checkpoint/dataset_stats.pth",
+      "bytes": 5368,
+      "sha256": "10e0ffc814a55ab25931b69fbb5521eac097176e705f79c532cdf7c1e3d83b38"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/fixtures/saved_near_grasp_inputs.npz",
+      "bundle": "runtime_lixin/fixtures/saved_near_grasp_inputs.npz",
+      "bytes": 138960,
+      "sha256": "24450ad52a6a16203f03e7237ff1fb517d7f14c8d6183cc3175cebfac5f47614"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/__init__.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/__init__.py",
+      "bytes": 7492,
+      "sha256": "751c7d49f40a9d8618b85326e33a2dd4197281974dd7c5564a946afb0a5698f6"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/constants.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/constants.py",
+      "bytes": 1915,
+      "sha256": "11ac9260341e1560c5eb0dd7acb79ed63c74180b8ab4113c27622ff213db417f"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/__version__.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/__version__.py",
+      "bytes": 834,
+      "sha256": "beb2aa5d785c7e7ccbcb910ec4688e2868423458e2a1aac7fd76c1e1a182a470"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/utils/random_utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/utils/random_utils.py",
+      "bytes": 7127,
+      "sha256": "5b96fae7841ab9f477942d4d524166a23655a5d95e0cd6f35915fdaaf2dc2afc"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/utils/hub.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/utils/hub.py",
+      "bytes": 9032,
+      "sha256": "1981583e520bc73e221491459694d58ad1c1370537bf280968493b31c8e2c51f"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/utils/utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/utils/utils.py",
+      "bytes": 11534,
+      "sha256": "81b4bffd89c3133f38b214877d12de5835d80c8ab69d832e3e092af3d484c12c"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/utils/io_utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/utils/io_utils.py",
+      "bytes": 4414,
+      "sha256": "3c04da95df2f211faefec3527603596bcf4231072919d6a8d4bcaa3436a14d5c"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/optim/optimizers.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/optim/optimizers.py",
+      "bytes": 7983,
+      "sha256": "0845806f9d5bf883da4f388d6ec1a2791c4f00fc54c43aa543b184d18f0239fa"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/optim/__init__.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/optim/__init__.py",
+      "bytes": 671,
+      "sha256": "4f485904e4eca422d708f5507810d51ae99a614dd41aac98127ed6019b9b3cc5"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/optim/schedulers.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/optim/schedulers.py",
+      "bytes": 4469,
+      "sha256": "c13291786debe87ab82aa53ebe39b90b68afdd75dc4a76db33e4a37e2144ac10"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/configs/policies.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/configs/policies.py",
+      "bytes": 7765,
+      "sha256": "156c3626f7e2e07f2e7b411be915c08c002daf013a3d1d9435572da1efdee32e"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/configs/types.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/configs/types.py",
+      "bytes": 1244,
+      "sha256": "f32750541f2c33bc37cd19bfb153f4a5c31c47892bcaa375dc97ebda5aa7abb3"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/video_utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/video_utils.py",
+      "bytes": 19528,
+      "sha256": "14a159f67e18a5f379b754539d8fa51ef6059f93b5a8b9ee32de89ff2788661e"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/lerobot_dataset.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/lerobot_dataset.py",
+      "bytes": 52057,
+      "sha256": "e8a4334daa92641745a0c07b5011aefce5ca2a75c66efdf924e7fdf1a9d32fc7"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/backward_compatibility.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/backward_compatibility.py",
+      "bytes": 3007,
+      "sha256": "a1090ab98db67e09ddb2047f4c7c2a482f089dd4c0bd5997e763f7481e3a4cc9"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/utils.py",
+      "bytes": 30877,
+      "sha256": "d5304b7f7039a6c97ab2de51748ad781a40edce15816ed3efe865cf1e261d033"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/compute_stats.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/compute_stats.py",
+      "bytes": 6942,
+      "sha256": "4f8006d2124e815d702501fc709d4c333d80e60bc32f80a13719b0dbc37c4941"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/datasets/image_writer.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/datasets/image_writer.py",
+      "bytes": 6284,
+      "sha256": "44f057d19b1036a5e64d67503a073c9c256ed956005fcefce51902b05c5e231c"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/factory.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/factory.py",
+      "bytes": 1034,
+      "sha256": "a58d01c6f37bf0470582d86c84212e34c7f3187adbc340fc7b8fdcf6a6fa3a51"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/__init__.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/__init__.py",
+      "bytes": 58,
+      "sha256": "7f1c12a1a48f9cd9af62a3e78f2c1ae70d91b5bc27238ed7ee3b8d2934496c92"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/normalize.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/normalize.py",
+      "bytes": 19548,
+      "sha256": "a28fbec9127c0e23510d5720747cf14f42e0b997c361556ec1f9702c63d559d5"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/pretrained.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/pretrained.py",
+      "bytes": 10023,
+      "sha256": "3e805059fc9a2554a2657cac0134b32e830fc74f0de0a58c6ada51d53d302df9"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/utils.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/utils.py",
+      "bytes": 3093,
+      "sha256": "3aea551920ca2bfc13ea46f5ce93facc09909e799fe3d158db0b311f9aba7c5a"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/act/modeling_act.py",
+      "bytes": 37776,
+      "sha256": "eb4d66949ed7e0e293d50558d31598fa3f1a56eb2152be13cb9b5de72f73385f"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/lerobot/src/lerobot/policies/act/configuration_act.py",
+      "bundle": "runtime_lixin/lerobot/src/lerobot/policies/act/configuration_act.py",
+      "bytes": 9785,
+      "sha256": "ffb0648da83acaed39d32d4503b7766205a309ddf5d8560cee164e987ebe2cf4"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/meta/tasks.jsonl",
+      "bundle": "runtime_lixin/recorded_metadata/meta/tasks.jsonl",
+      "bytes": 36,
+      "sha256": "dc5e7ce0de8342e5c64aac4c0252d87709d668ee4c51351b9ced3625c68690d8"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/meta/info.json",
+      "bundle": "runtime_lixin/recorded_metadata/meta/info.json",
+      "bytes": 2346,
+      "sha256": "846c0ae7e40f64f5030ab6f10fa8595467b68b3ca98b21f20f4540e6a5da2b53"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/meta/episodes_stats.jsonl",
+      "bundle": "runtime_lixin/recorded_metadata/meta/episodes_stats.jsonl",
+      "bytes": 36718,
+      "sha256": "e931798fec65528da16fed76b7f59c54d258d09c3b6c6e62a79a3f05b096f8c3"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/meta/episodes.jsonl",
+      "bundle": "runtime_lixin/recorded_metadata/meta/episodes.jsonl",
+      "bytes": 816,
+      "sha256": "767e40f90e73234870f7599e10a5373819f0f6e8e3c83b755feaf3ad76daa9fa"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000006.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000006.parquet",
+      "bytes": 136430,
+      "sha256": "bb9d84943846699d8c30d7b9b97e1c24290031108181b92cb8fcaabc8d254801"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000001.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000001.parquet",
+      "bytes": 142067,
+      "sha256": "82bef62b071718407f7bc58f9ac77adcf19d8f3e8fae15206e49d1b54c0f9c0b"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000002.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000002.parquet",
+      "bytes": 141326,
+      "sha256": "054ed87c8ad0533b0acfa1bc2210355985552954560ee5d6a79f8344561776bd"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000010.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000010.parquet",
+      "bytes": 135110,
+      "sha256": "9177431f980b919fa80fc56584fd1ccaef0ae1f98afac8b522558858bd6f0554"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000004.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000004.parquet",
+      "bytes": 138189,
+      "sha256": "7a2b3d3a337d70a23caae496ed8bb05a32fd4c988f4f0a3ba13384727e32d06b"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000005.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000005.parquet",
+      "bytes": 142916,
+      "sha256": "ea9257a4bed3bf46f9c9968fd3079d29b13982fa233f2431a0dddf0a939bc659"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000012.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000012.parquet",
+      "bytes": 130353,
+      "sha256": "cc9745aefcf52a0124a118503928c4dd6598e403aadd28d2dd1a572be1fd7bb8"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000003.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000003.parquet",
+      "bytes": 141549,
+      "sha256": "be004c4f9dfeb7355802d58bcdd203929dcbaa2bdb6b50ad42d5937713763043"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000011.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000011.parquet",
+      "bytes": 130962,
+      "sha256": "9bff3da77769c726fc3b1c0791336387c791d9e3a737511073f776e27394c802"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000009.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000009.parquet",
+      "bytes": 140507,
+      "sha256": "106ddfd6a0d52732fa356d7e300aefd00d08a415551b5c9f12ac0326a7972d0f"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000008.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000008.parquet",
+      "bytes": 139897,
+      "sha256": "3d4f6acec3885d7e4191e7d10609ea88795f809f4a7c6a9e513b2c3a016d2370"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000000.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000000.parquet",
+      "bytes": 142066,
+      "sha256": "e20d97ee83860ae4ed5abf1d6feefa299b874c45eaa31e7205aeed127229b284"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000013.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000013.parquet",
+      "bytes": 137920,
+      "sha256": "90f9a77fd176d93ce460635bf822cee78346c235f1fd7817cee154ea9c614507"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata/data/chunk-000/episode_000007.parquet",
+      "bundle": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000007.parquet",
+      "bytes": 137736,
+      "sha256": "c1185c3f9986d6ce6d2fb4e9b9765f86662ffcfaa84486ae16205698624910c0"
+    },
+    {
+      "source": "/home/lixin/act_gripper/pretrain_act_bc.py",
+      "bundle": "training_reference/pretrain_act_bc.py",
+      "bytes": 27161,
+      "sha256": "faa0950d6b87a2d09ba0450738e9c4f375ad3a60ab80f9a8021973f14954310f"
+    },
+    {
+      "source": "/home/lixin/act_gripper/gripper_training_validation.py",
+      "bundle": "training_reference/gripper_training_validation.py",
+      "bytes": 5317,
+      "sha256": "95667a65c1680c75fe1f988c3f198dc290af03e4df75fccf4e19d6f9aa1741c4"
+    },
+    {
+      "source": "/home/lixin/act_gripper/buffer_cache_utils.py",
+      "bundle": "training_reference/buffer_cache_utils.py",
+      "bytes": 5646,
+      "sha256": "d639af513042c9a631f0f88b895dfb4054b4624e48b77924c84569f2d1d27a3a"
+    },
+    {
+      "source": "/home/lixin/act_gripper/configs/train_block_pick_place_v3_run02.json",
+      "bundle": "training_reference/configs/train_block_pick_place_v3_run02.json",
+      "bytes": 2368,
+      "sha256": "e219307bb16300305784846906788094e5fce32b87324e21cd01a7ad0e817b9e"
+    },
+    {
+      "source": "/home/lixin/act_gripper/scripts/block_pick_place/train_block_pick_place_v3_run02.sh",
+      "bundle": "training_reference/scripts/block_pick_place/train_block_pick_place_v3_run02.sh",
+      "bytes": 1024,
+      "sha256": "1456605badaefdd09b295a9a16cb9dacda861c5f9f6f61a868471472e9b0d7fd"
+    },
+    {
+      "source": "/home/lixin/act_gripper/scripts/block_pick_place/evaluate_block_pick_place_v3.py",
+      "bundle": "training_reference/scripts/block_pick_place/evaluate_block_pick_place_v3.py",
+      "bytes": 10627,
+      "sha256": "64b990da786c4578830b3f9b6f20626ba0585c79100e9cae04e3c58d29780025"
+    },
+    {
+      "source": "/home/lixin/act_gripper/experiments/block_pick_place_v3_act_run02/deployment_selection.json",
+      "bundle": "training_reference/experiments/block_pick_place_v3_act_run02/deployment_selection.json",
+      "bytes": 892,
+      "sha256": "4ae6fa93b672bd8896bc43ab5a0c7237bdf1dae54dc5335c6e4f06ff0038c5d3"
+    },
+    {
+      "source": "/home/lixin/act_gripper/experiments/block_pick_place_v3_act_run02/train_log.csv",
+      "bundle": "training_reference/experiments/block_pick_place_v3_act_run02/train_log.csv",
+      "bytes": 15693,
+      "sha256": "ece0e934cce2a25fa3ab99c73b32ca1ec205c14edc9aef591c1a291450ed0177"
+    },
+    {
+      "source": "/home/lixin/act_gripper/experiments/block_pick_place_v3_act_run02/act_config.json",
+      "bundle": "training_reference/experiments/block_pick_place_v3_act_run02/act_config.json",
+      "bytes": 2541,
+      "sha256": "1851625995dc503c7c78e5ce1698978548af9d3eebb0426793497a8ea1dc5351"
+    },
+    {
+      "source": "/data/TS-WAM/deployment/__init__.py",
+      "bundle": "state_receiver_source/deployment/__init__.py",
+      "bytes": 34,
+      "sha256": "7746ffb57704d8edc46797d9c874fc2126fb72b97a3cb33fd1bd1b439dc684bb"
+    },
+    {
+      "source": "/data/TS-WAM/deployment/frst_protocol.py",
+      "bundle": "state_receiver_source/deployment/frst_protocol.py",
+      "bytes": 1883,
+      "sha256": "1c5383e6002ac3d8eedec11316c6b61d6824bd22e1585667b7f2a4f6e947076a"
+    },
+    {
+      "source": "/data/TS-WAM/deployment/tswam_state_relay_receiver.py",
+      "bundle": "state_receiver_source/deployment/tswam_state_relay_receiver.py",
+      "bytes": 6376,
+      "sha256": "c341f1e214a594e30fc5ee61740ba36f0e912116f3f024c50b7214ed7b797bc0"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/multi_camera_display.py",
+      "bundle": "camera_source/multi_camera_display.py",
+      "bytes": 6371,
+      "sha256": "30197411e0e1fcba390d08ba44b77055031782e0c4134652bf2028085633e91d"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/camera_launch.py",
+      "bundle": "camera_source/camera_launch.py",
+      "bytes": 12564,
+      "sha256": "e89fd9e8cf1eb20af636c4eb32df1544f5c3910ece846e2e5b2a15663c656969"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/cam_wrist_resize_node.py",
+      "bundle": "camera_source/cam_wrist_resize_node.py",
+      "bytes": 4326,
+      "sha256": "ffd003678a7774838f8dd9f21036de30b7d65731e31598e7be3cc57e63f6234c"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/cam_chest_resize_node.py",
+      "bundle": "camera_source/cam_chest_resize_node.py",
+      "bytes": 1883,
+      "sha256": "69b3a52d85e6c008396fd8d23e36151dad9c39b88edcf48936727fa051bad69c"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/start_cameras.sh",
+      "bundle": "camera_source/start_cameras.sh",
+      "bytes": 6685,
+      "sha256": "db5c8687ed05e505e920a3652c3489f21b5ab5f7f54a97cb8401a3327b6d9bd3"
+    },
+    {
+      "source": "/data/Yin_ros2_ws/src/camera/view_cameras.sh",
+      "bundle": "camera_source/view_cameras.sh",
+      "bytes": 2608,
+      "sha256": "1d37c18e7de5af9d7ef755f68561a5f943f37e0185dfbed92a8661f0121951d6"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_temporal/real_20261112_164844.csv",
+      "bundle": "evidence/real_temporal/real_20261112_164844.csv",
+      "bytes": 1354244,
+      "sha256": "79a5e7ba7ed11f5ec1aa23781ad87c414a10a315981ee3283de7be0772044001"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_temporal/real_20261112_170932.csv",
+      "bundle": "evidence/real_temporal/real_20261112_170932.csv",
+      "bytes": 832394,
+      "sha256": "faeb352e9d3e3447ccc3a5104b6786597b28caca5380c7424458f2e3126110f0"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/onsite_temporal_20261112_164839.log",
+      "bundle": "evidence/onsite_temporal_20261112_164839.log",
+      "bytes": 9516,
+      "sha256": "bcebe34b3d60c9167f46fd4bf4db45538080787cb9816039c712ccf7027ac732"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/onsite_temporal_20261112_164839.exit",
+      "bundle": "evidence/onsite_temporal_20261112_164839.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/onsite_temporal_retest_20261112_170928.log",
+      "bundle": "evidence/onsite_temporal_retest_20261112_170928.log",
+      "bytes": 6996,
+      "sha256": "6d2f164521e8f83e2b5510b6da7b7bc2f7990611a9d136d5ca9bc9b806fde38d"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/onsite_temporal_retest_20261112_170928.exit",
+      "bundle": "evidence/onsite_temporal_retest_20261112_170928.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/successful_trial_20261112_164844.json",
+      "bundle": "evidence/successful_trial_20261112_164844.json",
+      "bytes": 2246,
+      "sha256": "7acae79f3b5a5f4957153380a08389e4a8eeaeda898d094cc255e93b8a0a822d"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/offline_results.json",
+      "bundle": "evidence/offline_results.json",
+      "bytes": 9223,
+      "sha256": "d192890b575ebabcb3bae53d02bcd35dd2a4cde2fce7b07442839eee2d538f4b"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/real_launch_check.json",
+      "bundle": "evidence/real_launch_check.json",
+      "bytes": 2323,
+      "sha256": "a0778c4276dd72b31cc104a234c806e040e5596f213b0169ad3777d5bbf06668"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/live_temporal_preflight_20261112.json",
+      "bundle": "evidence/live_temporal_preflight_20261112.json",
+      "bytes": 1494,
+      "sha256": "c653097b7106a4a5cf6e219cf88a7a2771f8e030975e5687b294d0f7f33bdb9d"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/live_temporal_retest_20261112_165820.json",
+      "bundle": "evidence/live_temporal_retest_20261112_165820.json",
+      "bytes": 1956,
+      "sha256": "b7b5f5dc4efe22a7d64e1c6fa7a5356e4eed0d7330e0fa243802876c530e49b0"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/live_temporal_retest_after_return_20261112.json",
+      "bundle": "evidence/live_temporal_retest_after_return_20261112.json",
+      "bytes": 1222,
+      "sha256": "411ba731fc1b090544aa4ab58d659128c1eabb34f6fb17210c2918ad13d0a9ea"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/retest_success_start_target_20261112.json",
+      "bundle": "evidence/retest_success_start_target_20261112.json",
+      "bytes": 607,
+      "sha256": "017bcae088fd84d17be6cd60c4f68aedd20b801e41508ffb1aab0c72fb0d0038"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/retest2_comparison_20261112/comparison_results.json",
+      "bundle": "evidence/retest2_comparison_20261112/comparison_results.json",
+      "bytes": 13349,
+      "sha256": "de5f684f98ee4486cfe2410f9f8d1bae91d3d49f36e022695931c39c35cad788"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/retest2_comparison_20261112/two_successful_trials.png",
+      "bundle": "evidence/retest2_comparison_20261112/two_successful_trials.png",
+      "bytes": 419674,
+      "sha256": "a9f625e141a04042b81497d826095013c3b06d239baa75d3e8e5c1856c8edf0a"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/pose_bias_diagnosis/pose_bias_results.json",
+      "bundle": "evidence/pose_bias_diagnosis/pose_bias_results.json",
+      "bytes": 123019,
+      "sha256": "dcf8239c17e390488ce309dda9f7615067b419d3fa2cd5ac5dad5d31a94e0f41"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/pose_bias_diagnosis/pose_bias_additional.json",
+      "bundle": "evidence/pose_bias_diagnosis/pose_bias_additional.json",
+      "bytes": 8500,
+      "sha256": "dd7f06dd6884802a888ffcae900addf4955cc7c5397195454275c19295189861"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/pose_bias_diagnosis/pose_bias_diagnosis.png",
+      "bundle": "evidence/pose_bias_diagnosis/pose_bias_diagnosis.png",
+      "bytes": 267058,
+      "sha256": "7aa0f52ef096d7dbcb34e16958f30822c33513fcf2a051f1eedca9ef34ffb242"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/lixin_experiment_shutdown_20261112.json",
+      "bundle": "evidence/lixin_experiment_shutdown_20261112.json",
+      "bytes": 466,
+      "sha256": "0b06558f7323531b39462358ab2ee0ebbe50d9717a3d35e712f1b01d669f1317"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/temporal_preparation_report.json",
+      "bundle": "evidence/temporal_preparation_report.json",
+      "bytes": 153390,
+      "sha256": "9252b5c861cf563801f8eccbe61737aaade185404940d37d3800d1c54e4d575c"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_run02_20261112/reports/independent_version.diff",
+      "bundle": "evidence/independent_version.diff",
+      "bytes": 9508,
+      "sha256": "123d22a4a65a015ffe29baeb19bbadc5968b2bcf0fddeba966247992eb20d438"
+    },
+    {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/reports/execution_comparison_20261112/comparison_results.json",
+      "bundle": "evidence/three_execution_methods/comparison_results.json",
+      "bytes": 374562,
+      "sha256": "ba81fe6fef0dead1878cfe34c1c7659c74b07c8bba8bc285b5b02d278e1a32ce"
+    },
+    {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/reports/execution_comparison_20261112/execution_comparison.png",
+      "bundle": "evidence/three_execution_methods/execution_comparison.png",
+      "bytes": 487656,
+      "sha256": "8938048fb050eb9ff3b5247244083e79fad3afddd215fd41cdeb1ade0416040a"
+    },
+    {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/reports/execution_comparison_20261112/compare_execution.py",
+      "bundle": "evidence/three_execution_methods/compare_execution.py",
+      "bytes": 18643,
+      "sha256": "ac293f353bdcf0940ae389d82cda2f505a165f443ffde50d24c506245a7e4919"
+    },
+    {
+      "source": "/tmp/act_compare_two_trials_20261112.py",
+      "bundle": "analysis_tools/compare_two_trials.py",
+      "bytes": 13068,
+      "sha256": "c4ff935cfb11fed7927f5c6655c3eb64002a72cf0781f282b57a16e1de8d7ce7"
+    },
+    {
+      "source": "/home/lixin/act_gripper_temporal_tools_20261112/diagnose_pose_bias.py",
+      "bundle": "analysis_tools/diagnose_pose_bias.py",
+      "bytes": 11005,
+      "sha256": "acaaeaa809831c3a990a031f25aeffb6610e9f9fb4c0fc3964cdc196181eb056"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/source_inventory.json",
+      "bytes": 11644,
+      "sha256": "4f7e57b93b171159d9cbcc3f5e6d35dc937ff7e0615a463a06f7515b5de35b82"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/return_success_start.cpp",
+      "bytes": 4935,
+      "sha256": "8d34b5a5dbed43da4fc7156f5ed0d3907977081e5141e4d7ae1d919fd0e783ee"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/actually_installed/state_streamer.py",
+      "bytes": 4382,
+      "sha256": "4bbf62ce3a63feba74ad6fca32c2983edd3cc21ce778a8224e58fdd0e51b7fb4"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/actually_installed/udp_to_twist_bridge.py",
+      "bytes": 26109,
+      "sha256": "e95e41fde8852f7c83f3d01d89d8599158fde05f446e9e59e74f955f580d5cbc"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/act_control_profile/manifest.json",
+      "bytes": 2057,
+      "sha256": "68d60bc91b60ddaa43b517ecbac8c7130d259f33d39d9638ea490d866f7df218"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/act_control_profile/run_control.sh",
+      "bytes": 937,
+      "sha256": "f6d19891094e3ba6db8fffeec7b41cec07579e6ee40455b8e60b64a77efd2dd5"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/act_control_profile/controllers_act.yaml",
+      "bytes": 1742,
+      "sha256": "b86188b37fd2a72f889ced1fb82f271076a421c0d5202f319884eef0b73d8e5a"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/act_control_profile/act_cartesian.launch.py",
+      "bytes": 6133,
+      "sha256": "fbb143ff8a0550798e4f4b498fcbb4335a32f4063df5965cb69f89e94cf37b17"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/act_control_profile/original_controllers_safe.yaml",
+      "bytes": 1751,
+      "sha256": "0fb35d1c55c08500a3a18d8f9313447f8f1a1eb751be1b052e1d20d20a0e1672"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/workspace_reference/setup_full.bash",
+      "bytes": 1114,
+      "sha256": "25a275751d4d621f2c003926b1be2a2bd5a382bd3c7de0a605188c0a9b8a643b"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/CMakeLists.txt",
+      "bytes": 517,
+      "sha256": "5de99601d61e05782da9792210e201b62d953d6b22fef2f3f409a9e82afd6c6e"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/package.xml",
+      "bytes": 1111,
+      "sha256": "0f84d288b20b85bac5576673983e527fe7618905489f12059b29fceb6baa328d"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/CMakeLists.txt",
+      "bytes": 2319,
+      "sha256": "f2a417b0f0b6d7f1ca7a2f802b18714fd00637ea0dc3cf88204228f611f0cb43"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/package.xml",
+      "bytes": 1488,
+      "sha256": "d24a78be10ac88ef987da1ea86b219fcfd55d974e1cacd7ab2029f5dd4f1b5df"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/README.md",
+      "bytes": 4363,
+      "sha256": "d5481d8155dc994b2d37814f8e61315ea60cbba874cf7a752e26d1dd533e84f0"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/yin_franka_cartesian_controller.xml",
+      "bytes": 870,
+      "sha256": "35c064d6fe417ff3a444c3768cff08621de2dcaee2713bcf009087c8b9d776ea"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/scripts/udp_to_joint_bridge.py",
+      "bytes": 16843,
+      "sha256": "0986688a233d7ee325cd99dc63bea06b3a234532db1f193e14b4d0ca9f4f75ec"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/scripts/policy_action_udp_receiver.py",
+      "bytes": 3108,
+      "sha256": "1659eed757e84a5234d75c01bdf534d35d4b2438bf4ac3b6f61a04036990a441"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/scripts/yin_trajectory_core.py",
+      "bytes": 7173,
+      "sha256": "2bd0887d326df27b117a54cc7d16736b3f8a00bf364b94722ece3f211d8d94d0"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/scripts/udp_to_twist_bridge.py",
+      "bytes": 26109,
+      "sha256": "e95e41fde8852f7c83f3d01d89d8599158fde05f446e9e59e74f955f580d5cbc"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/src/franka_cartesian_twist_controller.cpp",
+      "bytes": 11420,
+      "sha256": "77df9db5be6a96fd38b45e7f6c51e0e395abeea051a50990226a10c327da918e"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/src/franka_policy_torque_controller.cpp",
+      "bytes": 21377,
+      "sha256": "3169a4743c6bd97f6ad49c6ccb07b9de6bb81a3babe30234f163be7ec8a67ed1"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/config/controllers.yaml",
+      "bytes": 1173,
+      "sha256": "2a657adc043b049b630c8e69993a69003ce2d23ca509b9ae0d9b3fedf8a545f2"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/config/controllers_policy_torque_safe.yaml",
+      "bytes": 1969,
+      "sha256": "66b79965ff3d69389646218363ad733404971964f64596f7736fd17360d86dea"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/config/controllers_safe.yaml",
+      "bytes": 1751,
+      "sha256": "0fb35d1c55c08500a3a18d8f9313447f8f1a1eb751be1b052e1d20d20a0e1672"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/include/yin_franka_cartesian_controller/franka_cartesian_twist_controller.hpp",
+      "bytes": 3740,
+      "sha256": "94ee2287302093a4db2d4b2ca6733421693b987f1ed794edc82321b03076e2cc"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_cartesian_controller/include/yin_franka_cartesian_controller/franka_policy_torque_controller.hpp",
+      "bytes": 5107,
+      "sha256": "8497cb0d2abc349d38c53c928473bcd484ccd041c04c77535f2cba44d1f58a70"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/launch/fr3_control.launch.py",
+      "bytes": 6125,
+      "sha256": "86b8f4d3a3fdc61605cff249e5b0602a4074cb449a1150260f534ef19acd12dd"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/scripts/state_streamer.py",
+      "bytes": 4382,
+      "sha256": "4bbf62ce3a63feba74ad6fca32c2983edd3cc21ce778a8224e58fdd0e51b7fb4"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/scripts/state_receiver.py",
+      "bytes": 1768,
+      "sha256": "7ce332767c4e5317d945c9e7cf54bfe3a10796350ac104fad8fdc1a29106fefd"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/yin_franka_bringup/state_protocol.py",
+      "bytes": 2614,
+      "sha256": "8cbe2d710b3a9f6b67b07322112002422e1562401c93e0d39680dc650936b2c3"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/yin_franka_bringup/__init__.py",
+      "bytes": 49,
+      "sha256": "59e86a075f5ae3ee6f9f4f0656afb7db93c2f7ba9d93f27f3a54309f5aff9097"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/test/test_state_protocol.py",
+      "bytes": 1555,
+      "sha256": "a98d16cef6461942f00705a2181979fa3ceb9abf74905624910168fe728e23bb"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/ros2_src/yin_franka_bringup/config/state_streamer.yaml",
+      "bytes": 89,
+      "sha256": "85ed2ad4f304786d04d33ecc9d0c42309873f3f15c5b0767ec6ad16c49838d16"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/workspace_reference/scripts/run_fr3_control.sh",
+      "bytes": 948,
+      "sha256": "e77685ef5234d6f0ba2a3334affdb6c85c3f84a5c9a9d8c88aa58f3cba85822c"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/libfranka_0.20.4/examples_common.cpp",
+      "bytes": 5537,
+      "sha256": "cab122051fa0fae0c75e3295867fa7d5ae65ed2a0dad499ecae0f31a14c328f2"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/libfranka_0.20.4/LICENSE",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/libfranka_0.20.4/examples_common.h",
+      "bytes": 2177,
+      "sha256": "fe3da5241e1d6c332ae35abddd353c7b48bb0c7d615127c9d2a68ca5c54b445a"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/evidence/execution.log",
+      "bytes": 536,
+      "sha256": "004c9f0d6b3c357da2ac3b0945009ecf0545fa99ff9b01fc010c4c3ab9fce008"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/evidence/plan.csv",
+      "bytes": 1685554,
+      "sha256": "09baadb0d97564d8bdbe6066543048920ba668c52e1b9bd87816b99e8de7d286"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/evidence/actual_feedback.csv",
+      "bytes": 2484065,
+      "sha256": "dfaf0f12c35a30dbcd192c71a80af095656c4bbfbbe35ec1de797ad77b29c712"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/evidence/plan_check.json",
+      "bytes": 1233,
+      "sha256": "5eed2052387e79b9011cd1b6d2d1a754ae7df4c66b938117937525d37f6976f5"
+    },
+    {
+      "source": "Yin explicitly selected snapshot; see yin_controller/source_inventory.json",
+      "bundle": "yin_controller/return_to_success_start/evidence/execution_status.json",
+      "bytes": 85,
+      "sha256": "9444bcf082bd1c0cc9d116b141853c6f30ade71d8d5fdd073e56ebf7a341d642"
+    }
+  ],
+  "existing_sources_unchanged": true,
+  "services_started": false,
+  "hardware_commands_sent": 0,
+  "deployment_scope": "Previously validated two-host Linux layout; snapshot is not a newly tested cross-machine installer."
+}

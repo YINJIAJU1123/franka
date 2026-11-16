@@ -1,0 +1,125 @@
+{
+  "codebase_version": "v2.1",
+  "robot_type": "franka_gripper",
+  "total_episodes": 14,
+  "total_frames": 24054,
+  "total_tasks": 1,
+  "total_videos": 28,
+  "total_chunks": 1,
+  "chunks_size": 1000,
+  "fps": 30,
+  "splits": {
+    "train": "0:14"
+  },
+  "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+  "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+  "features": {
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null
+    },
+    "observation.images.cam_head": {
+      "dtype": "video",
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "info": {
+        "video.height": 480,
+        "video.width": 640,
+        "video.channels": 3,
+        "video.codec": "libx264",
+        "video.pix_fmt": "yuv420p"
+      }
+    },
+    "observation.images.cam_wrist": {
+      "dtype": "video",
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "shape": [
+        720,
+        1280,
+        3
+      ],
+      "info": {
+        "video.height": 720,
+        "video.width": 1280,
+        "video.channels": 3,
+        "video.codec": "libx264",
+        "video.pix_fmt": "yuv420p"
+      }
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "names": [
+        "fr3_joint1",
+        "fr3_joint2",
+        "fr3_joint3",
+        "fr3_joint4",
+        "fr3_joint5",
+        "fr3_joint6",
+        "fr3_joint7",
+        "gripper"
+      ],
+      "shape": [
+        8
+      ]
+    },
+    "action": {
+      "dtype": "float32",
+      "names": [
+        "fr3_joint1",
+        "fr3_joint2",
+        "fr3_joint3",
+        "fr3_joint4",
+        "fr3_joint5",
+        "fr3_joint6",
+        "fr3_joint7",
+        "gripper"
+      ],
+      "shape": [
+        8
+      ]
+    }
+  }
+}

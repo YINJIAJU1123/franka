@@ -1,0 +1,31 @@
+{
+  "python": "3.10.19",
+  "kernel": "6.8.0-138-generic",
+  "packages": {
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "Pillow": "12.0.0",
+    "av": "15.1.0",
+    "draccus": "0.10.0",
+    "pin": "3.8.0",
+    "pinocchio": null,
+    "opencv-python": "4.11.0.86",
+    "huggingface-hub": "1.19.0",
+    "safetensors": "0.8.0",
+    "einops": "0.8.2",
+    "pynput": "1.8.1",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.9"
+  },
+  "ROS": "Humble",
+  "SDK_on_Yin": "libfranka 0.20.4",
+  "Yin_kernel": "5.15.0-1098-realtime",
+  "not_included": [
+    "Raw demonstration videos and the 2.36GB buffer cache",
+    "Conda/ROS installations",
+    "libfranka shared libraries and complete upstream ROS workspaces"
+  ],
+  "external_dataset": "/home/lixin/act_gripper/dataset/block_pick_place_v3_no_ep6"
+}

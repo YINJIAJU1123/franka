@@ -1,0 +1,301 @@
+{
+  "created_at": "2026-11-12T14:59:26.959679+08:00",
+  "root": "/home/lixin/act_gripper_temporal_run02_20261112",
+  "original_runner_expected_sha256": "5deea3cf877b51dce0380e1064ac86e78de5888c9e2bbd3efef0e9efd558167c",
+  "ema_sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+  "runtime_config_changes": {
+    "policy.temporal_ensemble_coeff": [
+      null,
+      0.01
+    ],
+    "data_dir": [
+      "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata",
+      "/home/lixin/act_gripper_temporal_run02_20261112/recorded_metadata"
+    ]
+  },
+  "files": {
+    "buffer_cache_utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/buffer_cache_utils.py",
+      "sha256": "d639af513042c9a631f0f88b895dfb4054b4624e48b77924c84569f2d1d27a3a"
+    },
+    "REAL_RUN_GUIDE.txt": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/REAL_RUN_GUIDE.txt",
+      "sha256": "97fda1125a775d3628c6ad48f578f1454d6e6793011dcf01ef8a5fce179a4b51"
+    },
+    "act_gripper_policy.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/act_gripper_policy.py",
+      "sha256": "4df73293aa4bad93020fa3f1e230b76b0b614cf9387a5670b2fe96f263dca400"
+    },
+    "protected_source_hashes.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/protected_source_hashes.json",
+      "sha256": "0f83b2ee210b13cdfae777a59cf0ee45180954aaf1de98c227a4f946c8e7cc97"
+    },
+    "offline_check.sh": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/offline_check.sh",
+      "sha256": "e1390cbc4cd60d2275fea1a43cc7110f076f0703c483abc1cf137ee2ff1c1433"
+    },
+    "offline_checks.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/offline_checks.py",
+      "sha256": "b306ca40b0096ec2567668989a30a60de3df35375414846ca9b1331c7c70a4c4"
+    },
+    "runtime_config.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/runtime_config.json",
+      "sha256": "6b69dc8be92c6dfde8bd9bb36e16a9d806d0987a0a642ff700410064620c4ac1"
+    },
+    "LICENSE": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "franka_gripper_transport.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/franka_gripper_transport.py",
+      "sha256": "61a4ac721291fc5a1c3c38efbff6e8db58736c09cd832988256ed8191ababe12"
+    },
+    "real_launch.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/real_launch.py",
+      "sha256": "1bf440c436aebb1d99d8d908c114b26f53bdfec535f342a3924bfeed205687c7"
+    },
+    "README.txt": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/README.txt",
+      "sha256": "97fda1125a775d3628c6ad48f578f1454d6e6793011dcf01ef8a5fce179a4b51"
+    },
+    "env.sh": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/env.sh",
+      "sha256": "38a71707cf1bb08217c99f2ddca14a01e3e8f01d502c850511072cd1d616e12a"
+    },
+    "original_runner.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/original_runner.py",
+      "sha256": "5deea3cf877b51dce0380e1064ac86e78de5888c9e2bbd3efef0e9efd558167c"
+    },
+    "ACT_CONTROL_PROFILE_20261112.txt": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/ACT_CONTROL_PROFILE_20261112.txt",
+      "sha256": "c228fada91570fe859c1146dea67765517c753fb435f87fc7d4bae5330374127"
+    },
+    "franka_gripper_control.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/franka_gripper_control.py",
+      "sha256": "c6935f8a55a6438b0d5b59afd30ed2e10af7be608a412ac6ae71260fc0939755"
+    },
+    "baseline_settings.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/baseline_settings.json",
+      "sha256": "18cde5ff47c90f9f56bb006455611c909cbfbd376d12a6494e4e159df9d9fc20"
+    },
+    "offline_sources.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/offline_sources.json",
+      "sha256": "2426a13cbfa0abdb25c9ba6101c7dda23b8f4e00a16f1ccacb79039ff08ba595"
+    },
+    "image_preprocessing.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/image_preprocessing.py",
+      "sha256": "65438210535450cc00035a739b163069c94ab20727a8314447a0be01e348b847"
+    },
+    "fr3.urdf": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/fr3.urdf",
+      "sha256": "ed07431426465f5cba2689989f3801a8e5ece8f7706aa46778fe26ad8c1a98cd"
+    },
+    "observe_only.sh": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/observe_only.sh",
+      "sha256": "0884c78dea9f7fe5b42cf55bafc985d60d890168483e7597f9fd97e72eca98bf"
+    },
+    "run_real.sh": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/run_real.sh",
+      "sha256": "455fc448edc46993d6280067bf3eff28a3eacb8936bb772220f4d4e89aace022"
+    },
+    "recorded_metadata/split.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/split.json",
+      "sha256": "9c776e825a93f49d9e1b291c3606f0d785b5a86505b07c9d3e4fd4baa3462f8f"
+    },
+    "recorded_metadata/episode_selection.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/episode_selection.json",
+      "sha256": "25035d89f5471d602baf1369f7392c811fcfc56b2bf03c4f4158532a12db881e"
+    },
+    "recorded_metadata/data/chunk-000/episode_000006.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000006.parquet",
+      "sha256": "bb9d84943846699d8c30d7b9b97e1c24290031108181b92cb8fcaabc8d254801"
+    },
+    "recorded_metadata/data/chunk-000/episode_000001.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000001.parquet",
+      "sha256": "82bef62b071718407f7bc58f9ac77adcf19d8f3e8fae15206e49d1b54c0f9c0b"
+    },
+    "recorded_metadata/data/chunk-000/episode_000002.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000002.parquet",
+      "sha256": "054ed87c8ad0533b0acfa1bc2210355985552954560ee5d6a79f8344561776bd"
+    },
+    "recorded_metadata/data/chunk-000/episode_000010.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000010.parquet",
+      "sha256": "9177431f980b919fa80fc56584fd1ccaef0ae1f98afac8b522558858bd6f0554"
+    },
+    "recorded_metadata/data/chunk-000/episode_000004.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000004.parquet",
+      "sha256": "7a2b3d3a337d70a23caae496ed8bb05a32fd4c988f4f0a3ba13384727e32d06b"
+    },
+    "recorded_metadata/data/chunk-000/episode_000005.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000005.parquet",
+      "sha256": "ea9257a4bed3bf46f9c9968fd3079d29b13982fa233f2431a0dddf0a939bc659"
+    },
+    "recorded_metadata/data/chunk-000/episode_000012.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000012.parquet",
+      "sha256": "cc9745aefcf52a0124a118503928c4dd6598e403aadd28d2dd1a572be1fd7bb8"
+    },
+    "recorded_metadata/data/chunk-000/episode_000003.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000003.parquet",
+      "sha256": "be004c4f9dfeb7355802d58bcdd203929dcbaa2bdb6b50ad42d5937713763043"
+    },
+    "recorded_metadata/data/chunk-000/episode_000011.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000011.parquet",
+      "sha256": "9bff3da77769c726fc3b1c0791336387c791d9e3a737511073f776e27394c802"
+    },
+    "recorded_metadata/data/chunk-000/episode_000009.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000009.parquet",
+      "sha256": "106ddfd6a0d52732fa356d7e300aefd00d08a415551b5c9f12ac0326a7972d0f"
+    },
+    "recorded_metadata/data/chunk-000/episode_000008.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000008.parquet",
+      "sha256": "3d4f6acec3885d7e4191e7d10609ea88795f809f4a7c6a9e513b2c3a016d2370"
+    },
+    "recorded_metadata/data/chunk-000/episode_000000.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000000.parquet",
+      "sha256": "e20d97ee83860ae4ed5abf1d6feefa299b874c45eaa31e7205aeed127229b284"
+    },
+    "recorded_metadata/data/chunk-000/episode_000013.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000013.parquet",
+      "sha256": "90f9a77fd176d93ce460635bf822cee78346c235f1fd7817cee154ea9c614507"
+    },
+    "recorded_metadata/data/chunk-000/episode_000007.parquet": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/data/chunk-000/episode_000007.parquet",
+      "sha256": "c1185c3f9986d6ce6d2fb4e9b9765f86662ffcfaa84486ae16205698624910c0"
+    },
+    "recorded_metadata/meta/tasks.jsonl": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/meta/tasks.jsonl",
+      "sha256": "dc5e7ce0de8342e5c64aac4c0252d87709d668ee4c51351b9ced3625c68690d8"
+    },
+    "recorded_metadata/meta/info.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/meta/info.json",
+      "sha256": "846c0ae7e40f64f5030ab6f10fa8595467b68b3ca98b21f20f4540e6a5da2b53"
+    },
+    "recorded_metadata/meta/episodes_stats.jsonl": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/meta/episodes_stats.jsonl",
+      "sha256": "e931798fec65528da16fed76b7f59c54d258d09c3b6c6e62a79a3f05b096f8c3"
+    },
+    "recorded_metadata/meta/episodes.jsonl": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/recorded_metadata/meta/episodes.jsonl",
+      "sha256": "767e40f90e73234870f7599e10a5373819f0f6e8e3c83b755feaf3ad76daa9fa"
+    },
+    "checkpoint/act_config.json": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/checkpoint/act_config.json",
+      "sha256": "1851625995dc503c7c78e5ce1698978548af9d3eebb0426793497a8ea1dc5351"
+    },
+    "checkpoint/act_policy_ema.pth": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/checkpoint/act_policy_ema.pth",
+      "sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852"
+    },
+    "checkpoint/dataset_stats.pth": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/checkpoint/dataset_stats.pth",
+      "sha256": "10e0ffc814a55ab25931b69fbb5521eac097176e705f79c532cdf7c1e3d83b38"
+    },
+    "fixtures/saved_near_grasp_inputs.npz": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/fixtures/saved_near_grasp_inputs.npz",
+      "sha256": "24450ad52a6a16203f03e7237ff1fb517d7f14c8d6183cc3175cebfac5f47614"
+    },
+    "lerobot/src/lerobot/__init__.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/__init__.py",
+      "sha256": "751c7d49f40a9d8618b85326e33a2dd4197281974dd7c5564a946afb0a5698f6"
+    },
+    "lerobot/src/lerobot/constants.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/constants.py",
+      "sha256": "11ac9260341e1560c5eb0dd7acb79ed63c74180b8ab4113c27622ff213db417f"
+    },
+    "lerobot/src/lerobot/__version__.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/__version__.py",
+      "sha256": "beb2aa5d785c7e7ccbcb910ec4688e2868423458e2a1aac7fd76c1e1a182a470"
+    },
+    "lerobot/src/lerobot/utils/random_utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/utils/random_utils.py",
+      "sha256": "5b96fae7841ab9f477942d4d524166a23655a5d95e0cd6f35915fdaaf2dc2afc"
+    },
+    "lerobot/src/lerobot/utils/hub.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/utils/hub.py",
+      "sha256": "1981583e520bc73e221491459694d58ad1c1370537bf280968493b31c8e2c51f"
+    },
+    "lerobot/src/lerobot/utils/utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/utils/utils.py",
+      "sha256": "81b4bffd89c3133f38b214877d12de5835d80c8ab69d832e3e092af3d484c12c"
+    },
+    "lerobot/src/lerobot/utils/io_utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/utils/io_utils.py",
+      "sha256": "3c04da95df2f211faefec3527603596bcf4231072919d6a8d4bcaa3436a14d5c"
+    },
+    "lerobot/src/lerobot/optim/optimizers.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/optim/optimizers.py",
+      "sha256": "0845806f9d5bf883da4f388d6ec1a2791c4f00fc54c43aa543b184d18f0239fa"
+    },
+    "lerobot/src/lerobot/optim/__init__.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/optim/__init__.py",
+      "sha256": "4f485904e4eca422d708f5507810d51ae99a614dd41aac98127ed6019b9b3cc5"
+    },
+    "lerobot/src/lerobot/optim/schedulers.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/optim/schedulers.py",
+      "sha256": "c13291786debe87ab82aa53ebe39b90b68afdd75dc4a76db33e4a37e2144ac10"
+    },
+    "lerobot/src/lerobot/configs/policies.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/configs/policies.py",
+      "sha256": "156c3626f7e2e07f2e7b411be915c08c002daf013a3d1d9435572da1efdee32e"
+    },
+    "lerobot/src/lerobot/configs/types.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/configs/types.py",
+      "sha256": "f32750541f2c33bc37cd19bfb153f4a5c31c47892bcaa375dc97ebda5aa7abb3"
+    },
+    "lerobot/src/lerobot/datasets/video_utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/video_utils.py",
+      "sha256": "14a159f67e18a5f379b754539d8fa51ef6059f93b5a8b9ee32de89ff2788661e"
+    },
+    "lerobot/src/lerobot/datasets/lerobot_dataset.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/lerobot_dataset.py",
+      "sha256": "e8a4334daa92641745a0c07b5011aefce5ca2a75c66efdf924e7fdf1a9d32fc7"
+    },
+    "lerobot/src/lerobot/datasets/backward_compatibility.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/backward_compatibility.py",
+      "sha256": "a1090ab98db67e09ddb2047f4c7c2a482f089dd4c0bd5997e763f7481e3a4cc9"
+    },
+    "lerobot/src/lerobot/datasets/utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/utils.py",
+      "sha256": "d5304b7f7039a6c97ab2de51748ad781a40edce15816ed3efe865cf1e261d033"
+    },
+    "lerobot/src/lerobot/datasets/compute_stats.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/compute_stats.py",
+      "sha256": "4f8006d2124e815d702501fc709d4c333d80e60bc32f80a13719b0dbc37c4941"
+    },
+    "lerobot/src/lerobot/datasets/image_writer.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/datasets/image_writer.py",
+      "sha256": "44f057d19b1036a5e64d67503a073c9c256ed956005fcefce51902b05c5e231c"
+    },
+    "lerobot/src/lerobot/policies/factory.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/factory.py",
+      "sha256": "a58d01c6f37bf0470582d86c84212e34c7f3187adbc340fc7b8fdcf6a6fa3a51"
+    },
+    "lerobot/src/lerobot/policies/__init__.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/__init__.py",
+      "sha256": "7f1c12a1a48f9cd9af62a3e78f2c1ae70d91b5bc27238ed7ee3b8d2934496c92"
+    },
+    "lerobot/src/lerobot/policies/normalize.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/normalize.py",
+      "sha256": "a28fbec9127c0e23510d5720747cf14f42e0b997c361556ec1f9702c63d559d5"
+    },
+    "lerobot/src/lerobot/policies/pretrained.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/pretrained.py",
+      "sha256": "3e805059fc9a2554a2657cac0134b32e830fc74f0de0a58c6ada51d53d302df9"
+    },
+    "lerobot/src/lerobot/policies/utils.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/utils.py",
+      "sha256": "3aea551920ca2bfc13ea46f5ce93facc09909e799fe3d158db0b311f9aba7c5a"
+    },
+    "lerobot/src/lerobot/policies/act/modeling_act.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/act/modeling_act.py",
+      "sha256": "eb4d66949ed7e0e293d50558d31598fa3f1a56eb2152be13cb9b5de72f73385f"
+    },
+    "lerobot/src/lerobot/policies/act/configuration_act.py": {
+      "source": "/home/lixin/act_gripper_baseline_run02_20261112/lerobot/src/lerobot/policies/act/configuration_act.py",
+      "sha256": "ffb0648da83acaed39d32d4503b7766205a309ddf5d8560cee164e987ebe2cf4"
+    }
+  },
+  "source_baseline": "/home/lixin/act_gripper_baseline_run02_20261112",
+  "algorithm_source_changed": false,
+  "robot_started": false
+}

@@ -1,0 +1,6 @@
+{
+  "dataset": "/home/lixin/act_gripper/dataset/block_pick_place_v3_no_ep6",
+  "fps": 30,
+  "source_episode_excluded": 6,
+  "evaluation": "Recorded observations only; no autonomous rollout"
+}

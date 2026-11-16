@@ -1,0 +1,19 @@
+{
+  "checkpoint": "/home/lixin/act_gripper/experiments/block_pick_place_v3_act_run02/act_policy_ema.pth",
+  "checkpoint_file": "act_policy_ema.pth",
+  "training_step": 30000,
+  "action_offset": 0,
+  "training_action_lead_frames": 10,
+  "n_action_steps": 1,
+  "mask_gripper_state": true,
+  "gripper_threshold": 0.5,
+  "gripper_hysteresis": 0.05,
+  "gripper_confirm_steps": 1,
+  "selection_reason": "Heldout timing matched event-best; final EMA has no extra transitions on all 14 episodes, while the earlier event-best checkpoint chatters in source episodes 1 and 9.",
+  "validation_accuracy": 0.995302407516148,
+  "validation_max_abs_timing_error_s": 0.2,
+  "all_episodes_max_abs_timing_error_s": 0.3,
+  "all_episodes_event_count_errors": 0,
+  "offline_report": "/home/lixin/act_gripper/reports/block_pick_place_v3/run02_validation_final/evaluation.json",
+  "physical_test_performed": false
+}

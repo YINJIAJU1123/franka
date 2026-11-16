@@ -1,0 +1,22 @@
+{
+  "host": "lixin",
+  "time": "2026-11-12T17:27:23.156143+08:00",
+  "stopped": [
+    {
+      "type": "camera_launcher_and_children",
+      "pgid": 1699595
+    },
+    {
+      "type": "calibrated_state_receiver",
+      "pid": 797085
+    },
+    {
+      "type": "completed_training_idle_tmux",
+      "session": "act_v3_train"
+    }
+  ],
+  "code_or_data_deleted": false,
+  "remaining_experiment_processes": [],
+  "state_port_8896_listeners": [],
+  "ACT_running": false
+}

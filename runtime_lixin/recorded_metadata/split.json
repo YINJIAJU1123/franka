@@ -1,0 +1,39 @@
+{
+  "seed": 1000,
+  "train_new_ids": [
+    0,
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "validation_new_ids": [
+    2,
+    4
+  ],
+  "train_original_ids": [
+    0,
+    1,
+    3,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "validation_original_ids": [
+    2,
+    4
+  ]
+}

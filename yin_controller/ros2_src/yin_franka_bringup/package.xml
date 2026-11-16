@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>yin_franka_bringup</name>
+  <version>0.1.0</version>
+  <description>Four FR3 control modes with shared bringup and controller-independent UDP state.</description>
+  <maintainer email="yin@example.com">Yin</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>franka_bringup</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>franka_robot_state_broadcaster</exec_depend>
+  <exec_depend>yin_franka_cartesian_controller</exec_depend>
+  <exec_depend>yin_franka_joint_impedance_replay</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>franka_msgs</exec_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

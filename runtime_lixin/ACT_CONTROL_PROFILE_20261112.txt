@@ -1,0 +1,9 @@
+ACT-only controller profile on Yin: /home/yin/act_run02_baseline_control_20261112/controllers_act.yaml
+Only linear_deadband and angular_deadband are set to [0,0,0]. All other original settings stay unchanged.
+Future startup on Yin (only when no other controller is running):
+export ROS_DOMAIN_ID=66 FRANKA_GRIPPER_CLOSED_WIDTH_THRESHOLD=0.0693
+bash /home/yin/act_run02_baseline_control_20261112/run_control.sh cartesian load_gripper:=true
+Then on the lixin Linux desktop:
+bash /home/lixin/act_gripper_baseline_run02_20261112/run_real.sh run
+B starts/ends an episode; C exits. There is no automatic time limit.
+Keep SpaceMouse/replay/other action senders stopped during ACT. SpaceMouse teleoperation uses its original controller profile.

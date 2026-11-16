@@ -1,0 +1,212 @@
+{
+  "description": "Local artifacts intentionally excluded from ordinary Git. Restore only from a trusted snapshot.",
+  "source_snapshot_root": "ACT_success_reproduction_20261112/snapshot",
+  "assets": [
+    {
+      "path": "evidence/onsite_temporal_20261112_164839.exit",
+      "snapshot_relative_path": "evidence/onsite_temporal_20261112_164839.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "evidence/onsite_temporal_20261112_164839.log",
+      "snapshot_relative_path": "evidence/onsite_temporal_20261112_164839.log",
+      "bytes": 9516,
+      "sha256": "bcebe34b3d60c9167f46fd4bf4db45538080787cb9816039c712ccf7027ac732",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "evidence/onsite_temporal_retest_20261112_170928.exit",
+      "snapshot_relative_path": "evidence/onsite_temporal_retest_20261112_170928.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "evidence/onsite_temporal_retest_20261112_170928.log",
+      "snapshot_relative_path": "evidence/onsite_temporal_retest_20261112_170928.log",
+      "bytes": 6996,
+      "sha256": "6d2f164521e8f83e2b5510b6da7b7bc2f7990611a9d136d5ca9bc9b806fde38d",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "yin_controller/return_to_success_start/evidence/actual_feedback.csv",
+      "snapshot_relative_path": "yin_controller/return_to_success_start/evidence/actual_feedback.csv",
+      "bytes": 2484065,
+      "sha256": "dfaf0f12c35a30dbcd192c71a80af095656c4bbfbbe35ec1de797ad77b29c712",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "yin_controller/return_to_success_start/evidence/execution.log",
+      "snapshot_relative_path": "yin_controller/return_to_success_start/evidence/execution.log",
+      "bytes": 536,
+      "sha256": "004c9f0d6b3c357da2ac3b0945009ecf0545fa99ff9b01fc010c4c3ab9fce008",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "yin_controller/return_to_success_start/evidence/plan.csv",
+      "snapshot_relative_path": "yin_controller/return_to_success_start/evidence/plan.csv",
+      "bytes": 1685554,
+      "sha256": "09baadb0d97564d8bdbe6066543048920ba668c52e1b9bd87816b99e8de7d286",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "runtime_lixin/checkpoint/act_policy_ema.pth",
+      "snapshot_relative_path": "runtime_lixin/checkpoint/act_policy_ema.pth",
+      "bytes": 206773010,
+      "sha256": "d9319c1b1e6f329f8a31d739cfd0593069622b949f3544a7b2bc0231dc39c852",
+      "reason": "external_model_weight",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/fixtures/saved_near_grasp_inputs.npz",
+      "snapshot_relative_path": "runtime_lixin/fixtures/saved_near_grasp_inputs.npz",
+      "bytes": 138960,
+      "sha256": "24450ad52a6a16203f03e7237ff1fb517d7f14c8d6183cc3175cebfac5f47614",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000000.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000000.parquet",
+      "bytes": 142066,
+      "sha256": "e20d97ee83860ae4ed5abf1d6feefa299b874c45eaa31e7205aeed127229b284",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000001.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000001.parquet",
+      "bytes": 142067,
+      "sha256": "82bef62b071718407f7bc58f9ac77adcf19d8f3e8fae15206e49d1b54c0f9c0b",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000002.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000002.parquet",
+      "bytes": 141326,
+      "sha256": "054ed87c8ad0533b0acfa1bc2210355985552954560ee5d6a79f8344561776bd",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000003.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000003.parquet",
+      "bytes": 141549,
+      "sha256": "be004c4f9dfeb7355802d58bcdd203929dcbaa2bdb6b50ad42d5937713763043",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000004.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000004.parquet",
+      "bytes": 138189,
+      "sha256": "7a2b3d3a337d70a23caae496ed8bb05a32fd4c988f4f0a3ba13384727e32d06b",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000005.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000005.parquet",
+      "bytes": 142916,
+      "sha256": "ea9257a4bed3bf46f9c9968fd3079d29b13982fa233f2431a0dddf0a939bc659",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000006.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000006.parquet",
+      "bytes": 136430,
+      "sha256": "bb9d84943846699d8c30d7b9b97e1c24290031108181b92cb8fcaabc8d254801",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000007.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000007.parquet",
+      "bytes": 137736,
+      "sha256": "c1185c3f9986d6ce6d2fb4e9b9765f86662ffcfaa84486ae16205698624910c0",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000008.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000008.parquet",
+      "bytes": 139897,
+      "sha256": "3d4f6acec3885d7e4191e7d10609ea88795f809f4a7c6a9e513b2c3a016d2370",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000009.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000009.parquet",
+      "bytes": 140507,
+      "sha256": "106ddfd6a0d52732fa356d7e300aefd00d08a415551b5c9f12ac0326a7972d0f",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000010.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000010.parquet",
+      "bytes": 135110,
+      "sha256": "9177431f980b919fa80fc56584fd1ccaef0ae1f98afac8b522558858bd6f0554",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000011.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000011.parquet",
+      "bytes": 130962,
+      "sha256": "9bff3da77769c726fc3b1c0791336387c791d9e3a737511073f776e27394c802",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000012.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000012.parquet",
+      "bytes": 130353,
+      "sha256": "cc9745aefcf52a0124a118503928c4dd6598e403aadd28d2dd1a572be1fd7bb8",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000013.parquet",
+      "snapshot_relative_path": "runtime_lixin/recorded_metadata/data/chunk-000/episode_000013.parquet",
+      "bytes": 137920,
+      "sha256": "90f9a77fd176d93ce460635bf822cee78346c235f1fd7817cee154ea9c614507",
+      "reason": "external_recorded_input_fixture",
+      "required_by_original_runtime_manifest": true
+    },
+    {
+      "path": "evidence/real_temporal/real_20261112_164844.csv",
+      "snapshot_relative_path": "evidence/real_temporal/real_20261112_164844.csv",
+      "bytes": 1354244,
+      "sha256": "79a5e7ba7ed11f5ec1aa23781ad87c414a10a315981ee3283de7be0772044001",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    },
+    {
+      "path": "evidence/real_temporal/real_20261112_170932.csv",
+      "snapshot_relative_path": "evidence/real_temporal/real_20261112_170932.csv",
+      "bytes": 832394,
+      "sha256": "faeb352e9d3e3447ccc3a5104b6786597b28caca5380c7424458f2e3126110f0",
+      "reason": "external_raw_runtime_trace",
+      "required_by_original_runtime_manifest": false
+    }
+  ],
+  "not_in_snapshot": [
+    "Raw demonstration videos",
+    "2.36GB buffer_cache.pt",
+    "ROS/Conda installations",
+    "libfranka shared libraries"
+  ]
+}

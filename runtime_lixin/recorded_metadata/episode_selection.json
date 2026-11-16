@@ -1,0 +1,156 @@
+{
+  "source": "/home/lixin/DatasetCollector/act01/franka_gripper_block_pick_place_v3",
+  "excluded_source_episodes": [
+    6
+  ],
+  "mapping": [
+    {
+      "source_episode": 0,
+      "training_episode": 0,
+      "frames": 1734,
+      "video_sha256": {
+        "observation.images.cam_head": "a1d6008eea6a1dbed76e4a6b1bd057e8116b7d81683ecdddade87a53d46d6114",
+        "observation.images.cam_wrist": "654eb9525bba588b48d8687db0571496b8da9b63ede752415c6ae206f62cbcfb"
+      }
+    },
+    {
+      "source_episode": 1,
+      "training_episode": 1,
+      "frames": 1719,
+      "video_sha256": {
+        "observation.images.cam_head": "76123d9b1d44310faf0bca2fb2d3bd8da465898c845626851c07fa6b84a482ae",
+        "observation.images.cam_wrist": "f072c1c276b7e01fe05b7f86918454642f0b0520997398b862cd42bc7b26edd0"
+      }
+    },
+    {
+      "source_episode": 2,
+      "training_episode": 2,
+      "frames": 1712,
+      "video_sha256": {
+        "observation.images.cam_head": "0eee5bec81c3c95475e9ef616fd4ed0b014d85ec361b478d8eb5a39bb834583d",
+        "observation.images.cam_wrist": "187484bdd6d66934ef1430bcec5259a3220547c8b827a1250dc90df978cc693b"
+      }
+    },
+    {
+      "source_episode": 3,
+      "training_episode": 3,
+      "frames": 1724,
+      "video_sha256": {
+        "observation.images.cam_head": "274cf4e7e689939d108db0b59729f8e3fff9e8504542f4ed16a25f06e9264981",
+        "observation.images.cam_wrist": "98c1903dc08ff3fb364d2eac691b95acc9f4451749951ce5afc89bed93c93de0"
+      }
+    },
+    {
+      "source_episode": 4,
+      "training_episode": 4,
+      "frames": 1714,
+      "video_sha256": {
+        "observation.images.cam_head": "c75e6d0def7d2fc3e6646a99522232519e911ee629771ea148881d4ea427e84d",
+        "observation.images.cam_wrist": "ecabc46eb78f36c9c41eb68e125193a381a5a8ecafb02526596e1c478150fc46"
+      }
+    },
+    {
+      "source_episode": 5,
+      "training_episode": 5,
+      "frames": 1741,
+      "video_sha256": {
+        "observation.images.cam_head": "e75438fcb78332debcdfdbd6ce052586e42666db8cd5f6f1e5f136abcc088c8b",
+        "observation.images.cam_wrist": "815f862d12b5116170734d953ca175795a6347287575e3839eb9fa581974d9b6"
+      }
+    },
+    {
+      "source_episode": 7,
+      "training_episode": 6,
+      "frames": 1703,
+      "video_sha256": {
+        "observation.images.cam_head": "42b7c259864d206965fa2bd6d53f00c105938e6df192676881319eb26de66061",
+        "observation.images.cam_wrist": "ce7f20813110a1007ff70bf407aff375adf7858e84b160aab6ff4bdd04c19e3e"
+      }
+    },
+    {
+      "source_episode": 8,
+      "training_episode": 7,
+      "frames": 1705,
+      "video_sha256": {
+        "observation.images.cam_head": "c629bb3eba17b06163673c713885283d691fadedb5fb63fd748e117d514502e1",
+        "observation.images.cam_wrist": "0dbd4be23ed6d66f7a78a629d2d4e711ee3bf2a9ff89cd33ee121bed84096117"
+      }
+    },
+    {
+      "source_episode": 9,
+      "training_episode": 8,
+      "frames": 1717,
+      "video_sha256": {
+        "observation.images.cam_head": "16c2e008a66052092d9f6109eefda668e6b90a4acdb4d9dcf3cdd43a66c7b21e",
+        "observation.images.cam_wrist": "f348dc515742bd9172134efa5080de14600d30d9e2466be85408981330fb8b70"
+      }
+    },
+    {
+      "source_episode": 10,
+      "training_episode": 9,
+      "frames": 1719,
+      "video_sha256": {
+        "observation.images.cam_head": "5225d881ef9ed7725b9ba01570e2dc853888b8c5e31555c0ce8843ba0b07b3a8",
+        "observation.images.cam_wrist": "deedc18d02b19f1d931f76571cd597e672e2ec7fed8525e6a159bf5e9be68ed8"
+      }
+    },
+    {
+      "source_episode": 11,
+      "training_episode": 10,
+      "frames": 1737,
+      "video_sha256": {
+        "observation.images.cam_head": "0b957289de5a0766bdc60a2ba3aeea77b6019df0682abb62a0f4d6c3b4af2dd0",
+        "observation.images.cam_wrist": "8dab14d2dde45cf7794dd14eeb529a4d27db165408ecc9b518b4303b7875cec4"
+      }
+    },
+    {
+      "source_episode": 12,
+      "training_episode": 11,
+      "frames": 1697,
+      "video_sha256": {
+        "observation.images.cam_head": "93451c8a70f95dcc585d224ef2c538bfdbd3273835e24e098bb9d3d757e53ec3",
+        "observation.images.cam_wrist": "e2a66f8cf40eb8145505503921bbc69a8fdff3e72380ebdabaca64a89efe049b"
+      }
+    },
+    {
+      "source_episode": 13,
+      "training_episode": 12,
+      "frames": 1715,
+      "video_sha256": {
+        "observation.images.cam_head": "3c90500b692cc173c2a6865d347a3bbe857d9b786d03dd459300606786301a7c",
+        "observation.images.cam_wrist": "0ad320d75fb6e2eba49cc39684c008445edec0dd2b3cf08408f0cf34da8f5212"
+      }
+    },
+    {
+      "source_episode": 14,
+      "training_episode": 13,
+      "frames": 1717,
+      "video_sha256": {
+        "observation.images.cam_head": "9d2460dfdfdbd00d76ae6043d11383e8946d50e66114774a4d8a6c075690f0a4",
+        "observation.images.cam_wrist": "45d4deb28d1d544158b8a8af613770812154fa2208a201f91d4677dfc8ab63b7"
+      }
+    }
+  ],
+  "source_metadata_and_parquet_sha256": {
+    "meta/tasks.jsonl": "dc5e7ce0de8342e5c64aac4c0252d87709d668ee4c51351b9ced3625c68690d8",
+    "meta/info.json": "cdd8432a5067753a2d4dbcf607840f5c160ff728779a27f0eb379d01f14b9513",
+    "meta/episodes_stats.jsonl": "0b67a544b2c9f9eebb73b7b46f87b0f68d4a677f8e1307dea21260a9d59b2004",
+    "meta/episodes.jsonl": "a25608e596e041280ebf58f3e047817ee95842426532c02ce2eaa1e60f6d2ae8",
+    "data/chunk-000/episode_000000.parquet": "6995ca2919fb411b191bc0cd7b52683a1ad01ce3567c567ce20a0b3b352d318f",
+    "data/chunk-000/episode_000001.parquet": "c502d68adc025476273e8503f46b68e0e228e0a5bceeef9910afdfb5332d35e1",
+    "data/chunk-000/episode_000002.parquet": "c1c3a2b251a1908dd5e35212d547bd0e99b738f93244024506b8b678a289df7a",
+    "data/chunk-000/episode_000003.parquet": "55f973e5e2ef1822e07b19a9ab1162ed0daf7855400d539786aaf2a98f8ec337",
+    "data/chunk-000/episode_000004.parquet": "75f2c20d8ddd37b30ed1eda3723ce7c020a5d21a99a6329fd2f4acf66ca4a628",
+    "data/chunk-000/episode_000005.parquet": "1abf90d4af0c1da5ceb668f85e6e1e387595bc7ef39c4c4f59cae95661fa612c",
+    "data/chunk-000/episode_000006.parquet": "1b16842199e4e3a6ed2d3f1e4a9fa185ad4e104f4e139585af7961b8b191a0e9",
+    "data/chunk-000/episode_000007.parquet": "07be0531275413320ce60fb9c5ee2b2336ae7da1786ee343d136dbaa65112c35",
+    "data/chunk-000/episode_000008.parquet": "6dec6bc991c08f6b89da032865791be2042a856b0b0bfcafe34e3f41e5e5333d",
+    "data/chunk-000/episode_000009.parquet": "a249f781245cfe3921b1cc81a3cba61768cea447a2fd72ad40293503d3b8ae9c",
+    "data/chunk-000/episode_000010.parquet": "4c1bb63d0a94f5e7ab68f3b5d0b332fc94fad2d439ae24074e8d13c5b16b0a2a",
+    "data/chunk-000/episode_000011.parquet": "133e0dcd9afa62e6e377a27891b4390f6a12acd0b818c17bdef9c16e3e4b33dc",
+    "data/chunk-000/episode_000012.parquet": "b103ad53763f201852f8a74df715638a93b350ba74f4614519166f15e777c16b",
+    "data/chunk-000/episode_000013.parquet": "4d7e87f0b017332acf77e03ebc3ca72c454ecf2245e5902e8b4e8a29da550ec7",
+    "data/chunk-000/episode_000014.parquet": "1bde9a054f1fdf25e4feb34366bf89af77a754bde50df558b6282ed7df8b2329"
+  },
+  "note": "Only episode_index and global index were changed; videos copied byte-for-byte."
+}

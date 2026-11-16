@@ -1,0 +1,16 @@
+# Preserve the byte-identical, validated runtime snapshots and their hashes.
+* text=auto eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+runtime_lixin/** -text
+yin_controller/** -text
+state_receiver_source/** -text
+camera_source/** -text
+training_reference/** -text
+analysis_tools/** -text
+environment/** -text
+evidence/** -text
+provenance/** -text
+*.png binary
+*.pth binary

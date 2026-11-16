@@ -1,0 +1,19 @@
+<library path="yin_franka_cartesian_controller">
+  <class
+    name="yin_franka_cartesian_controller/FrankaCartesianTwistController"
+    type="yin_franka_cartesian_controller::FrankaCartesianTwistController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>
+      6D Cartesian velocity controller for Franka robots that subscribes to TwistStamped.
+    </description>
+  </class>
+  <class
+    name="yin_franka_cartesian_controller/FrankaPolicyTorqueController"
+    type="yin_franka_cartesian_controller::FrankaPolicyTorqueController"
+    base_class_type="controller_interface::ControllerInterface">
+    <description>
+      CORN-style policy torque controller. Accepts a 20D policy action, solves damped least-squares
+      Cartesian residual IK, and writes joint effort commands with safety limits.
+    </description>
+  </class>
+</library>

@@ -1,0 +1,39 @@
+/**:
+  controller_manager:
+    ros__parameters:
+      update_rate: 1000
+      thread_priority: 98
+
+      joint_state_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+      franka_robot_state_broadcaster:
+        type: franka_robot_state_broadcaster/FrankaRobotStateBroadcaster
+
+      franka_cartesian_twist_controller:
+        type: yin_franka_cartesian_controller/FrankaCartesianTwistController
+
+/**:
+  franka_robot_state_broadcaster:
+    ros__parameters:
+      lock_try_count: 5
+      lock_sleep_interval: 5
+      lock_log_error: false
+      lock_update_success: true
+
+/**:
+  franka_cartesian_twist_controller:
+    ros__parameters:
+      arm_id: "fr3"
+      command_topic: "~/twist_cmd"
+      command_timeout: 0.15
+      linear_scale: [1.0, 1.0, 1.0]
+      angular_scale: [1.0, 1.0, 1.0]
+      max_linear_velocity: [0.15, 0.15, 0.15]
+      max_angular_velocity: [0.80, 0.80, 0.80]
+      linear_deadband: [0.001, 0.001, 0.001]
+      angular_deadband: [0.01, 0.01, 0.01]
+      linear_accel_limit: [0.80, 0.80, 0.80]
+      angular_accel_limit: [3.00, 3.00, 3.00]
+      linear_jerk_limit: [5.0, 5.0, 5.0]
+      angular_jerk_limit: [25.0, 25.0, 25.0]

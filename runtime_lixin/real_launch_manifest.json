@@ -1,0 +1,9 @@
+{
+  "new_files": {
+    "real_launch.py": "1bf440c436aebb1d99d8d908c114b26f53bdfec535f342a3924bfeed205687c7",
+    "run_real.sh": "455fc448edc46993d6280067bf3eff28a3eacb8936bb772220f4d4e89aace022",
+    "REAL_RUN_GUIDE.txt": "97fda1125a775d3628c6ad48f578f1454d6e6793011dcf01ef8a5fce179a4b51"
+  },
+  "existing_files_overwritten": false,
+  "robot_started": false
+}
